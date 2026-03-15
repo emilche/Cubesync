@@ -13,6 +13,8 @@ public:
   virtual ~ACompanionCube();
   virtual void Tick(float DeltaTime) override;
   void DestroyMe();
+  UPROPERTY(VisibleAnywhere, BlueprintReadOnly)
+  UStaticMeshComponent* myMesh;
 
 protected:
   virtual void BeginPlay() override;

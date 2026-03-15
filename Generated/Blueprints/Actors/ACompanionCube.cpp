@@ -1,9 +1,11 @@
 #include "ACompanionCube.h"
+#include "Components/StaticMeshComponent.h"
 
 ACompanionCube::ACompanionCube()
 {
   PrimaryActorTick.bCanEverTick = true;
-  // No connected nodes.
+  myMesh = CreateDefaultSubobject<UStaticMeshComponent>(TEXT("MyMesh"));
+  SetRootComponent(myMesh);
 }
 
 ACompanionCube::~ACompanionCube()
@@ -25,4 +27,5 @@ void ACompanionCube::Tick(float DeltaTime)
 
 void ACompanionCube::DestroyMe()
 {
+  DestroyActor();
 }
