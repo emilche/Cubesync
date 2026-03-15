@@ -1,0 +1,3126 @@
+{
+  "id": "project-1773168899843-1",
+  "name": "Tutorial1",
+  "enums": [],
+  "structs": [],
+  "interfaces": [],
+  "activeBlueprintId": "bp-1773169014053-2",
+  "blueprints": [
+    {
+      "id": "bp-1773169014053-2",
+      "name": "CubicGM",
+      "templateId": "game-mode",
+      "templateLabel": "Game Mode",
+      "categoryPath": "GameModes",
+      "graph": {
+        "nodes": [
+          {
+            "id": "node-1773169014053-3",
+            "definitionId": "event-construct",
+            "position": {
+              "x": 56.13865844368393,
+              "y": 38.10628644714593
+            }
+          },
+          {
+            "id": "node-1773169014053-4",
+            "definitionId": "event-destruct",
+            "position": {
+              "x": 244,
+              "y": 20
+            }
+          },
+          {
+            "id": "custom-event-cubespawned",
+            "definitionId": "custom-event-cubespawned",
+            "position": {
+              "x": 422.4131021086593,
+              "y": 20.503812983201186
+            },
+            "data": {
+              "eventScopeId": "custom-event-cubespawned"
+            }
+          },
+          {
+            "id": "node-1773169501296-12",
+            "definitionId": "get-variable",
+            "position": {
+              "x": 516.4000647279596,
+              "y": 186.60358073999728
+            },
+            "data": {
+              "variableId": "var-currentnumberofcubes",
+              "eventScopeId": "custom-event-cubespawned"
+            }
+          },
+          {
+            "id": "node-1773169529918-14",
+            "definitionId": "branch",
+            "position": {
+              "x": 964.245160650696,
+              "y": 161.88377084975772
+            },
+            "data": {
+              "eventScopeId": "custom-event-cubespawned"
+            }
+          },
+          {
+            "id": "node-1773169559523-16",
+            "definitionId": "compare-greater-equal",
+            "position": {
+              "x": 748.3276947684813,
+              "y": 294.9649762362798
+            },
+            "data": {
+              "eventScopeId": "custom-event-cubespawned"
+            }
+          },
+          {
+            "id": "node-1773169654672-20",
+            "definitionId": "get-variable",
+            "position": {
+              "x": 535.6478828411821,
+              "y": 411.63020629175026
+            },
+            "data": {
+              "variableId": "var-maxspawnedcubes",
+              "eventScopeId": "custom-event-cubespawned"
+            }
+          },
+          {
+            "id": "node-1773169688776-23",
+            "definitionId": "broadcast-delegate-delegate-onmaxcubespawned",
+            "position": {
+              "x": 1174.7307405987667,
+              "y": 163.2417423332941
+            },
+            "data": {
+              "eventScopeId": "custom-event-cubespawned"
+            }
+          },
+          {
+            "id": "node-1773171013552-78",
+            "definitionId": "bind-delegate-delegate-onmaxcubespawned",
+            "position": {
+              "x": 655.3175306101743,
+              "y": -36.26770351941516
+            },
+            "data": {
+              "eventScopeId": "custom-event-cubespawned",
+              "customEventId": "local:bp-1773170878478-68:custom-event-destroyme",
+              "customEventOwnerClassName": "ACompanionCube",
+              "customEventFunctionName": "DestroyMe"
+            }
+          },
+          {
+            "id": "node-1773171320780-87",
+            "definitionId": "event-tick",
+            "position": {
+              "x": 37.21725294729319,
+              "y": 36.909521472669965
+            },
+            "data": {
+              "eventScopeId": "node-1773169014053-3"
+            }
+          },
+          {
+            "id": "node-1773171367114-88",
+            "definitionId": "event-begin-play",
+            "position": {
+              "x": 268.43486703646954,
+              "y": -4.443486703646798
+            },
+            "data": {
+              "eventScopeId": "node-1773171320780-87"
+            }
+          },
+          {
+            "id": "node-1773171395235-89",
+            "definitionId": "bind-delegate-delegate-oncubespawned",
+            "position": {
+              "x": 489.78421885282796,
+              "y": -89.54303300523242
+            },
+            "data": {
+              "eventScopeId": "node-1773171367114-88",
+              "customEventId": "custom-event-cubespawned",
+              "customEventOwnerClassName": "ACubicGM",
+              "customEventFunctionName": "CubeSpawned"
+            }
+          },
+          {
+            "id": "node-1773171585154-93",
+            "definitionId": "set-variable",
+            "position": {
+              "x": 460.3615033762158,
+              "y": -19.833830183720764
+            },
+            "data": {
+              "variableId": "var-currenttime",
+              "eventScopeId": "node-1773171320780-87"
+            }
+          },
+          {
+            "id": "node-1773171598166-95",
+            "definitionId": "get-variable",
+            "position": {
+              "x": 24.452657161178678,
+              "y": 294.7628968354387
+            },
+            "data": {
+              "variableId": "var-currenttime",
+              "eventScopeId": "node-1773171320780-87"
+            }
+          },
+          {
+            "id": "node-1773171612586-96",
+            "definitionId": "math",
+            "position": {
+              "x": 296.9522681907242,
+              "y": 162.58700577127385
+            },
+            "data": {
+              "operator": "add",
+              "eventScopeId": "node-1773171320780-87"
+            }
+          },
+          {
+            "id": "node-1773171635027-100",
+            "definitionId": "branch",
+            "position": {
+              "x": 793.0645168425214,
+              "y": 41.27488657539636
+            },
+            "data": {
+              "eventScopeId": "node-1773171320780-87"
+            }
+          },
+          {
+            "id": "node-1773171644933-102",
+            "definitionId": "compare-greater-equal",
+            "position": {
+              "x": 582.5789368944505,
+              "y": 267.1508100035412
+            },
+            "data": {
+              "eventScopeId": "node-1773171320780-87"
+            }
+          },
+          {
+            "id": "node-1773171655544-103",
+            "definitionId": "get-variable",
+            "position": {
+              "x": 332.8783537401164,
+              "y": 361.92232650615745
+            },
+            "data": {
+              "variableId": "var-currenttime",
+              "eventScopeId": "node-1773171320780-87"
+            }
+          },
+          {
+            "id": "node-1773171658351-104",
+            "definitionId": "get-variable",
+            "position": {
+              "x": 335.7604665234673,
+              "y": 518.2552169290699
+            },
+            "data": {
+              "variableId": "var-spawnrate",
+              "eventScopeId": "node-1773171320780-87"
+            }
+          },
+          {
+            "id": "node-1773233598824-3",
+            "definitionId": "get-world-world",
+            "position": {
+              "x": 808.7970554362807,
+              "y": 235.07205686800256
+            },
+            "data": {
+              "eventScopeId": "node-1773171320780-87"
+            }
+          },
+          {
+            "id": "node-1773235391080-1",
+            "definitionId": "spawn-actor-a95be1",
+            "position": {
+              "x": 1402.1204770933034,
+              "y": 100.72771942080024
+            },
+            "data": {
+              "eventScopeId": "node-1773171320780-87"
+            }
+          },
+          {
+            "id": "node-1773235457844-2",
+            "definitionId": "is-valid",
+            "position": {
+              "x": 1000.4196646558131,
+              "y": 344.07192067679546
+            },
+            "data": {
+              "eventScopeId": "node-1773171320780-87"
+            }
+          },
+          {
+            "id": "node-1773235466634-4",
+            "definitionId": "branch",
+            "position": {
+              "x": 1067.9108303359897,
+              "y": 17.225891986268678
+            },
+            "data": {
+              "eventScopeId": "node-1773171320780-87"
+            }
+          },
+          {
+            "id": "node-1773235616539-13",
+            "definitionId": "get-variable",
+            "position": {
+              "x": 1169.4741537754157,
+              "y": 219.89529851420102
+            },
+            "data": {
+              "variableId": "var-cubetospawn",
+              "eventScopeId": "node-1773171320780-87"
+            }
+          },
+          {
+            "id": "node-1773235641972-15",
+            "definitionId": "constant",
+            "position": {
+              "x": 1034.840552904392,
+              "y": 453.4344896691156
+            },
+            "data": {
+              "eventScopeId": "node-1773171320780-87",
+              "value": {
+                "y": "0",
+                "z": "0",
+                "x": "0"
+              }
+            }
+          },
+          {
+            "id": "node-1773235651426-17",
+            "definitionId": "constant",
+            "position": {
+              "x": 1024.7341965931698,
+              "y": 666.4103458043788
+            },
+            "data": {
+              "eventScopeId": "node-1773171320780-87"
+            }
+          },
+          {
+            "id": "node-1773235712748-19",
+            "definitionId": "math",
+            "position": {
+              "x": 1519.7829405077878,
+              "y": 427.7277503442277
+            },
+            "data": {
+              "operator": "add",
+              "eventScopeId": "node-1773171320780-87"
+            }
+          },
+          {
+            "id": "node-1773235932981-24",
+            "definitionId": "set-struct-member",
+            "position": {
+              "x": 1676.2019136880383,
+              "y": 678.2595319003398
+            },
+            "data": {
+              "eventScopeId": "node-1773171320780-87"
+            }
+          },
+          {
+            "id": "node-1773264075449-1",
+            "definitionId": "constant",
+            "position": {
+              "x": 1060.9231193265966,
+              "y": 890.6124136887486
+            },
+            "data": {
+              "eventScopeId": "node-1773171320780-87"
+            }
+          },
+          {
+            "id": "node-1773264153547-3",
+            "definitionId": "is-valid",
+            "position": {
+              "x": 1668.5177726445277,
+              "y": 183.40651551914817
+            },
+            "data": {
+              "eventScopeId": "node-1773171320780-87"
+            }
+          },
+          {
+            "id": "node-1773264162472-5",
+            "definitionId": "branch",
+            "position": {
+              "x": 1864.376575114657,
+              "y": 96.23029857979466
+            },
+            "data": {
+              "eventScopeId": "node-1773171320780-87"
+            }
+          },
+          {
+            "id": "node-1773264183917-8",
+            "definitionId": "broadcast-delegate-delegate-oncubespawned",
+            "position": {
+              "x": 2066.8022061699694,
+              "y": 158.13605490925815
+            },
+            "data": {
+              "eventScopeId": "node-1773171320780-87"
+            }
+          },
+          {
+            "id": "node-1773265427244-2",
+            "definitionId": "get-timer-manager",
+            "position": {
+              "x": 1124.3156494063116,
+              "y": -5.791330455410339
+            },
+            "data": {
+              "eventScopeId": "custom-event-startspawning"
+            }
+          },
+          {
+            "id": "node-1773265468273-6",
+            "definitionId": "is-valid",
+            "position": {
+              "x": 695.7013363455088,
+              "y": -96.09686182356694
+            },
+            "data": {
+              "eventScopeId": "custom-event-startspawning"
+            }
+          },
+          {
+            "id": "node-1773265479443-7",
+            "definitionId": "branch",
+            "position": {
+              "x": 929.5522272764814,
+              "y": -81.27058055416799
+            },
+            "data": {
+              "eventScopeId": "custom-event-startspawning"
+            }
+          },
+          {
+            "id": "node-1773599503435-1",
+            "definitionId": "get-world-world",
+            "position": {
+              "x": 698.5953186578587,
+              "y": 5.46804443970305
+            },
+            "data": {
+              "eventScopeId": "custom-event-startspawning"
+            }
+          },
+          {
+            "id": "node-1773599541851-6",
+            "definitionId": "set-timer-8bf8d1",
+            "position": {
+              "x": 1380.1122000746034,
+              "y": 53.43985517351679
+            },
+            "data": {
+              "eventScopeId": "custom-event-startspawning"
+            }
+          },
+          {
+            "id": "node-1773599719651-9",
+            "definitionId": "get-variable",
+            "position": {
+              "x": 1137.8743789311295,
+              "y": 97.84351469572476
+            },
+            "data": {
+              "variableId": "var-spawntimerhandle",
+              "eventScopeId": "custom-event-startspawning"
+            }
+          },
+          {
+            "id": "node-1773599761070-11",
+            "definitionId": "constant",
+            "position": {
+              "x": 1156.9408984798865,
+              "y": 593.3401404957189
+            },
+            "data": {
+              "eventScopeId": "custom-event-startspawning",
+              "value": true
+            }
+          },
+          {
+            "id": "node-1773599768602-13",
+            "definitionId": "get-variable",
+            "position": {
+              "x": 1121.9639922063811,
+              "y": 438.67766884032534
+            },
+            "data": {
+              "variableId": "var-spawnrate",
+              "eventScopeId": "custom-event-startspawning"
+            }
+          },
+          {
+            "id": "custom-event-startspawning",
+            "definitionId": "custom-event-startspawning",
+            "position": {
+              "x": 435.7013363455088,
+              "y": -116.09686182356694
+            },
+            "data": {
+              "eventScopeId": "custom-event-startspawning"
+            }
+          },
+          {
+            "id": "node-1773599822651-15",
+            "definitionId": "call-custom-event-startspawning",
+            "position": {
+              "x": 715.845454679343,
+              "y": -21.21098699853853
+            },
+            "data": {
+              "eventScopeId": "node-1773171367114-88"
+            }
+          },
+          {
+            "id": "node-1773599854971-18",
+            "definitionId": "constant",
+            "position": {
+              "x": 1192.5293188583748,
+              "y": 329.80094497257704
+            },
+            "data": {
+              "eventScopeId": "custom-event-startspawning",
+              "constantTypeValue": "String",
+              "constantTypeName": null
+            }
+          },
+          {
+            "id": "custom-event-spawncube",
+            "definitionId": "custom-event-spawncube",
+            "position": {
+              "x": -427.17905081897754,
+              "y": 2846.5479411250435
+            },
+            "data": {
+              "eventScopeId": "custom-event-spawncube"
+            }
+          },
+          {
+            "id": "node-1773599947459-20",
+            "definitionId": "spawn-actor-a95be1",
+            "position": {
+              "x": 524.5117195176075,
+              "y": 3068.740668131759
+            },
+            "data": {
+              "eventScopeId": "custom-event-spawncube"
+            }
+          },
+          {
+            "id": "node-1773599965102-21",
+            "definitionId": "get-variable",
+            "position": {
+              "x": -147.37392066572343,
+              "y": 3094.6966086899315
+            },
+            "data": {
+              "variableId": "var-cubetospawn",
+              "eventScopeId": "custom-event-spawncube"
+            }
+          },
+          {
+            "id": "node-1773599995173-25",
+            "definitionId": "get-world-world",
+            "position": {
+              "x": -185.67738644375163,
+              "y": 2861.932358163972
+            },
+            "data": {
+              "eventScopeId": "custom-event-spawncube"
+            }
+          },
+          {
+            "id": "node-1773600074334-27",
+            "definitionId": "is-valid",
+            "position": {
+              "x": 109.7512389729246,
+              "y": 2929.2229613248846
+            },
+            "data": {
+              "eventScopeId": "custom-event-spawncube"
+            }
+          },
+          {
+            "id": "node-1773600088484-29",
+            "definitionId": "branch",
+            "position": {
+              "x": 335.13922485458124,
+              "y": 2867.214444667317
+            },
+            "data": {
+              "eventScopeId": "custom-event-spawncube"
+            }
+          },
+          {
+            "id": "node-1773600128279-34",
+            "definitionId": "constant",
+            "position": {
+              "x": 89.13110883619217,
+              "y": 3379.1219076457182
+            },
+            "data": {
+              "eventScopeId": "custom-event-spawncube",
+              "constantTypeValue": "Vector",
+              "constantTypeName": "FVector",
+              "value": {
+                "x": "0",
+                "y": "0",
+                "z": "0"
+              }
+            }
+          },
+          {
+            "id": "node-1773600267983-36",
+            "definitionId": "math",
+            "position": {
+              "x": 315.42190561942687,
+              "y": 3368.6344403298503
+            },
+            "data": {
+              "operator": "add",
+              "eventScopeId": "custom-event-spawncube"
+            }
+          },
+          {
+            "id": "node-1773600301962-38",
+            "definitionId": "constant",
+            "position": {
+              "x": -154.0930342000766,
+              "y": 3636.2839943630893
+            },
+            "data": {
+              "eventScopeId": "custom-event-spawncube",
+              "constantTypeValue": "Vector",
+              "constantTypeName": "FVector",
+              "value": {
+                "x": "1",
+                "y": "0",
+                "z": "0"
+              }
+            }
+          },
+          {
+            "id": "node-1773600317398-39",
+            "definitionId": "math",
+            "position": {
+              "x": 102.99326581944041,
+              "y": 3613.4775036333776
+            },
+            "data": {
+              "operator": "multiply",
+              "eventScopeId": "custom-event-spawncube"
+            }
+          },
+          {
+            "id": "node-1773600331501-41",
+            "definitionId": "get-variable",
+            "position": {
+              "x": -147.01490753578832,
+              "y": 3874.7016746802415
+            },
+            "data": {
+              "variableId": "var-currentnumberofcubes",
+              "eventScopeId": "custom-event-spawncube"
+            }
+          },
+          {
+            "id": "node-1773600354372-45",
+            "definitionId": "constant",
+            "position": {
+              "x": -368.5239304282659,
+              "y": 3288.947311647716
+            },
+            "data": {
+              "eventScopeId": "custom-event-spawncube",
+              "constantTypeValue": "Vector",
+              "constantTypeName": "FVector",
+              "value": {
+                "x": "0",
+                "y": "0",
+                "z": "0"
+              }
+            }
+          },
+          {
+            "id": "node-1773600418684-47",
+            "definitionId": "is-valid",
+            "position": {
+              "x": 876.4468062883024,
+              "y": 3207.7110058737576
+            },
+            "data": {
+              "eventScopeId": "custom-event-spawncube"
+            }
+          },
+          {
+            "id": "node-1773600453955-48",
+            "definitionId": "branch",
+            "position": {
+              "x": 1090.5062859042298,
+              "y": 3161.893832154745
+            },
+            "data": {
+              "eventScopeId": "custom-event-spawncube"
+            }
+          },
+          {
+            "id": "node-1773600486629-52",
+            "definitionId": "broadcast-delegate-delegate-oncubespawned",
+            "position": {
+              "x": 1317.2004344995066,
+              "y": 3185.670579072419
+            },
+            "data": {
+              "eventScopeId": "custom-event-spawncube"
+            }
+          },
+          {
+            "id": "node-1773600559190-55",
+            "definitionId": "set-local-variable",
+            "position": {
+              "x": 839.3029402836314,
+              "y": 3010.1749061353567
+            },
+            "data": {
+              "eventScopeId": "custom-event-spawncube",
+              "localVarName": "SpawnedCube",
+              "localVarId": "node-1773600559190-55",
+              "localVarType": "ACompanionCube*"
+            }
+          },
+          {
+            "id": "node-1773600561412-56",
+            "definitionId": "get-local-variable",
+            "position": {
+              "x": 690.7030479679933,
+              "y": 3306.0315280498976
+            },
+            "data": {
+              "eventScopeId": "custom-event-spawncube",
+              "localVarId": "node-1773600559190-55"
+            }
+          },
+          {
+            "id": "node-1773600810500-62",
+            "definitionId": "clear-timer",
+            "position": {
+              "x": 1867.3903954207503,
+              "y": 176.73488047981664
+            },
+            "data": {
+              "eventScopeId": "custom-event-cubespawned"
+            }
+          },
+          {
+            "id": "node-1773600823307-63",
+            "definitionId": "get-variable",
+            "position": {
+              "x": 1648.603891758032,
+              "y": 291.09838151372134
+            },
+            "data": {
+              "variableId": "var-spawntimerhandle",
+              "eventScopeId": "custom-event-cubespawned"
+            }
+          },
+          {
+            "id": "node-1773600870007-65",
+            "definitionId": "get-world-world",
+            "position": {
+              "x": 1447.2294101677046,
+              "y": 178.98992499345482
+            },
+            "data": {
+              "eventScopeId": "custom-event-cubespawned"
+            }
+          },
+          {
+            "id": "node-1773600894611-68",
+            "definitionId": "get-timer-manager",
+            "position": {
+              "x": 1658.3488419445164,
+              "y": 178.6748840354573
+            },
+            "data": {
+              "eventScopeId": "custom-event-cubespawned"
+            }
+          },
+          {
+            "id": "node-1773600987590-73",
+            "definitionId": "set-variable",
+            "position": {
+              "x": 1444.6926313510212,
+              "y": 20.8584964496824
+            },
+            "data": {
+              "variableId": "var-currentnumberofcubes",
+              "eventScopeId": "custom-event-cubespawned"
+            }
+          },
+          {
+            "id": "node-1773601019234-76",
+            "definitionId": "constant",
+            "position": {
+              "x": 1223.346958403984,
+              "y": 273.6511040979196
+            },
+            "data": {
+              "eventScopeId": "custom-event-cubespawned",
+              "value": "0"
+            }
+          }
+        ],
+        "edges": [
+          {
+            "id": "edge-1773169662288-21",
+            "from": {
+              "nodeId": "node-1773169654672-20",
+              "pinId": "get-variable-output"
+            },
+            "to": {
+              "nodeId": "node-1773169559523-16",
+              "pinId": "compare-greater-equal-b"
+            }
+          },
+          {
+            "id": "edge-1773169667355-22",
+            "from": {
+              "nodeId": "node-1773169559523-16",
+              "pinId": "compare-greater-equal-result"
+            },
+            "to": {
+              "nodeId": "node-1773169529918-14",
+              "pinId": "branch-condition"
+            }
+          },
+          {
+            "id": "edge-1773169692347-24",
+            "from": {
+              "nodeId": "node-1773169529918-14",
+              "pinId": "branch-true"
+            },
+            "to": {
+              "nodeId": "node-1773169688776-23",
+              "pinId": "broadcast-delegate-delegate-onmaxcubespawned-exec-in"
+            }
+          },
+          {
+            "id": "edge-1773171018327-79",
+            "from": {
+              "nodeId": "custom-event-cubespawned",
+              "pinId": "custom-event-cubespawned-exec-out"
+            },
+            "to": {
+              "nodeId": "node-1773171013552-78",
+              "pinId": "bind-delegate-delegate-onmaxcubespawned-exec-in"
+            }
+          },
+          {
+            "id": "edge-1773171020052-80",
+            "from": {
+              "nodeId": "custom-event-cubespawned",
+              "pinId": "custom-event-cubespawned-out-spawnedcube"
+            },
+            "to": {
+              "nodeId": "node-1773171013552-78",
+              "pinId": "bind-delegate-delegate-onmaxcubespawned-target"
+            }
+          },
+          {
+            "id": "edge-1773171037011-81",
+            "from": {
+              "nodeId": "node-1773171013552-78",
+              "pinId": "bind-delegate-delegate-onmaxcubespawned-exec-out"
+            },
+            "to": {
+              "nodeId": "node-1773169529918-14",
+              "pinId": "branch-exec-in"
+            }
+          },
+          {
+            "id": "edge-1773171047917-82",
+            "from": {
+              "nodeId": "node-1773169501296-12",
+              "pinId": "get-variable-output"
+            },
+            "to": {
+              "nodeId": "node-1773169559523-16",
+              "pinId": "compare-greater-equal-a"
+            }
+          },
+          {
+            "id": "edge-1773171399258-90",
+            "from": {
+              "nodeId": "node-1773171367114-88",
+              "pinId": "event-begin-play-exec"
+            },
+            "to": {
+              "nodeId": "node-1773171395235-89",
+              "pinId": "bind-delegate-delegate-oncubespawned-exec-in"
+            }
+          },
+          {
+            "id": "edge-1773171587657-94",
+            "from": {
+              "nodeId": "node-1773171320780-87",
+              "pinId": "event-tick-exec"
+            },
+            "to": {
+              "nodeId": "node-1773171585154-93",
+              "pinId": "set-variable-exec-in"
+            }
+          },
+          {
+            "id": "edge-1773171615862-97",
+            "from": {
+              "nodeId": "node-1773171320780-87",
+              "pinId": "event-tick-delta-seconds"
+            },
+            "to": {
+              "nodeId": "node-1773171612586-96",
+              "pinId": "math-a"
+            }
+          },
+          {
+            "id": "edge-1773171617838-98",
+            "from": {
+              "nodeId": "node-1773171598166-95",
+              "pinId": "get-variable-output"
+            },
+            "to": {
+              "nodeId": "node-1773171612586-96",
+              "pinId": "math-b"
+            }
+          },
+          {
+            "id": "edge-1773171624370-99",
+            "from": {
+              "nodeId": "node-1773171612586-96",
+              "pinId": "math-result"
+            },
+            "to": {
+              "nodeId": "node-1773171585154-93",
+              "pinId": "set-variable-value"
+            }
+          },
+          {
+            "id": "edge-1773171637921-101",
+            "from": {
+              "nodeId": "node-1773171585154-93",
+              "pinId": "set-variable-exec-out"
+            },
+            "to": {
+              "nodeId": "node-1773171635027-100",
+              "pinId": "branch-exec-in"
+            }
+          },
+          {
+            "id": "edge-1773171682868-109",
+            "from": {
+              "nodeId": "node-1773171658351-104",
+              "pinId": "get-variable-output"
+            },
+            "to": {
+              "nodeId": "node-1773171644933-102",
+              "pinId": "compare-greater-equal-b"
+            }
+          },
+          {
+            "id": "edge-1773171684656-110",
+            "from": {
+              "nodeId": "node-1773171655544-103",
+              "pinId": "get-variable-output"
+            },
+            "to": {
+              "nodeId": "node-1773171644933-102",
+              "pinId": "compare-greater-equal-a"
+            }
+          },
+          {
+            "id": "edge-1773171690905-111",
+            "from": {
+              "nodeId": "node-1773171644933-102",
+              "pinId": "compare-greater-equal-result"
+            },
+            "to": {
+              "nodeId": "node-1773171635027-100",
+              "pinId": "branch-condition"
+            }
+          },
+          {
+            "id": "edge-1773235462758-3",
+            "from": {
+              "nodeId": "node-1773233598824-3",
+              "pinId": "get-world-world-return"
+            },
+            "to": {
+              "nodeId": "node-1773235457844-2",
+              "pinId": "is-valid-object"
+            }
+          },
+          {
+            "id": "edge-1773235478265-6",
+            "from": {
+              "nodeId": "node-1773171635027-100",
+              "pinId": "branch-true"
+            },
+            "to": {
+              "nodeId": "node-1773233598824-3",
+              "pinId": "get-world-world-exec-in"
+            }
+          },
+          {
+            "id": "edge-1773235479969-7",
+            "from": {
+              "nodeId": "node-1773233598824-3",
+              "pinId": "get-world-world-exec-out"
+            },
+            "to": {
+              "nodeId": "node-1773235466634-4",
+              "pinId": "branch-exec-in"
+            }
+          },
+          {
+            "id": "edge-1773235482314-8",
+            "from": {
+              "nodeId": "node-1773235457844-2",
+              "pinId": "is-valid-result"
+            },
+            "to": {
+              "nodeId": "node-1773235466634-4",
+              "pinId": "branch-condition"
+            }
+          },
+          {
+            "id": "edge-1773235485083-9",
+            "from": {
+              "nodeId": "node-1773235466634-4",
+              "pinId": "branch-true"
+            },
+            "to": {
+              "nodeId": "node-1773235391080-1",
+              "pinId": "spawn-actor-a95be1-exec-in"
+            }
+          },
+          {
+            "id": "edge-1773235491033-10",
+            "from": {
+              "nodeId": "node-1773233598824-3",
+              "pinId": "get-world-world-return"
+            },
+            "to": {
+              "nodeId": "node-1773235391080-1",
+              "pinId": "spawn-actor-a95be1-target-input-0"
+            }
+          },
+          {
+            "id": "edge-1773235625299-14",
+            "from": {
+              "nodeId": "node-1773235616539-13",
+              "pinId": "get-variable-output"
+            },
+            "to": {
+              "nodeId": "node-1773235391080-1",
+              "pinId": "spawn-actor-a95be1-in-class-input-1"
+            }
+          },
+          {
+            "id": "edge-1773235646882-16",
+            "from": {
+              "nodeId": "node-1773235641972-15",
+              "pinId": "constant-output"
+            },
+            "to": {
+              "nodeId": "node-1773235391080-1",
+              "pinId": "spawn-actor-a95be1-location-input-2"
+            }
+          },
+          {
+            "id": "edge-1773235657125-18",
+            "from": {
+              "nodeId": "node-1773235651426-17",
+              "pinId": "constant-output"
+            },
+            "to": {
+              "nodeId": "node-1773235391080-1",
+              "pinId": "spawn-actor-a95be1-rotation-input-3"
+            }
+          },
+          {
+            "id": "edge-1773236046670-30",
+            "from": {
+              "nodeId": "node-1773235712748-19",
+              "pinId": "math-result"
+            },
+            "to": {
+              "nodeId": "node-1773235932981-24",
+              "pinId": "set-struct-member-input"
+            }
+          },
+          {
+            "id": "edge-1773264079256-2",
+            "from": {
+              "nodeId": "node-1773264075449-1",
+              "pinId": "constant-output"
+            },
+            "to": {
+              "nodeId": "node-1773235391080-1",
+              "pinId": "spawn-actor-a95be1-spawn-parameters-input-4"
+            }
+          },
+          {
+            "id": "edge-1773264157877-4",
+            "from": {
+              "nodeId": "node-1773235391080-1",
+              "pinId": "spawn-actor-a95be1-return"
+            },
+            "to": {
+              "nodeId": "node-1773264153547-3",
+              "pinId": "is-valid-object"
+            }
+          },
+          {
+            "id": "edge-1773264168088-6",
+            "from": {
+              "nodeId": "node-1773264153547-3",
+              "pinId": "is-valid-result"
+            },
+            "to": {
+              "nodeId": "node-1773264162472-5",
+              "pinId": "branch-condition"
+            }
+          },
+          {
+            "id": "edge-1773264170894-7",
+            "from": {
+              "nodeId": "node-1773235391080-1",
+              "pinId": "spawn-actor-a95be1-exec-out"
+            },
+            "to": {
+              "nodeId": "node-1773264162472-5",
+              "pinId": "branch-exec-in"
+            }
+          },
+          {
+            "id": "edge-1773264188028-9",
+            "from": {
+              "nodeId": "node-1773264162472-5",
+              "pinId": "branch-true"
+            },
+            "to": {
+              "nodeId": "node-1773264183917-8",
+              "pinId": "broadcast-delegate-delegate-oncubespawned-exec-in"
+            }
+          },
+          {
+            "id": "edge-1773264193058-10",
+            "from": {
+              "nodeId": "node-1773235391080-1",
+              "pinId": "spawn-actor-a95be1-return"
+            },
+            "to": {
+              "nodeId": "node-1773264183917-8",
+              "pinId": "broadcast-delegate-delegate-oncubespawned-in-spawnedcube"
+            }
+          },
+          {
+            "id": "edge-1773265486574-8",
+            "from": {
+              "nodeId": "node-1773265468273-6",
+              "pinId": "is-valid-result"
+            },
+            "to": {
+              "nodeId": "node-1773265479443-7",
+              "pinId": "branch-condition"
+            }
+          },
+          {
+            "id": "edge-1773265493883-11",
+            "from": {
+              "nodeId": "node-1773265479443-7",
+              "pinId": "branch-true"
+            },
+            "to": {
+              "nodeId": "node-1773265427244-2",
+              "pinId": "get-timer-manager-exec-in"
+            }
+          },
+          {
+            "id": "edge-1773599509867-3",
+            "from": {
+              "nodeId": "node-1773599503435-1",
+              "pinId": "get-world-world-exec-out"
+            },
+            "to": {
+              "nodeId": "node-1773265479443-7",
+              "pinId": "branch-exec-in"
+            }
+          },
+          {
+            "id": "edge-1773599514558-4",
+            "from": {
+              "nodeId": "node-1773599503435-1",
+              "pinId": "get-world-world-return"
+            },
+            "to": {
+              "nodeId": "node-1773265427244-2",
+              "pinId": "get-timer-manager-target-input-0"
+            }
+          },
+          {
+            "id": "edge-1773599517603-5",
+            "from": {
+              "nodeId": "node-1773599503435-1",
+              "pinId": "get-world-world-return"
+            },
+            "to": {
+              "nodeId": "node-1773265468273-6",
+              "pinId": "is-valid-object"
+            }
+          },
+          {
+            "id": "edge-1773599702136-7",
+            "from": {
+              "nodeId": "node-1773265427244-2",
+              "pinId": "get-timer-manager-exec-out"
+            },
+            "to": {
+              "nodeId": "node-1773599541851-6",
+              "pinId": "set-timer-8bf8d1-exec-in"
+            }
+          },
+          {
+            "id": "edge-1773599704398-8",
+            "from": {
+              "nodeId": "node-1773265427244-2",
+              "pinId": "get-timer-manager-return"
+            },
+            "to": {
+              "nodeId": "node-1773599541851-6",
+              "pinId": "set-timer-8bf8d1-target-input-0"
+            }
+          },
+          {
+            "id": "edge-1773599729209-10",
+            "from": {
+              "nodeId": "node-1773599719651-9",
+              "pinId": "get-variable-output"
+            },
+            "to": {
+              "nodeId": "node-1773599541851-6",
+              "pinId": "set-timer-8bf8d1-in-out-handle-input-1"
+            }
+          },
+          {
+            "id": "edge-1773599764781-12",
+            "from": {
+              "nodeId": "node-1773599761070-11",
+              "pinId": "constant-output"
+            },
+            "to": {
+              "nodeId": "node-1773599541851-6",
+              "pinId": "set-timer-8bf8d1-inb-loop-input-4"
+            }
+          },
+          {
+            "id": "edge-1773599778494-14",
+            "from": {
+              "nodeId": "node-1773599768602-13",
+              "pinId": "get-variable-output"
+            },
+            "to": {
+              "nodeId": "node-1773599541851-6",
+              "pinId": "set-timer-8bf8d1-in-rate-input-3"
+            }
+          },
+          {
+            "id": "edge-1773599822651-16",
+            "from": {
+              "nodeId": "node-1773171395235-89",
+              "pinId": "bind-delegate-delegate-oncubespawned-exec-out"
+            },
+            "to": {
+              "nodeId": "node-1773599822651-15",
+              "pinId": "call-custom-event-startspawning-exec-in"
+            }
+          },
+          {
+            "id": "edge-1773599822651-17",
+            "from": {
+              "nodeId": "custom-event-startspawning",
+              "pinId": "custom-event-startspawning-exec-out"
+            },
+            "to": {
+              "nodeId": "node-1773599503435-1",
+              "pinId": "get-world-world-exec-in"
+            }
+          },
+          {
+            "id": "edge-1773599980068-23",
+            "from": {
+              "nodeId": "node-1773599965102-21",
+              "pinId": "get-variable-output"
+            },
+            "to": {
+              "nodeId": "node-1773599947459-20",
+              "pinId": "spawn-actor-a95be1-in-class-input-1"
+            }
+          },
+          {
+            "id": "edge-1773599997465-26",
+            "from": {
+              "nodeId": "custom-event-spawncube",
+              "pinId": "custom-event-spawncube-exec-out"
+            },
+            "to": {
+              "nodeId": "node-1773599995173-25",
+              "pinId": "get-world-world-exec-in"
+            }
+          },
+          {
+            "id": "edge-1773600078891-28",
+            "from": {
+              "nodeId": "node-1773599995173-25",
+              "pinId": "get-world-world-return"
+            },
+            "to": {
+              "nodeId": "node-1773600074334-27",
+              "pinId": "is-valid-object"
+            }
+          },
+          {
+            "id": "edge-1773600094478-30",
+            "from": {
+              "nodeId": "node-1773599995173-25",
+              "pinId": "get-world-world-exec-out"
+            },
+            "to": {
+              "nodeId": "node-1773600088484-29",
+              "pinId": "branch-exec-in"
+            }
+          },
+          {
+            "id": "edge-1773600096270-31",
+            "from": {
+              "nodeId": "node-1773600074334-27",
+              "pinId": "is-valid-result"
+            },
+            "to": {
+              "nodeId": "node-1773600088484-29",
+              "pinId": "branch-condition"
+            }
+          },
+          {
+            "id": "edge-1773600101076-32",
+            "from": {
+              "nodeId": "node-1773600088484-29",
+              "pinId": "branch-true"
+            },
+            "to": {
+              "nodeId": "node-1773599947459-20",
+              "pinId": "spawn-actor-a95be1-exec-in"
+            }
+          },
+          {
+            "id": "edge-1773600113138-33",
+            "from": {
+              "nodeId": "node-1773599995173-25",
+              "pinId": "get-world-world-return"
+            },
+            "to": {
+              "nodeId": "node-1773599947459-20",
+              "pinId": "spawn-actor-a95be1-target-input-0"
+            }
+          },
+          {
+            "id": "edge-1773600273100-37",
+            "from": {
+              "nodeId": "node-1773600128279-34",
+              "pinId": "constant-output"
+            },
+            "to": {
+              "nodeId": "node-1773600267983-36",
+              "pinId": "math-a"
+            }
+          },
+          {
+            "id": "edge-1773600325205-40",
+            "from": {
+              "nodeId": "node-1773600301962-38",
+              "pinId": "constant-output"
+            },
+            "to": {
+              "nodeId": "node-1773600317398-39",
+              "pinId": "math-a"
+            }
+          },
+          {
+            "id": "edge-1773600341960-42",
+            "from": {
+              "nodeId": "node-1773600331501-41",
+              "pinId": "get-variable-output"
+            },
+            "to": {
+              "nodeId": "node-1773600317398-39",
+              "pinId": "math-b"
+            }
+          },
+          {
+            "id": "edge-1773600345982-43",
+            "from": {
+              "nodeId": "node-1773600317398-39",
+              "pinId": "math-result"
+            },
+            "to": {
+              "nodeId": "node-1773600267983-36",
+              "pinId": "math-b"
+            }
+          },
+          {
+            "id": "edge-1773600351126-44",
+            "from": {
+              "nodeId": "node-1773600267983-36",
+              "pinId": "math-result"
+            },
+            "to": {
+              "nodeId": "node-1773599947459-20",
+              "pinId": "spawn-actor-a95be1-location-input-2"
+            }
+          },
+          {
+            "id": "edge-1773600358231-46",
+            "from": {
+              "nodeId": "node-1773600354372-45",
+              "pinId": "constant-output"
+            },
+            "to": {
+              "nodeId": "node-1773599947459-20",
+              "pinId": "spawn-actor-a95be1-rotation-input-3"
+            }
+          },
+          {
+            "id": "edge-1773600468252-50",
+            "from": {
+              "nodeId": "node-1773600418684-47",
+              "pinId": "is-valid-result"
+            },
+            "to": {
+              "nodeId": "node-1773600453955-48",
+              "pinId": "branch-condition"
+            }
+          },
+          {
+            "id": "edge-1773600492164-53",
+            "from": {
+              "nodeId": "node-1773600453955-48",
+              "pinId": "branch-true"
+            },
+            "to": {
+              "nodeId": "node-1773600486629-52",
+              "pinId": "broadcast-delegate-delegate-oncubespawned-exec-in"
+            }
+          },
+          {
+            "id": "edge-1773600629317-57",
+            "from": {
+              "nodeId": "node-1773599947459-20",
+              "pinId": "spawn-actor-a95be1-exec-out"
+            },
+            "to": {
+              "nodeId": "node-1773600559190-55",
+              "pinId": "set-local-variable-exec-in"
+            }
+          },
+          {
+            "id": "edge-1773600634880-58",
+            "from": {
+              "nodeId": "node-1773599947459-20",
+              "pinId": "spawn-actor-a95be1-return"
+            },
+            "to": {
+              "nodeId": "node-1773600559190-55",
+              "pinId": "set-local-variable-value"
+            }
+          },
+          {
+            "id": "edge-1773600664903-59",
+            "from": {
+              "nodeId": "node-1773600561412-56",
+              "pinId": "get-local-variable-output"
+            },
+            "to": {
+              "nodeId": "node-1773600418684-47",
+              "pinId": "is-valid-object"
+            }
+          },
+          {
+            "id": "edge-1773600667731-60",
+            "from": {
+              "nodeId": "node-1773600561412-56",
+              "pinId": "get-local-variable-output"
+            },
+            "to": {
+              "nodeId": "node-1773600486629-52",
+              "pinId": "broadcast-delegate-delegate-oncubespawned-in-spawnedcube"
+            }
+          },
+          {
+            "id": "edge-1773600671909-61",
+            "from": {
+              "nodeId": "node-1773600559190-55",
+              "pinId": "set-local-variable-exec-out"
+            },
+            "to": {
+              "nodeId": "node-1773600453955-48",
+              "pinId": "branch-exec-in"
+            }
+          },
+          {
+            "id": "edge-1773600833600-64",
+            "from": {
+              "nodeId": "node-1773600823307-63",
+              "pinId": "get-variable-output"
+            },
+            "to": {
+              "nodeId": "node-1773600810500-62",
+              "pinId": "clear-timer-in-handle-input-1"
+            }
+          },
+          {
+            "id": "edge-1773600900165-69",
+            "from": {
+              "nodeId": "node-1773600870007-65",
+              "pinId": "get-world-world-return"
+            },
+            "to": {
+              "nodeId": "node-1773600894611-68",
+              "pinId": "get-timer-manager-target-input-0"
+            }
+          },
+          {
+            "id": "edge-1773600901903-70",
+            "from": {
+              "nodeId": "node-1773600870007-65",
+              "pinId": "get-world-world-exec-out"
+            },
+            "to": {
+              "nodeId": "node-1773600894611-68",
+              "pinId": "get-timer-manager-exec-in"
+            }
+          },
+          {
+            "id": "edge-1773600906476-71",
+            "from": {
+              "nodeId": "node-1773600894611-68",
+              "pinId": "get-timer-manager-exec-out"
+            },
+            "to": {
+              "nodeId": "node-1773600810500-62",
+              "pinId": "clear-timer-exec-in"
+            }
+          },
+          {
+            "id": "edge-1773600908585-72",
+            "from": {
+              "nodeId": "node-1773600894611-68",
+              "pinId": "get-timer-manager-return"
+            },
+            "to": {
+              "nodeId": "node-1773600810500-62",
+              "pinId": "clear-timer-target-input-0"
+            }
+          },
+          {
+            "id": "edge-1773601001925-75",
+            "from": {
+              "nodeId": "node-1773169688776-23",
+              "pinId": "broadcast-delegate-delegate-onmaxcubespawned-exec-out"
+            },
+            "to": {
+              "nodeId": "node-1773600987590-73",
+              "pinId": "set-variable-exec-in"
+            }
+          },
+          {
+            "id": "edge-1773601031056-77",
+            "from": {
+              "nodeId": "node-1773601019234-76",
+              "pinId": "constant-output"
+            },
+            "to": {
+              "nodeId": "node-1773600987590-73",
+              "pinId": "set-variable-value"
+            }
+          }
+        ]
+      },
+      "selectedFiles": [
+        "Runtime/GameModeBase.json",
+        "Runtime/TimerManager.json",
+        "Runtime/World.json"
+      ],
+      "loadedFileNames": [
+        "Types.json",
+        "Runtime/AABB.json",
+        "Runtime/AccessDetection.json",
+        "ThirdParty/acm_random.json",
+        "Runtime/Actor.json",
+        "Runtime/ActorComponent.json",
+        "Runtime/ActorInstanceHandle.json",
+        "ThirdParty/address_pool_manager_bitmap.json",
+        "ThirdParty/addressof.json",
+        "ThirdParty/algorithm.json",
+        "ThirdParty/AlignOf.json",
+        "Runtime/AlignmentTemplates.json",
+        "Runtime/Allocator.json",
+        "ThirdParty/allocators.json",
+        "ThirdParty/always_valid_pointer.json",
+        "Developer/AnalysisSession.json",
+        "Developer/Analyzer.json",
+        "ThirdParty/any_invocable.json",
+        "ThirdParty/arch.json",
+        "Runtime/Archive.json",
+        "Runtime/ArchiveProxy.json",
+        "Runtime/ArchiveUObject.json",
+        "Runtime/Arithmetic.json",
+        "Runtime/Array.json",
+        "ThirdParty/ArrayRef.json",
+        "Runtime/ArrayView.json",
+        "ThirdParty/array_view.json",
+        "ThirdParty/ascii.json",
+        "Runtime/AssertionMacros.json",
+        "Runtime/Async.json",
+        "ThirdParty/async_packet_socket.json",
+        "Runtime/AsyncPhysicsData.json",
+        "Runtime/AsyncPhysicsStateProcessorInterface.json",
+        "ThirdParty/async_resolver_interface.json",
+        "Developer/atomic.json",
+        "Runtime/Attribute.json",
+        "ThirdParty/Attributes.json",
+        "Runtime/AudioDeviceHandle.json",
+        "Runtime/AutoRTFM.json",
+        "Runtime/AutoRTFMTask.json",
+        "ThirdParty/back_insert_iterator.json",
+        "Runtime/BinaryArchiveFormatter.json",
+        "Runtime/BinarySearch.json",
+        "Runtime/BitArchive.json",
+        "Runtime/BitArray.json",
+        "ThirdParty/bit_cast.json",
+        "Runtime/BitReader.json",
+        "Runtime/BitWriter.json",
+        "ThirdParty/bits.json",
+        "Runtime/BlendableInterface.json",
+        "ThirdParty/boolean_testable.json",
+        "Runtime/Boundary.json",
+        "Runtime/Box.json",
+        "Runtime/BoxSphereBounds.json",
+        "Runtime/Box2D.json",
+        "ThirdParty/buffer.json",
+        "Runtime/BufferReader.json",
+        "ThirdParty/byte_buffer.json",
+        "ThirdParty/byte_order.json",
+        "Runtime/ByteSwap.json",
+        "Runtime/BytesToHex.json",
+        "ThirdParty/bytestream.json",
+        "Runtime/CachedOSPageAllocator.json",
+        "Runtime/CachedOSVeryLargePageAllocator.json",
+        "ThirdParty/calendar.json",
+        "ThirdParty/callback_list.json",
+        "Runtime/CallstackTrace.json",
+        "Runtime/CameraTypes.json",
+        "ThirdParty/candidate.json",
+        "ThirdParty/Casting.json",
+        "Runtime/Casts.json",
+        "Developer/Channel.json",
+        "Runtime/ChaosArchive.json",
+        "Runtime/ChaosEngineInterface.json",
+        "Runtime/Char.json",
+        "ThirdParty/char16ptr.json",
+        "ThirdParty/check.json",
+        "ThirdParty/check_op.json",
+        "ThirdParty/checks.json",
+        "Runtime/ChildActorComponent.json",
+        "Runtime/Chrono.json",
+        "ThirdParty/city.json",
+        "Runtime/CityHash.json",
+        "ThirdParty/civil_time.json",
+        "ThirdParty/clamp.json",
+        "Runtime/Class.json",
+        "ThirdParty/clzll.json",
+        "Runtime/CollisionFilterData.json",
+        "Runtime/CollisionProfile.json",
+        "Runtime/CollisionQueryParams.json",
+        "Runtime/CollisionShape.json",
+        "Runtime/Color.json",
+        "Runtime/Common.json",
+        "ThirdParty/common_comparison_category.json",
+        "ThirdParty/common_type.json",
+        "ThirdParty/comp_ref_type.json",
+        "Runtime/Compare.json",
+        "ThirdParty/compiler_specific.json",
+        "Runtime/ComponentInstanceDataCache.json",
+        "ThirdParty/compressed_tuple.json",
+        "Developer/concepts.json",
+        "Runtime/ConcurrentLinearAllocator.json",
+        "ThirdParty/conjunction.json",
+        "ThirdParty/connection.json",
+        "ThirdParty/container.json",
+        "Runtime/ContainerAllocationPolicies.json",
+        "Runtime/ContainerHelpers.json",
+        "Runtime/Controller.json",
+        "ThirdParty/convert_to_integral.json",
+        "ThirdParty/convert_to_timespec.json",
+        "Runtime/ConvexHalfEdgeStructureData.json",
+        "Runtime/Copy.json",
+        "ThirdParty/copy_n.json",
+        "Runtime/Core.json",
+        "Runtime/CoreGlobals.json",
+        "Runtime/CoreMisc.json",
+        "Runtime/CoreMiscDefines.json",
+        "Runtime/CoreNative.json",
+        "Runtime/CoreNet.json",
+        "Runtime/CoreNetTypes.json",
+        "Runtime/CoreOnline.json",
+        "ThirdParty/countl.json",
+        "Runtime/CpuProfilerTrace.json",
+        "Runtime/Crc.json",
+        "Runtime/CriticalSection.json",
+        "Runtime/CString.json",
+        "Runtime/CsvProfiler.json",
+        "Runtime/CsvProfilerTrace.json",
+        "ThirdParty/cxx20_is_constant_evaluated.json",
+        "ThirdParty/datatypes.json",
+        "Runtime/DateTime.json",
+        "ThirdParty/day.json",
+        "Runtime/Decay.json",
+        "ThirdParty/declval.json",
+        "Runtime/DelayedAutoRegister.json",
+        "Runtime/Delegate.json",
+        "Runtime/DelegateBase.json",
+        "Runtime/DelegateInstanceInterface.json",
+        "Runtime/DelegateInstancesImpl.json",
+        "Runtime/Deque.json",
+        "Runtime/DeveloperSettings.json",
+        "ThirdParty/diyfp.json",
+        "ThirdParty/dtoa.json",
+        "ThirdParty/duration.json",
+        "ThirdParty/dynamic_annotations.json",
+        "ThirdParty/ecintrin.json",
+        "ThirdParty/Element.json",
+        "ThirdParty/Endian.json",
+        "Runtime/EngineBaseTypes.json",
+        "Runtime/EngineTypes.json",
+        "Runtime/EnumAsByte.json",
+        "Runtime/EnumClassFlags.json",
+        "Runtime/EnumRange.json",
+        "ThirdParty/equality_comparable.json",
+        "ThirdParty/Errc.json",
+        "ThirdParty/error_code.json",
+        "ThirdParty/error_condition.json",
+        "ThirdParty/escaped_output_table.json",
+        "Runtime/Event.json",
+        "ThirdParty/event_based_exponential_moving_average.json",
+        "Runtime/EventCount.json",
+        "ThirdParty/Exception.json",
+        "Runtime/Exec.json",
+        "ThirdParty/exponential_functions.json",
+        "ThirdParty/extent.json",
+        "Runtime/FAAArrayQueue.json",
+        "ThirdParty/feature_list.json",
+        "Runtime/Field.json",
+        "Runtime/FieldPath.json",
+        "ThirdParty/field_trials_view.json",
+        "ThirdParty/file_clock.json",
+        "Runtime/Find.json",
+        "ThirdParty/fixed_armv4.json",
+        "ThirdParty/fixed_armv5e.json",
+        "ThirdParty/fixed_array.json",
+        "ThirdParty/fixed_debug.json",
+        "ThirdParty/fixed_generic.json",
+        "ThirdParty/fixed_length_encoding_parameters_v3.json",
+        "ThirdParty/flat_map.json",
+        "ThirdParty/flat_tree.json",
+        "Runtime/Float16.json",
+        "Runtime/Folder.json",
+        "ThirdParty/FoldingSet.json",
+        "Runtime/Fork.json",
+        "ThirdParty/format.json",
+        "ThirdParty/format_arg.json",
+        "ThirdParty/format_arg_store.json",
+        "ThirdParty/format_args.json",
+        "Runtime/FormatArgsTrace.json",
+        "ThirdParty/format_context.json",
+        "ThirdParty/format_error.json",
+        "ThirdParty/format_functions.json",
+        "ThirdParty/format_parse_context.json",
+        "ThirdParty/format_string.json",
+        "Runtime/FormatStringSan.json",
+        "ThirdParty/formatter.json",
+        "ThirdParty/formatter_bool.json",
+        "ThirdParty/formatter_char.json",
+        "ThirdParty/formatter_floating_point.json",
+        "ThirdParty/formatter_integer.json",
+        "ThirdParty/formatter_integral.json",
+        "ThirdParty/formatter_output.json",
+        "ThirdParty/formatter_pointer.json",
+        "ThirdParty/formatter_string.json",
+        "ThirdParty/forward.json",
+        "ThirdParty/freeslot_bitmap.json",
+        "ThirdParty/freeslot_bitmap_constants.json",
+        "Runtime/Function.json",
+        "ThirdParty/function_view.json",
+        "Runtime/Future.json",
+        "Runtime/GameModeBase.json",
+        "Runtime/GameTime.json",
+        "Runtime/GarbageCollection.json",
+        "Runtime/GCObject.json",
+        "Runtime/GenericPlatformAffinity.json",
+        "Runtime/GenericPlatformInputDeviceMapper.json",
+        "Runtime/GenericPlatformMath.json",
+        "Runtime/GenericPlatformMemory.json",
+        "Runtime/GenericPlatformMisc.json",
+        "Runtime/GenericWindow.json",
+        "Runtime/GeoEnum.json",
+        "ThirdParty/Geom.json",
+        "Runtime/GJKShape.json",
+        "Runtime/GpuProfilerTrace.json",
+        "ThirdParty/gtest.json",
+        "ThirdParty/gtest-internal.json",
+        "ThirdParty/gtest-message.json",
+        "ThirdParty/gtest-param-test.json",
+        "ThirdParty/gtest-param-util.json",
+        "ThirdParty/gtest-port.json",
+        "ThirdParty/gtest_pred_impl.json",
+        "ThirdParty/gtest-printers.json",
+        "ThirdParty/gtest-type-util.json",
+        "Runtime/Guid.json",
+        "ThirdParty/hash.json",
+        "Runtime/HashTable.json",
+        "Runtime/HashTraits.json",
+        "Runtime/HazardPointer.json",
+        "Runtime/HeapSort.json",
+        "Runtime/HexToBytes.json",
+        "ThirdParty/hh_mm_ss.json",
+        "Runtime/HitResult.json",
+        "ThirdParty/ice_logger.json",
+        "Runtime/IConsoleManager.json",
+        "Runtime/ICursor.json",
+        "ThirdParty/id.json",
+        "Runtime/IDelegateInstance.json",
+        "Runtime/IdxRange.json",
+        "ThirdParty/ieee754.json",
+        "Runtime/IInputInterface.json",
+        "ThirdParty/immediate_crash.json",
+        "Runtime/ImplicitObject.json",
+        "Runtime/ImplicitObjectType.json",
+        "ThirdParty/incrementable_traits.json",
+        "Runtime/IndexOfCoordinateFinder.json",
+        "Runtime/Info.json",
+        "Runtime/InheritedContext.json",
+        "Runtime/InputCoreTypes.json",
+        "Runtime/InputKeyEventArgs.json",
+        "Runtime/IntPoint.json",
+        "Runtime/IntRect.json",
+        "Runtime/IntVector.json",
+        "Runtime/Int128.json",
+        "Runtime/IntegerSequence.json",
+        "ThirdParty/integral_constant.json",
+        "ThirdParty/Interface.json",
+        "Runtime/InterpCurvePoint.json",
+        "Runtime/Interval.json",
+        "Runtime/IntroSort.json",
+        "Runtime/Invoke.json",
+        "ThirdParty/ip_address.json",
+        "Runtime/IQueuedWork.json",
+        "Runtime/IsArrayOrRefOfTypeByPredicate.json",
+        "ThirdParty/is_callable.json",
+        "Runtime/IsCharEncodingCompatibleWith.json",
+        "Runtime/IsCharEncodingSimplyConvertibleTo.json",
+        "ThirdParty/is_class.json",
+        "ThirdParty/is_constant_evaluated.json",
+        "ThirdParty/is_constructible.json",
+        "ThirdParty/is_convertible.json",
+        "ThirdParty/is_enum.json",
+        "Runtime/IsFixedWidthCharEncoding.json",
+        "ThirdParty/is_function.json",
+        "Runtime/IsImplicitlyConstructible.json",
+        "ThirdParty/is_integral.json",
+        "Runtime/IsInvocable.json",
+        "ThirdParty/is_nothrow_constructible.json",
+        "ThirdParty/is_object.json",
+        "ThirdParty/is_pointer.json",
+        "ThirdParty/is_reference.json",
+        "ThirdParty/is_same.json",
+        "ThirdParty/is_trivially_copyable.json",
+        "ThirdParty/is_unsigned.json",
+        "ThirdParty/is_void.json",
+        "Runtime/IterationSettings.json",
+        "ThirdParty/Iterator.json",
+        "ThirdParty/iterator_range.json",
+        "ThirdParty/iterator_traits.json",
+        "ThirdParty/itoa.json",
+        "Runtime/LargeWorldCoordinatesSerializer.json",
+        "Runtime/LazyObjectPtr.json",
+        "ThirdParty/leap_second.json",
+        "ThirdParty/limits.json",
+        "Runtime/LinkedListBuilder.json",
+        "Runtime/List.json",
+        "Runtime/LocKeyFuncs.json",
+        "Runtime/LocalQueue.json",
+        "Runtime/LocalizedTextSourceTypes.json",
+        "ThirdParty/localpointer.json",
+        "ThirdParty/locid.json",
+        "ThirdParty/lock.json",
+        "Runtime/LockFreeFixedSizeAllocator.json",
+        "Runtime/LockFreeList.json",
+        "ThirdParty/lock_impl.json",
+        "Runtime/LogCategory.json",
+        "Runtime/LogMacros.json",
+        "Runtime/LogScope.json",
+        "Runtime/LogScopedCategoryAndVerbosityOverride.json",
+        "ThirdParty/log_severity.json",
+        "Runtime/LogTrace.json",
+        "Runtime/LogVerbosity.json",
+        "ThirdParty/logging.json",
+        "Runtime/LowLevelMemTracker.json",
+        "ThirdParty/Macros.json",
+        "ThirdParty/macros_armv4.json",
+        "ThirdParty/macros_armv5e.json",
+        "ThirdParty/macros_mipsr1.json",
+        "ThirdParty/make_unsigned.json",
+        "Runtime/MallocBinnedCommon.json",
+        "Runtime/MallocBinned2.json",
+        "Runtime/ManualResetEvent.json",
+        "Runtime/Map.json",
+        "ThirdParty/match.json",
+        "ThirdParty/Math.json",
+        "Runtime/MathConst.json",
+        "ThirdParty/MathExtras.json",
+        "Runtime/MathUtils.json",
+        "Runtime/Matrix.json",
+        "ThirdParty/max.json",
+        "ThirdParty/max_element.json",
+        "Runtime/MemStack.json",
+        "Developer/Memory.json",
+        "Runtime/MemoryArchive.json",
+        "Runtime/MemoryBase.json",
+        "Runtime/MemoryImage.json",
+        "Runtime/MemoryImageWriter.json",
+        "Runtime/MemoryLayout.json",
+        "Runtime/MemoryOps.json",
+        "Runtime/MemoryReader.json",
+        "Runtime/MemoryTrace.json",
+        "Runtime/MemoryView.json",
+        "Runtime/MemoryWriter.json",
+        "ThirdParty/Meta.json",
+        "ThirdParty/min.json",
+        "ThirdParty/min_element.json",
+        "Runtime/MiscTrace.json",
+        "Runtime/MonotonicTime.json",
+        "ThirdParty/month.json",
+        "ThirdParty/month_weekday.json",
+        "ThirdParty/monthday.json",
+        "ThirdParty/move.json",
+        "Runtime/MpscQueue.json",
+        "Runtime/MulticastDelegateBase.json",
+        "Runtime/Mutex.json",
+        "Runtime/NameTypes.json",
+        "Runtime/NaniteAssemblyData.json",
+        "ThirdParty/nanosleep.json",
+        "Runtime/NetEnums.json",
+        "Runtime/NetSerialization.json",
+        "Runtime/NetSubObjectRegistry.json",
+        "ThirdParty/network.json",
+        "Runtime/NetworkDelegates.json",
+        "Runtime/NetworkGuid.json",
+        "ThirdParty/network_monitor.json",
+        "Runtime/NetworkVersion.json",
+        "Runtime/NonNullPointer.json",
+        "Runtime/NoopCounter.json",
+        "Runtime/NotNull.json",
+        "ThirdParty/nullguard.json",
+        "ThirdParty/nullstream.json",
+        "Runtime/Numeric.json",
+        "Runtime/NumericLimits.json",
+        "Runtime/Object.json",
+        "Runtime/ObjectFwd.json",
+        "Runtime/ObjectHandle.json",
+        "Runtime/ObjectHandleTracking.json",
+        "Runtime/ObjectKey.json",
+        "Runtime/ObjectMacros.json",
+        "Runtime/ObjectPtr.json",
+        "Runtime/ObjectRef.json",
+        "Runtime/ObjectVersion.json",
+        "Runtime/OnlineReplStructs.json",
+        "Runtime/Optional.json",
+        "ThirdParty/Ordering.json",
+        "ThirdParty/ostream.json",
+        "Runtime/OutputDevice.json",
+        "Runtime/OutputDeviceRedirector.json",
+        "Runtime/OverlapInfo.json",
+        "Runtime/OverlapResult.json",
+        "Runtime/PackagePath.json",
+        "Runtime/PackedObjectRef.json",
+        "ThirdParty/packet_socket_factory.json",
+        "ThirdParty/page_allocator_constants.json",
+        "Developer/PagedArray.json",
+        "Runtime/Pair.json",
+        "Runtime/ParkingLot.json",
+        "Runtime/Parse.json",
+        "ThirdParty/parser_std_format_spec.json",
+        "ThirdParty/partition_address_space.json",
+        "ThirdParty/partition_alloc_check.json",
+        "ThirdParty/partition_alloc_constants.json",
+        "ThirdParty/partition_alloc-inl.json",
+        "ThirdParty/partition_bucket.json",
+        "ThirdParty/partition_cookie.json",
+        "ThirdParty/partition_freelist_entry.json",
+        "ThirdParty/partition_lock.json",
+        "ThirdParty/partition_page.json",
+        "ThirdParty/partition_ref_count.json",
+        "ThirdParty/partition_tag.json",
+        "ThirdParty/partition_tag_bitmap.json",
+        "Runtime/Paths.json",
+        "Runtime/Pawn.json",
+        "Runtime/PendingNetGame.json",
+        "ThirdParty/pending_task_safety_flag.json",
+        "Runtime/PersistentObjectPtr.json",
+        "Runtime/PhysicsInterfaceDeclaresCore.json",
+        "Runtime/PhysicsInterfaceTypesCore.json",
+        "Runtime/PhysicsInterfaceWrapperShared.json",
+        "Runtime/PhysicsQueryHandler.json",
+        "Runtime/PimplPtr.json",
+        "Runtime/Plane.json",
+        "Runtime/Platform.json",
+        "Runtime/PlatformMisc.json",
+        "ThirdParty/platform_thread.json",
+        "ThirdParty/platform_thread_ref.json",
+        "Runtime/PlayerCameraManager.json",
+        "Runtime/PlayerController.json",
+        "Runtime/PlayerMuteList.json",
+        "Runtime/Point.json",
+        "ThirdParty/PointerIntPair.json",
+        "ThirdParty/PointerLikeTypeTraits.json",
+        "ThirdParty/pointer_traits.json",
+        "Runtime/PooledSyncEvent.json",
+        "Runtime/PooledVirtualMemoryAllocator.json",
+        "ThirdParty/port.json",
+        "Runtime/PrimaryAssetId.json",
+        "Runtime/PrimitiveComponentId.json",
+        "Runtime/PropertyPairsMap.json",
+        "Runtime/PropertyTag.json",
+        "Runtime/PropertyTypeName.json",
+        "Runtime/PropertyVisitor.json",
+        "ThirdParty/pthread.json",
+        "Runtime/QuantizedVectorSerialization.json",
+        "Runtime/Quat.json",
+        "Runtime/QuatRotationTranslationMatrix.json",
+        "Runtime/Queue.json",
+        "Runtime/QueuedThreadPool.json",
+        "ThirdParty/Random.json",
+        "Runtime/RandomStream.json",
+        "Runtime/RangeView.json",
+        "ThirdParty/ranges.json",
+        "ThirdParty/rate_tracker.json",
+        "ThirdParty/raw_ptr.json",
+        "ThirdParty/ref_counted_base.json",
+        "Runtime/RefCountedObject.json",
+        "ThirdParty/ref_counted_object.json",
+        "ThirdParty/ref_counter.json",
+        "Runtime/RefCounting.json",
+        "Runtime/ReferenceToken.json",
+        "Runtime/References.json",
+        "Runtime/ReflectedTypeAccessors.json",
+        "Runtime/RemoteExecutor.json",
+        "Runtime/RemoteObject.json",
+        "Runtime/RemoteObjectPathName.json",
+        "Runtime/RemoteObjectTransfer.json",
+        "Runtime/RemoteObjectTypes.json",
+        "Runtime/RenderCommandFence.json",
+        "ThirdParty/rep.json",
+        "Runtime/ReplicatedState.json",
+        "ThirdParty/reservation_offset_table.json",
+        "Runtime/ResourceSize.json",
+        "ThirdParty/reverse_bytes.json",
+        "Runtime/ReverseIterate.json",
+        "Runtime/RHIDefinitions.json",
+        "Runtime/RHIFeatureLevel.json",
+        "Runtime/Rotate.json",
+        "Runtime/Rotation.json",
+        "Runtime/RotationMatrix.json",
+        "Runtime/RotationTranslationMatrix.json",
+        "Runtime/Rotator.json",
+        "ThirdParty/rtc_error.json",
+        "ThirdParty/rtc_event.json",
+        "ThirdParty/rtc_event_field_encoding.json",
+        "ThirdParty/rtc_event_field_encoding_parser.json",
+        "ThirdParty/rtc_event_field_extraction.json",
+        "ThirdParty/rtc_event_ice_candidate_pair.json",
+        "ThirdParty/rtc_event_ice_candidate_pair_config.json",
+        "ThirdParty/rtc_event_log_encoder_common.json",
+        "Runtime/Runnable.json",
+        "Runtime/RunnableThread.json",
+        "ThirdParty/safe_compare.json",
+        "ThirdParty/safe_conversions.json",
+        "ThirdParty/safe_conversions_impl.json",
+        "Runtime/Scene.json",
+        "Runtime/SceneComponent.json",
+        "Runtime/SceneQueryData.json",
+        "Runtime/SceneTypes.json",
+        "Runtime/SceneUtils.json",
+        "Runtime/Scheduler.json",
+        "Runtime/ScopeLock.json",
+        "Runtime/ScopeRWLock.json",
+        "Runtime/ScopedMovementUpdate.json",
+        "ThirdParty/scoped_refptr.json",
+        "Runtime/Script.json",
+        "Runtime/ScriptArray.json",
+        "Runtime/ScriptDelegates.json",
+        "Runtime/ScriptInterface.json",
+        "Runtime/SecureHash.json",
+        "Runtime/Serializable.json",
+        "Runtime/ServerStatReplicator.json",
+        "Runtime/Set.json",
+        "Runtime/SharedPointer.json",
+        "ThirdParty/sigslot.json",
+        "Developer/SlabAllocator.json",
+        "ThirdParty/SmallVector.json",
+        "ThirdParty/socket.json",
+        "ThirdParty/socket_address.json",
+        "Runtime/SoftObjectPath.json",
+        "Runtime/SoftObjectPtr.json",
+        "Runtime/Sort.json",
+        "Runtime/SortedMap.json",
+        "Runtime/Sorting.json",
+        "Runtime/SparseArray.json",
+        "Runtime/SparseDelegate.json",
+        "Runtime/Sphere.json",
+        "ThirdParty/spinning_mutex.json",
+        "Runtime/StableSort.json",
+        "Developer/stack.json",
+        "ThirdParty/state_bitmap.json",
+        "Runtime/StaticArray.json",
+        "ThirdParty/statically_widen.json",
+        "Runtime/Stats.json",
+        "ThirdParty/stdlib.json",
+        "ThirdParty/STLExtras.json",
+        "Runtime/Storage.json",
+        "ThirdParty/Stream.json",
+        "ThirdParty/strfunc.json",
+        "ThirdParty/string.json",
+        "Runtime/StringBuilder.json",
+        "ThirdParty/string_builder.json",
+        "Runtime/StringConv.json",
+        "ThirdParty/string_encode.json",
+        "Runtime/StringOverload.json",
+        "ThirdParty/string_piece.json",
+        "ThirdParty/StringRef.json",
+        "ThirdParty/string_to_number.json",
+        "Runtime/StringView.json",
+        "ThirdParty/string_view.json",
+        "ThirdParty/stringbuffer.json",
+        "ThirdParty/stringpiece.json",
+        "ThirdParty/strip.json",
+        "ThirdParty/strong_order.json",
+        "Runtime/StructOnScope.json",
+        "Runtime/StructuredArchive.json",
+        "Runtime/StructuredArchiveAdapters.json",
+        "Runtime/StructuredArchiveFormatter.json",
+        "Runtime/StructuredArchiveNameHelpers.json",
+        "Runtime/StructuredArchiveSlotBase.json",
+        "Runtime/StructuredArchiveSlots.json",
+        "ThirdParty/stun.json",
+        "ThirdParty/stun_request.json",
+        "Runtime/SubclassOf.json",
+        "Runtime/Subsystem.json",
+        "Runtime/SubsystemCollection.json",
+        "ThirdParty/SwapByteOrder.json",
+        "ThirdParty/sys_info.json",
+        "ThirdParty/system_error.json",
+        "Developer/Tables.json",
+        "Runtime/TagTrace.json",
+        "ThirdParty/tagging.json",
+        "Runtime/Task.json",
+        "Runtime/TaskDelegate.json",
+        "Runtime/TaskGraphInterfaces.json",
+        "Runtime/TaskPrivate.json",
+        "ThirdParty/task_queue_base.json",
+        "Runtime/TaskShared.json",
+        "Runtime/TaskTrace.json",
+        "ThirdParty/template_util.json",
+        "Runtime/Text.json",
+        "Runtime/TextComparison.json",
+        "Runtime/TextKey.json",
+        "Runtime/TextLocalizationManager.json",
+        "Runtime/TextProperty.json",
+        "Runtime/Thread.json",
+        "ThirdParty/thread_annotations.json",
+        "Runtime/ThreadSafeCounter.json",
+        "Runtime/ThreadSingleton.json",
+        "Runtime/Threading.json",
+        "ThirdParty/three_way_comparable.json",
+        "Runtime/Tickable.json",
+        "Runtime/Ticker.json",
+        "ThirdParty/time.json",
+        "ThirdParty/time_delta.json",
+        "ThirdParty/time_point.json",
+        "ThirdParty/time_utils.json",
+        "ThirdParty/time_zone.json",
+        "ThirdParty/time_zone_link.json",
+        "Runtime/Timeout.json",
+        "Runtime/TimerHandle.json",
+        "Runtime/TimerManager.json",
+        "Runtime/Timespan.json",
+        "ThirdParty/timestamp.json",
+        "ThirdParty/timezone.json",
+        "Runtime/TlsAutoCleanup.json",
+        "ThirdParty/to_chars_base_10.json",
+        "ThirdParty/to_chars_integral.json",
+        "ThirdParty/to_chars_result.json",
+        "Runtime/TokenizedMessage.json",
+        "Runtime/TopLevelAssetPath.json",
+        "ThirdParty/totally_ordered.json",
+        "Runtime/Trace.json",
+        "ThirdParty/traits.json",
+        "Runtime/TransactionallySafeCriticalSection.json",
+        "Runtime/TransactionallySafeRWLock.json",
+        "Runtime/Transform.json",
+        "ThirdParty/transport_description.json",
+        "ThirdParty/Traversal.json",
+        "Runtime/Tuple.json",
+        "Runtime/TwoVectors.json",
+        "Runtime/TypeCompatibleBytes.json",
+        "Runtime/TypeHash.json",
+        "ThirdParty/type_traits.json",
+        "ThirdParty/tzdb.json",
+        "ThirdParty/tzdb_list.json",
+        "ThirdParty/unaligned_access.json",
+        "Runtime/Unicode.json",
+        "Runtime/UniqueLock.json",
+        "Runtime/UniqueObj.json",
+        "Runtime/UniquePtr.json",
+        "ThirdParty/unistr.json",
+        "ThirdParty/unit_base.json",
+        "ThirdParty/unreachable.json",
+        "Runtime/UnrealMathFPU.json",
+        "Runtime/UnrealMathNeon.json",
+        "Runtime/UnrealMathSSE.json",
+        "Runtime/UnrealMathUtility.json",
+        "Runtime/UnrealMemory.json",
+        "Runtime/UnrealNames.json",
+        "Runtime/UnrealString.json",
+        "Runtime/UnrealTemplate.json",
+        "Runtime/UnrealType.json",
+        "Runtime/UnrealTypeTraits.json",
+        "ThirdParty/untyped_function.json",
+        "ThirdParty/uobject.json",
+        "Runtime/UObjectArray.json",
+        "Runtime/UObjectBase.json",
+        "Runtime/UObjectBaseUtility.json",
+        "Runtime/UObjectGlobals.json",
+        "Runtime/UObjectHash.json",
+        "Runtime/UObjectMarks.json",
+        "Runtime/UpdateLevelVisibilityLevelInfo.json",
+        "ThirdParty/ures.json",
+        "ThirdParty/Use.json",
+        "Runtime/UTF8String.json",
+        "Runtime/UTF8StringView.json",
+        "Runtime/Util.json",
+        "ThirdParty/Utility.json",
+        "Developer/Utils.json",
+        "ThirdParty/Value.json",
+        "Runtime/Variant.json",
+        "Runtime/Vector.json",
+        "Runtime/VectorRegister.json",
+        "Runtime/Vector2D.json",
+        "Runtime/Vector4.json",
+        "Runtime/VersePathFwd.json",
+        "ThirdParty/version.json",
+        "Runtime/VirtualStackAllocator.json",
+        "ThirdParty/vpx_mem.json",
+        "Runtime/WaitingQueue.json",
+        "ThirdParty/wchar.json",
+        "Runtime/WeakInterfacePtr.json",
+        "Runtime/WeakObjectPtr.json",
+        "Runtime/WeakObjectPtrTemplates.json",
+        "ThirdParty/weak_ptr.json",
+        "ThirdParty/weekday.json",
+        "ThirdParty/width_estimation_table.json",
+        "ThirdParty/WinAdapter.json",
+        "ThirdParty/win32.json",
+        "ThirdParty/windows_types.json",
+        "Runtime/WordMutex.json",
+        "Runtime/World.json",
+        "Runtime/WorldCollision.json",
+        "Runtime/WorldInitializationValues.json",
+        "Runtime/WorldPartitionStreamingSource.json",
+        "Runtime/WorldPSCPool.json",
+        "Runtime/WorldSubsystem.json",
+        "ThirdParty/wrapping_async_dns_resolver.json",
+        "ThirdParty/write_escaped.json",
+        "ThirdParty/writer.json",
+        "ThirdParty/year.json",
+        "ThirdParty/year_month.json",
+        "ThirdParty/year_month_day.json",
+        "ThirdParty/year_month_weekday.json",
+        "ThirdParty/zoned_time.json"
+      ],
+      "customEvents": [
+        {
+          "id": "custom-event-cubespawned",
+          "title": "CubeSpawned",
+          "pins": [
+            {
+              "id": "spawnedcube",
+              "name": "SpawnedCube",
+              "valueType": "Object",
+              "typeName": "ACompanionCube*"
+            }
+          ],
+          "returnPins": [],
+          "access": "public",
+          "isUFunction": false,
+          "ufunctionSpecifiers": [],
+          "ufunctionValues": {}
+        },
+        {
+          "id": "custom-event-maxspawned",
+          "title": "MaxSpawned",
+          "pins": [],
+          "returnPins": [],
+          "access": "public",
+          "isUFunction": false,
+          "ufunctionSpecifiers": [],
+          "ufunctionValues": {}
+        },
+        {
+          "id": "custom-event-maxcubesspawned",
+          "title": "MaxCubesSpawned",
+          "pins": [],
+          "returnPins": [],
+          "access": "public",
+          "isUFunction": false,
+          "ufunctionSpecifiers": [],
+          "ufunctionValues": {}
+        },
+        {
+          "id": "custom-event-startspawning",
+          "title": "StartSpawning",
+          "pins": [],
+          "returnPins": [],
+          "access": "public",
+          "isUFunction": false,
+          "ufunctionSpecifiers": [],
+          "ufunctionValues": {}
+        },
+        {
+          "id": "custom-event-spawncube",
+          "title": "SpawnCube",
+          "pins": [],
+          "returnPins": [],
+          "access": "public",
+          "isUFunction": false,
+          "ufunctionSpecifiers": [],
+          "ufunctionValues": {}
+        }
+      ],
+      "delegates": [
+        {
+          "id": "delegate-oncubespawned",
+          "name": "OnCubeSpawned",
+          "kind": "dynamic-multicast",
+          "pins": [
+            {
+              "id": "spawnedcube",
+              "name": "SpawnedCube",
+              "valueType": "Object",
+              "typeName": "ACompanionCube*"
+            }
+          ]
+        },
+        {
+          "id": "delegate-onmaxcubespawned",
+          "name": "OnMaxCubeSpawned",
+          "kind": "dynamic-multicast",
+          "pins": []
+        }
+      ],
+      "variables": [
+        {
+          "id": "var-maxspawnedcubes",
+          "name": "MaxSpawnedCubes",
+          "valueType": "Int",
+          "isArray": false,
+          "isMap": false,
+          "defaultValue": "5",
+          "isPublic": true,
+          "isUProperty": true,
+          "upropertySpecifiers": [
+            "EditAnywhere",
+            "BlueprintReadWrite"
+          ],
+          "upropertyValues": {}
+        },
+        {
+          "id": "var-currentnumberofcubes",
+          "name": "CurrentNumberOfCubes",
+          "valueType": "Int",
+          "isArray": false,
+          "isMap": false,
+          "defaultValue": null,
+          "isPublic": false,
+          "isUProperty": false,
+          "upropertySpecifiers": [],
+          "upropertyValues": {}
+        },
+        {
+          "id": "var-mycubes",
+          "name": "MyCubes",
+          "valueType": "Object",
+          "typeName": "AActor",
+          "isArray": true,
+          "isMap": false,
+          "objectPointerKind": "tobject",
+          "defaultValue": null,
+          "isPublic": true,
+          "isUProperty": true,
+          "upropertySpecifiers": [
+            "VisibleAnywhere",
+            "BlueprintReadOnly"
+          ],
+          "upropertyValues": {}
+        },
+        {
+          "id": "var-spawnrate",
+          "name": "SpawnRate",
+          "valueType": "Float",
+          "isArray": false,
+          "isMap": false,
+          "defaultValue": null,
+          "isPublic": false,
+          "isUProperty": true,
+          "upropertySpecifiers": [
+            "EditAnywhere",
+            "BlueprintReadWrite"
+          ],
+          "upropertyValues": {}
+        },
+        {
+          "id": "var-currenttime",
+          "name": "CurrentTime",
+          "valueType": "Float",
+          "isArray": false,
+          "isMap": false,
+          "defaultValue": null,
+          "isPublic": false,
+          "isUProperty": false,
+          "upropertySpecifiers": [],
+          "upropertyValues": {}
+        },
+        {
+          "id": "var-cubetospawn",
+          "name": "CubeToSpawn",
+          "valueType": "Object",
+          "typeName": "AActor",
+          "isArray": false,
+          "isMap": false,
+          "objectPointerKind": "tsubclass",
+          "defaultValue": null,
+          "isPublic": true,
+          "isUProperty": true,
+          "upropertySpecifiers": [
+            "BlueprintReadWrite",
+            "EditAnywhere"
+          ],
+          "upropertyValues": {}
+        },
+        {
+          "id": "var-spawntimerhandle",
+          "name": "SpawnTimerHandle",
+          "valueType": "Struct",
+          "typeName": "FTimerHandle",
+          "isArray": false,
+          "isMap": false,
+          "defaultValue": null,
+          "isPublic": false,
+          "isUProperty": false,
+          "upropertySpecifiers": [],
+          "upropertyValues": {}
+        }
+      ],
+      "enums": [],
+      "structs": [],
+      "selectedProjectEnumIds": [],
+      "selectedProjectStructIds": [],
+      "selectedProjectInterfaceIds": [],
+      "includedBlueprintIds": [
+        "bp-1773170878478-68"
+      ]
+    },
+    {
+      "id": "bp-1773170878478-68",
+      "name": "CompanionCube",
+      "templateId": "actor",
+      "templateLabel": "Actor",
+      "categoryPath": "Actors",
+      "graph": {
+        "nodes": [
+          {
+            "id": "node-1773170878478-69",
+            "definitionId": "event-construct",
+            "position": {
+              "x": 24,
+              "y": 20
+            }
+          },
+          {
+            "id": "node-1773170878478-70",
+            "definitionId": "event-destruct",
+            "position": {
+              "x": 244,
+              "y": 20
+            }
+          },
+          {
+            "id": "node-1773170878478-71",
+            "definitionId": "event-begin-play",
+            "position": {
+              "x": 24,
+              "y": 160
+            }
+          },
+          {
+            "id": "node-1773170878478-72",
+            "definitionId": "event-tick",
+            "position": {
+              "x": 244,
+              "y": 160
+            }
+          },
+          {
+            "id": "custom-event-destroyme",
+            "definitionId": "custom-event-destroyme",
+            "position": {
+              "x": 32,
+              "y": 345.66666666666663
+            },
+            "data": {
+              "eventScopeId": "custom-event-destroyme"
+            }
+          },
+          {
+            "id": "node-1773170920897-74",
+            "definitionId": "destroy-actor",
+            "position": {
+              "x": 294.9276300405216,
+              "y": 350.0038669231678
+            },
+            "data": {
+              "eventScopeId": "custom-event-destroyme"
+            }
+          },
+          {
+            "id": "node-1773170931778-76",
+            "definitionId": "self",
+            "position": {
+              "x": 32.316429029466164,
+              "y": 428.4860228584919
+            },
+            "data": {
+              "eventScopeId": "custom-event-destroyme"
+            }
+          }
+        ],
+        "edges": [
+          {
+            "id": "edge-1773170923704-75",
+            "from": {
+              "nodeId": "custom-event-destroyme",
+              "pinId": "custom-event-destroyme-exec-out"
+            },
+            "to": {
+              "nodeId": "node-1773170920897-74",
+              "pinId": "destroy-actor-exec-in"
+            }
+          },
+          {
+            "id": "edge-1773170935438-77",
+            "from": {
+              "nodeId": "node-1773170931778-76",
+              "pinId": "self-output"
+            },
+            "to": {
+              "nodeId": "node-1773170920897-74",
+              "pinId": "destroy-actor-target-input-0"
+            }
+          }
+        ]
+      },
+      "selectedFiles": [
+        "Runtime/Actor.json"
+      ],
+      "loadedFileNames": [
+        "Types.json",
+        "Runtime/AccessDetection.json",
+        "Runtime/Actor.json",
+        "Editor/ActorActionUtility.json",
+        "Runtime/ActorComponent.json",
+        "Runtime/ActorDescList.json",
+        "Runtime/ActorElementCounterInterface.json",
+        "Runtime/ActorInstanceHandle.json",
+        "Runtime/AIPerceptionTypes.json",
+        "Runtime/AISense.json",
+        "Runtime/AISenseConfig.json",
+        "Runtime/AITypes.json",
+        "Runtime/AlphaBlend.json",
+        "Runtime/AndroidPlatformMemory.json",
+        "Runtime/AndroidPlatformMisc.json",
+        "Runtime/AndroidPlatformProcess.json",
+        "Runtime/AndroidPlatformStackWalk.json",
+        "Runtime/AnimCurveMetadata.json",
+        "Runtime/AnimCurveTypes.json",
+        "Runtime/AnimDataNotifications.json",
+        "Runtime/AnimInterpFilter.json",
+        "Runtime/AnimLinkableElement.json",
+        "Runtime/AnimNode_ApplyLimits.json",
+        "Runtime/AnimNode_AssetPlayerBase.json",
+        "Runtime/AnimNodeBase.json",
+        "Runtime/AnimNode_CallFunction.json",
+        "Runtime/AnimNodeData.json",
+        "Runtime/AnimNodeFunctionRef.json",
+        "Runtime/AnimNodeMessages.json",
+        "Runtime/AnimNode_ModifyCurve.json",
+        "Runtime/AnimNode_PoseByName.json",
+        "Runtime/AnimNode_PoseHandler.json",
+        "Runtime/AnimNode_RelevantAssetPlayerBase.json",
+        "Runtime/AnimNode_SkeletalControlBase.json",
+        "Runtime/AnimNotifyQueue.json",
+        "Runtime/AnimSequenceBase.json",
+        "Runtime/AnimSync.json",
+        "Runtime/AnimTypes.json",
+        "Runtime/AnimationAsset.json",
+        "Editor/AnimationBlueprintLibrary.json",
+        "Editor/AnimationModifier.json",
+        "Editor/AnimationModifiersAssetUserData.json",
+        "Runtime/AnimationPoseData.json",
+        "Runtime/AnimationRuntime.json",
+        "Runtime/App.json",
+        "Runtime/Archive.json",
+        "Runtime/ArchiveProxy.json",
+        "Runtime/ArchiveUObject.json",
+        "Runtime/ArrangedWidget.json",
+        "Runtime/Array.json",
+        "Runtime/AssertionMacros.json",
+        "Runtime/AssetBundleData.json",
+        "Runtime/AssetData.json",
+        "Runtime/AssetDataMap.json",
+        "Runtime/AssetDataTagMap.json",
+        "Runtime/AssetIdentifier.json",
+        "Runtime/AssetRegistryTagsContext.json",
+        "Runtime/Async.json",
+        "Runtime/AttributeCurve.json",
+        "Runtime/AttributeIdentifier.json",
+        "Runtime/AttributeStorage.json",
+        "Runtime/AttributesRuntime.json",
+        "Runtime/AudioDeviceHandle.json",
+        "Runtime/AudioParameter.json",
+        "Runtime/AudioParameterControllerInterface.json",
+        "Runtime/AutoRTFM.json",
+        "Runtime/AutoRTFMTestObject.json",
+        "Developer/AutomationBlueprintFunctionLibrary.json",
+        "Runtime/AutomationEvent.json",
+        "Runtime/AutomationTest.json",
+        "Runtime/AVIWriter.json",
+        "Runtime/Base64.json",
+        "Runtime/BinaryArchiveFormatter.json",
+        "Runtime/BitArchive.json",
+        "Runtime/BitReader.json",
+        "Runtime/BitWriter.json",
+        "Runtime/Blake3.json",
+        "Runtime/BodyInstance.json",
+        "Runtime/BodyInstanceCore.json",
+        "Runtime/BoneContainer.json",
+        "Runtime/BonePose.json",
+        "Runtime/BoneReference.json",
+        "Runtime/BoneSocketReference.json",
+        "Runtime/BufferVectorOperations.json",
+        "Runtime/BuildResultDependenciesMap.json",
+        "Runtime/BuildVersion.json",
+        "Runtime/BytesToHex.json",
+        "Runtime/CallstackTrace.json",
+        "Runtime/CameraTypes.json",
+        "Runtime/Casts.json",
+        "Developer/Channel.json",
+        "Runtime/ChaosEngineInterface.json",
+        "Runtime/CheckBox.json",
+        "Runtime/ChildActorComponent.json",
+        "Runtime/CityHash.json",
+        "Runtime/Class.json",
+        "Runtime/Clipping.json",
+        "Runtime/CollisionProfile.json",
+        "Runtime/CollisionQueryParams.json",
+        "Runtime/Color.json",
+        "Runtime/ComboBoxString.json",
+        "Runtime/CommandLine.json",
+        "Runtime/Common.json",
+        "Runtime/CompactBinary.json",
+        "Runtime/ComponentInstanceDataCache.json",
+        "Runtime/CompositeBuffer.json",
+        "Runtime/CompositeFont.json",
+        "Runtime/CompositionGraphCaptureProtocol.json",
+        "Runtime/CompressedBuffer.json",
+        "Runtime/ConcurrentLinearAllocator.json",
+        "Runtime/ContainerAllocationPolicies.json",
+        "Runtime/ContainerHelpers.json",
+        "Runtime/ContentWidget.json",
+        "Runtime/Controller.json",
+        "Runtime/ConvolutionAlgorithm.json",
+        "Runtime/CookDependency.json",
+        "Runtime/CookStats.json",
+        "Runtime/CoreGlobals.json",
+        "Runtime/CoreMisc.json",
+        "Runtime/CoreNative.json",
+        "Runtime/CoreNet.json",
+        "Runtime/CoreNetTypes.json",
+        "Runtime/CoreOnline.json",
+        "Runtime/CpuProfilerTrace.json",
+        "Runtime/Crc.json",
+        "Runtime/CString.json",
+        "Runtime/CsvProfiler.json",
+        "Runtime/CsvProfilerTrace.json",
+        "Runtime/CurveBase.json",
+        "Editor/CurveEditorAxis.json",
+        "Runtime/CurveIdentifier.json",
+        "Runtime/CurveLinearColor.json",
+        "Runtime/CurveOwnerInterface.json",
+        "Runtime/CustomResourcePool.json",
+        "Runtime/CustomVersion.json",
+        "Runtime/DataDrivenPlatformInfoRegistry.json",
+        "Runtime/DateTime.json",
+        "Runtime/DelayedAutoRegister.json",
+        "Runtime/DelegateBase.json",
+        "Developer/DerivedDataBuild.json",
+        "Runtime/DevObjectVersion.json",
+        "Runtime/DeveloperSettings.json",
+        "Runtime/DeviceProfileManager.json",
+        "Runtime/DragAndDrop.json",
+        "Runtime/DrawElementTypes.json",
+        "Runtime/DrawElements.json",
+        "Runtime/Dsp.json",
+        "Runtime/DynamicRHI.json",
+        "Editor/EditorComponents.json",
+        "Runtime/ElementBatcher.json",
+        "Runtime/EngineBaseTypes.json",
+        "Runtime/EngineTypes.json",
+        "Runtime/EngineVersion.json",
+        "Runtime/EngineVersionBase.json",
+        "Runtime/Event.json",
+        "Runtime/Events.json",
+        "Runtime/Exec.json",
+        "Runtime/ExposedValueHandler.json",
+        "Runtime/ExpressionParser.json",
+        "Runtime/ExpressionParserTypes.json",
+        "Runtime/FeedbackContext.json",
+        "Runtime/Field.json",
+        "Runtime/FieldNotificationDelegate.json",
+        "Runtime/FieldPath.json",
+        "Runtime/Find.json",
+        "Runtime/FloatArrayMath.json",
+        "Runtime/Folder.json",
+        "Runtime/FontCache.json",
+        "Runtime/FontTypes.json",
+        "Runtime/Fork.json",
+        "Runtime/FortniteMainBranchObjectVersion.json",
+        "Runtime/FrameNumber.json",
+        "Runtime/FrameRate.json",
+        "Runtime/GameTime.json",
+        "Runtime/GarbageCollection.json",
+        "Runtime/GCObject.json",
+        "Runtime/GenericApplication.json",
+        "Runtime/GenericApplicationMessageHandler.json",
+        "Runtime/GenericPlatformCrashContext.json",
+        "Runtime/GenericPlatformInputDeviceMapper.json",
+        "Runtime/GenericPlatformMath.json",
+        "Runtime/GenericPlatformMemory.json",
+        "Runtime/GenericPlatformMisc.json",
+        "Runtime/GenericPlatformProcess.json",
+        "Runtime/GenericPlatformStackWalk.json",
+        "Runtime/GenericPlatformStricmp.json",
+        "Runtime/GenericPlatformString.json",
+        "Runtime/GenericPlatformTime.json",
+        "Runtime/GenericTeamAgentInterface.json",
+        "Runtime/GenericWindow.json",
+        "Runtime/Geometry.json",
+        "Runtime/GlobalRenderResources.json",
+        "Runtime/GpuProfilerTrace.json",
+        "Runtime/GPUProfiler.json",
+        "Runtime/GPUSkinVertexFactory.json",
+        "Runtime/Guid.json",
+        "Runtime/HashTable.json",
+        "Runtime/HexToBytes.json",
+        "Runtime/HitProxies.json",
+        "Runtime/HitResult.json",
+        "Runtime/IAnimationDataController.json",
+        "Runtime/IAnimationDataModel.json",
+        "Runtime/IAudioProxyInitializer.json",
+        "Runtime/IConsoleManager.json",
+        "Runtime/IDelegateInstance.json",
+        "Runtime/ImageCore.json",
+        "Runtime/IMovieSceneEntityProvider.json",
+        "Runtime/IMovieSceneRetimingInterface.json",
+        "Runtime/IndexedCurve.json",
+        "Runtime/InheritedContext.json",
+        "Runtime/InputCoreTypes.json",
+        "Runtime/InputKeyEventArgs.json",
+        "Runtime/InputScaleBias.json",
+        "Runtime/InterchangeBaseNode.json",
+        "Runtime/InterchangeUserDefinedAttribute.json",
+        "Runtime/Internationalization.json",
+        "Runtime/InterpCurvePoint.json",
+        "Runtime/InvalidateWidgetReason.json",
+        "ThirdParty/io.json",
+        "Runtime/IoChunkId.json",
+        "Runtime/IoHash.json",
+        "Runtime/KeyHandle.json",
+        "Runtime/LargeMemoryData.json",
+        "Runtime/LargeMemoryWriter.json",
+        "Runtime/LazyObjectPtr.json",
+        "Runtime/LinkerInstancingContext.json",
+        "Runtime/LocalPlayer.json",
+        "Runtime/LocalPlayerSubsystem.json",
+        "Runtime/LocalVertexFactory.json",
+        "Runtime/LockFreeList.json",
+        "Runtime/LogCategory.json",
+        "Runtime/LogMacros.json",
+        "Runtime/LogScopedCategoryAndVerbosityOverride.json",
+        "Runtime/LogTrace.json",
+        "Runtime/LogVerbosity.json",
+        "Runtime/LowLevelMemTracker.json",
+        "Runtime/MacPlatformMutex.json",
+        "Runtime/MallocBinned2.json",
+        "ThirdParty/Maps.json",
+        "Runtime/MaterialExpression.json",
+        "Runtime/MaterialExpressionIO.json",
+        "Runtime/MaterialInterface.json",
+        "Runtime/MaterialLayersFunctions.json",
+        "Runtime/MaterialRelevance.json",
+        "Runtime/MaterialShared.json",
+        "Editor/MaterialStatsCommon.json",
+        "Runtime/MaterialTypes.json",
+        "Runtime/Matrix.json",
+        "Runtime/Matrix3x4.json",
+        "Runtime/MemStack.json",
+        "Developer/Memory.json",
+        "Runtime/MemoryBase.json",
+        "Runtime/MemoryImage.json",
+        "Runtime/MemoryImageWriter.json",
+        "Runtime/MemoryLayout.json",
+        "Runtime/MemoryTrace.json",
+        "Runtime/MeshComponent.json",
+        "Runtime/MessageDialog.json",
+        "Runtime/MessageLog.json",
+        "Runtime/MetaData.json",
+        "Runtime/MicrosoftPlatformManualResetEvent.json",
+        "Runtime/MiscTrace.json",
+        "Runtime/MovieSceneCaptureProtocolBase.json",
+        "Runtime/MovieSceneChannel.json",
+        "Runtime/MovieSceneChannelData.json",
+        "Runtime/MovieSceneDoubleChannel.json",
+        "Runtime/MovieSceneEntityIDs.json",
+        "Runtime/MovieSceneFwd.json",
+        "Runtime/MovieSceneInterpolation.json",
+        "Runtime/MovieSceneLatentActionManager.json",
+        "Runtime/MovieSceneNumericVariant.json",
+        "Runtime/MovieScenePiecewiseCurve.json",
+        "Runtime/MovieScenePlayRateCurve.json",
+        "Runtime/MovieScenePlayback.json",
+        "Runtime/MovieScenePlaybackManager.json",
+        "Runtime/MovieScenePreAnimatedState.json",
+        "Runtime/MovieSceneScalingAnchors.json",
+        "Runtime/MovieSceneSequenceTickInterval.json",
+        "Runtime/MovieSceneSequenceTransform.json",
+        "Runtime/MovieSceneSharedPlaybackState.json",
+        "Runtime/MovieSceneTimeHelpers.json",
+        "Runtime/MovieSceneTimeWarpChannel.json",
+        "Runtime/MovieSceneTimeWarpDecoration.json",
+        "Runtime/MovieSceneTimeWarpGetter.json",
+        "Runtime/MovieSceneTimeWarpVariant.json",
+        "Runtime/Mutex.json",
+        "Runtime/NameTypes.json",
+        "Runtime/NamedSlotInterface.json",
+        "Runtime/NavAgentSelector.json",
+        "Runtime/NavLinkDefinition.json",
+        "Runtime/NavigationDirtyArea.json",
+        "Runtime/NavigationModifier.json",
+        "Runtime/NavigationSystemConfig.json",
+        "Runtime/NavigationSystemTypes.json",
+        "Runtime/NavigationTypes.json",
+        "Runtime/NetBitArray.json",
+        "Runtime/NetSubObjectRegistry.json",
+        "Runtime/NetworkVersion.json",
+        "Runtime/NotNull.json",
+        "Runtime/Object.json",
+        "Runtime/ObjectFwd.json",
+        "Runtime/ObjectHandle.json",
+        "Runtime/ObjectHandleTracking.json",
+        "Runtime/ObjectMacros.json",
+        "Runtime/ObjectPtr.json",
+        "Runtime/ObjectRef.json",
+        "Runtime/ObjectSaveContext.json",
+        "Runtime/ObjectThumbnail.json",
+        "Runtime/ObjectVersion.json",
+        "Runtime/OnlineReplStructs.json",
+        "Runtime/OodleDataCompression.json",
+        "Runtime/OutputDevice.json",
+        "Runtime/OutputDeviceRedirector.json",
+        "Runtime/Package.json",
+        "Runtime/PackageId.json",
+        "Runtime/PackageName.json",
+        "Runtime/PackagePath.json",
+        "Runtime/PackageReload.json",
+        "Runtime/PaintArgs.json",
+        "Runtime/PanelSlot.json",
+        "Runtime/PanelWidget.json",
+        "Runtime/ParallelRenderingObjectVersion.json",
+        "Runtime/Parse.json",
+        "Runtime/PathViews.json",
+        "Runtime/Paths.json",
+        "Runtime/PendingNetGame.json",
+        "Runtime/PerPlatformProperties.json",
+        "Runtime/PhysicsPublic.json",
+        "Runtime/PhysicsQueryHandler.json",
+        "Runtime/Pipe.json",
+        "Runtime/PipelineStateCache.json",
+        "Runtime/PixelFormat.json",
+        "Runtime/Platform.json",
+        "Runtime/Player.json",
+        "Runtime/PlayerCameraManager.json",
+        "Runtime/PlayerController.json",
+        "Runtime/PlayerMuteList.json",
+        "Runtime/PoseAsset.json",
+        "Runtime/PreviewAssetAttachComponent.json",
+        "Runtime/PrimaryAssetId.json",
+        "Runtime/PrimitiveComponent.json",
+        "Runtime/PrimitiveSceneInfoData.json",
+        "Runtime/PropertyOptional.json",
+        "Runtime/PropertyPathName.json",
+        "Runtime/PropertyTag.json",
+        "Runtime/PropertyTypeName.json",
+        "Runtime/PropertyVisitor.json",
+        "Runtime/PSOPrecache.json",
+        "Runtime/Quat.json",
+        "Runtime/QueuedThreadPool.json",
+        "Runtime/RealCurve.json",
+        "Runtime/RecursiveMutex.json",
+        "Runtime/RefCounting.json",
+        "Runtime/ReferenceSkeleton.json",
+        "Runtime/Regex.json",
+        "Runtime/RemoteExecutor.json",
+        "Runtime/RemoteObject.json",
+        "Runtime/RemoteObjectPathName.json",
+        "Runtime/RemoteObjectTransfer.json",
+        "Runtime/RemoteObjectTypes.json",
+        "Runtime/RenderCommandFence.json",
+        "Runtime/RenderDeferredCleanup.json",
+        "Runtime/RenderGraphAllocator.json",
+        "Runtime/RenderResource.json",
+        "Runtime/RenderTimer.json",
+        "Runtime/RenderUtils.json",
+        "Runtime/RendererInterface.json",
+        "Runtime/RenderingThread.json",
+        "Runtime/ReplicatedState.json",
+        "Runtime/Reply.json",
+        "Runtime/ResourceSize.json",
+        "Runtime/RHI.json",
+        "Runtime/RHIBreadcrumbs.json",
+        "Runtime/RHIBufferInitializer.json",
+        "Runtime/RHICommandList.json",
+        "Runtime/RHIContext.json",
+        "Runtime/RHIDefinitions.json",
+        "Runtime/RHIGPUReadback.json",
+        "Runtime/RHIResources.json",
+        "Runtime/RHIStats.json",
+        "Runtime/RHIStrings.json",
+        "Runtime/RHITextureReference.json",
+        "Runtime/RHITransition.json",
+        "Runtime/RHIValidationCommon.json",
+        "Runtime/RichCurve.json",
+        "Runtime/Rotator.json",
+        "Runtime/RunnableThread.json",
+        "Runtime/SampleBufferReader.json",
+        "Runtime/Scene.json",
+        "Runtime/SceneComponent.json",
+        "Runtime/SceneTypes.json",
+        "Runtime/SceneUniformBuffer.json",
+        "Runtime/SceneUtils.json",
+        "Runtime/Scheduler.json",
+        "Runtime/ScopedMovementUpdate.json",
+        "Runtime/Script.json",
+        "Runtime/SecureHash.json",
+        "Editor/SequencerKeyParams.json",
+        "Runtime/Set.json",
+        "Runtime/Shader.json",
+        "Runtime/ShaderCompilerCore.json",
+        "Runtime/ShaderCore.json",
+        "Runtime/ShaderParameterMacros.json",
+        "Runtime/ShaderParameterMetadata.json",
+        "Runtime/ShaderParameterMetadataBuilder.json",
+        "Runtime/ShaderParameters.json",
+        "Runtime/ShaderTypes.json",
+        "Runtime/SharedBuffer.json",
+        "Runtime/SkeletalMeshTypes.json",
+        "Runtime/Skeleton.json",
+        "Runtime/SkeletonRemapping.json",
+        "Runtime/SkinWeightProfile.json",
+        "Runtime/SkinWeightVertexBuffer.json",
+        "Runtime/SkinnedMeshComponent.json",
+        "Runtime/SlateBrush.json",
+        "Runtime/SlateColor.json",
+        "Runtime/SlateDebugging.json",
+        "Runtime/SlateFontInfo.json",
+        "Runtime/SlateInvalidationRootHandle.json",
+        "Runtime/SlateRect.json",
+        "Runtime/SlateResourceHandle.json",
+        "Runtime/SlateRotatedRect.json",
+        "Runtime/SlateSound.json",
+        "Runtime/SlateTypes.json",
+        "Runtime/SlateVector2.json",
+        "Runtime/SlowTask.json",
+        "Runtime/SlowTaskStack.json",
+        "Runtime/SmartName.json",
+        "Runtime/SoftObjectPath.json",
+        "Runtime/SparseDelegate.json",
+        "Runtime/Sphere.json",
+        "Runtime/StaticParameterSet.json",
+        "Runtime/StatsHierarchical.json",
+        "Runtime/StringBuilder.json",
+        "Runtime/StructOnScope.json",
+        "Runtime/StructuredArchive.json",
+        "Runtime/StructuredArchiveAdapters.json",
+        "Runtime/StructuredArchiveSlotBase.json",
+        "Runtime/StructuredArchiveSlots.json",
+        "Runtime/Subsystem.json",
+        "Runtime/SubsystemCollection.json",
+        "Runtime/SWidget.json",
+        "Runtime/TagTrace.json",
+        "Runtime/Task.json",
+        "Runtime/TaskGraphInterfaces.json",
+        "Runtime/TaskPrivate.json",
+        "Runtime/TaskTrace.json",
+        "Runtime/Text.json",
+        "Runtime/TextComparison.json",
+        "Runtime/TextFilterExpressionEvaluator.json",
+        "Runtime/TextFilterUtils.json",
+        "Runtime/TextKey.json",
+        "Runtime/TextLocalizationManager.json",
+        "Runtime/TextProperty.json",
+        "Runtime/TextureAtlas.json",
+        "Runtime/TextureStreamingTypes.json",
+        "Runtime/Thread.json",
+        "Runtime/ThreadSingleton.json",
+        "Runtime/Tickable.json",
+        "Runtime/Ticker.json",
+        "Runtime/Timecode.json",
+        "Runtime/Timespan.json",
+        "Runtime/TlsAutoCleanup.json",
+        "Runtime/TokenizedMessage.json",
+        "Runtime/TopLevelAssetPath.json",
+        "Runtime/Trace.json",
+        "ThirdParty/Transform.json",
+        "Runtime/TypedElementCounter.json",
+        "Runtime/TypedElementData.json",
+        "Runtime/TypedElementHandle.json",
+        "Runtime/TypedElementRowHandleArrayView.json",
+        "Runtime/UE5ReleaseStreamObjectVersion.json",
+        "Runtime/UMGSequenceTickManager.json",
+        "Runtime/UnicodeBlockRange.json",
+        "Runtime/UnrealMathSSE.json",
+        "Runtime/UnrealMathUtility.json",
+        "Runtime/UnrealMemory.json",
+        "Runtime/UnrealNames.json",
+        "Runtime/UnrealString.json",
+        "Runtime/UnrealType.json",
+        "Runtime/UObjectArray.json",
+        "Runtime/UObjectBase.json",
+        "Runtime/UObjectBaseUtility.json",
+        "Runtime/UObjectGlobals.json",
+        "Runtime/UObjectHash.json",
+        "Runtime/UObjectMarks.json",
+        "Runtime/UObjectThreadContext.json",
+        "Runtime/UpdateLevelVisibilityLevelInfo.json",
+        "Runtime/UserWidget.json",
+        "Runtime/Vector.json",
+        "Runtime/VersePathFwd.json",
+        "Runtime/VertexFactory.json",
+        "Runtime/VirtualStackAllocator.json",
+        "Runtime/VirtualTexturing.json",
+        "Runtime/Visibility.json",
+        "Runtime/Visual.json",
+        "Runtime/WaitingQueue.json",
+        "Runtime/WeakObjectPtr.json",
+        "Runtime/Widget.json",
+        "Runtime/WidgetAnimationHandle.json",
+        "Runtime/WidgetAnimationState.json",
+        "Runtime/WidgetChild.json",
+        "Runtime/WidgetNavigation.json",
+        "Runtime/WidgetProxy.json",
+        "Runtime/WidgetStateBitfield.json",
+        "Runtime/WidgetStateRegistration.json",
+        "Runtime/WidgetStyle.json",
+        "Runtime/WindowsPlatformAtomics.json",
+        "Runtime/WindowsPlatformTLS.json",
+        "Runtime/World.json",
+        "Runtime/WorldCompositionUtility.json",
+        "Runtime/WorldPartitionActorDesc.json",
+        "Runtime/WorldPartitionActorFilter.json",
+        "Runtime/WorldPartitionStreamingSource.json",
+        "Runtime/WorldPSCPool.json",
+        "Runtime/WorldSubsystem.json",
+        "Developer/xxh3.json",
+        "Developer/xxhash.json"
+      ],
+      "customEvents": [
+        {
+          "id": "custom-event-destroyme",
+          "title": "DestroyMe",
+          "pins": [],
+          "returnPins": [],
+          "access": "public",
+          "isUFunction": false,
+          "ufunctionSpecifiers": [],
+          "ufunctionValues": {}
+        }
+      ],
+      "delegates": [],
+      "variables": [],
+      "enums": [],
+      "structs": [],
+      "selectedProjectEnumIds": [],
+      "selectedProjectStructIds": [],
+      "selectedProjectInterfaceIds": [],
+      "includedBlueprintIds": []
+    }
+  ]
+}
