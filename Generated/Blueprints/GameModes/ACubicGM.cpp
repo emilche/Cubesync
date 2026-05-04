@@ -1,5 +1,5 @@
 #include "ACubicGM.h"
-#include "Actors/ACompanionCube.h"
+#include "../Actors/ACompanionCube.h"
 #include "Engine/World.h"
 #include "TimerManager.h"
 
@@ -16,13 +16,13 @@ ACubicGM::~ACubicGM()
 void ACubicGM::BeginPlay()
 {
   Super::BeginPlay();
-  OnCubeSpawned.AddDynamic(this, &ACubicGM::CubeSpawned);
   StartSpawning();
 }
 
 void ACubicGM::CubeSpawned(ACompanionCube* SpawnedCube)
 {
   OnMaxCubeSpawned.AddDynamic(SpawnedCube, &ACompanionCube::DestroyMe);
+  currentNumberOfCubes = (currentNumberOfCubes + 1);
   if ((currentNumberOfCubes >= maxSpawnedCubes)) {
     OnMaxCubeSpawned.Broadcast();
     currentNumberOfCubes = 0;
@@ -42,7 +42,7 @@ void ACubicGM::MaxCubesSpawned()
 void ACubicGM::StartSpawning()
 {
   if ((GetWorld()) != nullptr) {
-    GetWorld()->GetTimerManager()->SetTimer(spawnTimerHandle, /* In Dyn Delegate */, spawnRate, true, /* In First Delay */);
+    GetWorld()->GetTimerManager().SetTimer(spawnTimerHandle, this, &ACubicGM::SpawnCube, spawnRate, true, 0.f);
   }
 }
 
@@ -50,9 +50,9 @@ void ACubicGM::SpawnCube()
 {
   ACompanionCube* spawnedCube;
   if ((GetWorld()) != nullptr) {
-    spawnedCube = GetWorld()->SpawnActor(cubeToSpawn, (FVector(0, 0, 0) + (FVector(1, 0, 0) * currentNumberOfCubes)), FRotator*(), /* Spawn Parameters */);
+    spawnedCube = GetWorld()->SpawnActor<ACompanionCube>(cubeToSpawn, FTransform(FQuat::Identity, (FVector(0, 0, 0) + (FVector(100, 0, 0) * currentNumberOfCubes)), FVector(1.0, 1.0, 1.0)), FActorSpawnParameters());
     if ((spawnedCube) != nullptr) {
-      OnCubeSpawned.Broadcast(spawnedCube);
+      CubeSpawned(spawnedCube);
     }
   }
 }

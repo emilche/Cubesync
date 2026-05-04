@@ -4,7 +4,7 @@
 #include "ACompanionCube.generated.h"
 
 UCLASS()
-class TUTORIAL1_API ACompanionCube : public AActor
+class CPPTESTPROJECT_API ACompanionCube : public AActor
 {
   GENERATED_BODY()
 
@@ -12,6 +12,7 @@ public:
   ACompanionCube();
   virtual ~ACompanionCube();
   virtual void Tick(float DeltaTime) override;
+  UFUNCTION()
   void DestroyMe();
 
 protected:

@@ -3,18 +3,23 @@
 #include "GameFramework/GameModeBase.h"
 #include "ACubicGM.generated.h"
 
+class ACompanionCube;
+
 UCLASS()
-class TUTORIAL1_API ACubicGM : public AGameModeBase
+class CPPTESTPROJECT_API ACubicGM : public AGameModeBase
 {
   GENERATED_BODY()
 
 public:
   ACubicGM();
   virtual ~ACubicGM();
+  UFUNCTION()
   void CubeSpawned(ACompanionCube* SpawnedCube);
   void MaxSpawned();
   void MaxCubesSpawned();
+  UFUNCTION()
   void StartSpawning();
+  UFUNCTION()
   void SpawnCube();
   DECLARE_DYNAMIC_MULTICAST_DELEGATE_OneParam(FOnCubeSpawned, ACompanionCube*, spawnedCube);
   UPROPERTY(BlueprintAssignable)
@@ -27,6 +32,8 @@ public:
   UPROPERTY(VisibleAnywhere, BlueprintReadOnly)
   TArray<TObjectPtr<AActor>> myCubes;
   UPROPERTY(EditAnywhere, BlueprintReadWrite)
+  float spawnRate;
+  UPROPERTY(EditAnywhere, BlueprintReadWrite)
   TSubclassOf<AActor> cubeToSpawn;
 
 protected:
@@ -34,8 +41,6 @@ protected:
 
 private:
   int32 currentNumberOfCubes;
-  UPROPERTY(EditAnywhere, BlueprintReadWrite)
-  float spawnRate;
   float currentTime;
   FTimerHandle spawnTimerHandle;
 };
