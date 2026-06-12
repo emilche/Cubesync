@@ -5,140 +5,140 @@
   "templateLabel": "Actor",
   "categoryPath": "Actors",
   "graph": {
-    "nodes": [
-      {
-        "id": "node-1773170878478-69",
-        "definitionId": "event-construct",
-        "position": {
-          "x": 24,
-          "y": 20
-        }
-      },
-      {
-        "id": "node-1773170878478-70",
-        "definitionId": "event-destruct",
-        "position": {
-          "x": 244,
-          "y": 20
-        }
-      },
-      {
-        "id": "node-1773170878478-71",
-        "definitionId": "event-begin-play",
-        "position": {
-          "x": 24,
-          "y": 160
-        }
-      },
-      {
-        "id": "node-1773170878478-72",
-        "definitionId": "event-tick",
-        "position": {
-          "x": 244,
-          "y": 160
-        }
-      },
-      {
-        "id": "custom-event-destroyme",
-        "definitionId": "custom-event-destroyme",
-        "position": {
-          "x": 32,
-          "y": 345.66666666666663
-        },
-        "data": {
-          "eventScopeId": "custom-event-destroyme"
-        }
-      },
-      {
-        "id": "node-1773170931778-76",
-        "definitionId": "self",
-        "position": {
-          "x": 32.316429029466164,
-          "y": 428.4860228584919
-        },
-        "data": {
-          "eventScopeId": "custom-event-destroyme"
-        }
-      },
-      {
-        "id": "node-1777452043489-12",
-        "definitionId": "destroy",
-        "position": {
-          "x": 379,
-          "y": 340.66666666666663
-        },
-        "data": {
-          "eventScopeId": "custom-event-destroyme"
-        }
-      },
-      {
-        "id": "node-1777460494841-1",
-        "definitionId": "constant",
-        "position": {
-          "x": 25.5,
-          "y": 534.6666666666666
-        },
-        "data": {
-          "eventScopeId": "custom-event-destroyme",
-          "value": true
-        }
-      },
-      {
-        "id": "node-1777460509000-4",
-        "definitionId": "constant",
-        "position": {
-          "x": 19.5,
-          "y": 765.6666666666666
-        },
-        "data": {
-          "eventScopeId": "custom-event-destroyme"
-        }
-      }
-    ],
     "edges": [
       {
         "id": "edge-1777452054334-13",
-        "from": {
-          "nodeId": "custom-event-destroyme",
-          "pinId": "custom-event-destroyme-exec-out"
-        },
         "to": {
-          "nodeId": "node-1777452043489-12",
-          "pinId": "destroy-exec-in"
+          "pinId": "destroy-exec-in",
+          "nodeId": "node-1777452043489-12"
+        },
+        "from": {
+          "pinId": "custom-event-destroyme-exec-out",
+          "nodeId": "custom-event-destroyme"
         }
       },
       {
         "id": "edge-1777452055604-14",
-        "from": {
-          "nodeId": "node-1773170931778-76",
-          "pinId": "self-output"
-        },
         "to": {
-          "nodeId": "node-1777452043489-12",
-          "pinId": "destroy-target-input-0"
+          "pinId": "destroy-target-input-0",
+          "nodeId": "node-1777452043489-12"
+        },
+        "from": {
+          "pinId": "self-output",
+          "nodeId": "node-1773170931778-76"
         }
       },
       {
         "id": "edge-1777460503468-3",
-        "from": {
-          "nodeId": "node-1777460494841-1",
-          "pinId": "constant-output"
-        },
         "to": {
-          "nodeId": "node-1777452043489-12",
-          "pinId": "destroy-net-force-input-1"
+          "pinId": "destroy-net-force-input-1",
+          "nodeId": "node-1777452043489-12"
+        },
+        "from": {
+          "pinId": "constant-output",
+          "nodeId": "node-1777460494841-1"
         }
       },
       {
         "id": "edge-1777460514581-5",
-        "from": {
-          "nodeId": "node-1777460509000-4",
-          "pinId": "constant-output"
-        },
         "to": {
-          "nodeId": "node-1777452043489-12",
-          "pinId": "destroy-should-modify-level-input-2"
+          "pinId": "destroy-should-modify-level-input-2",
+          "nodeId": "node-1777452043489-12"
+        },
+        "from": {
+          "pinId": "constant-output",
+          "nodeId": "node-1777460509000-4"
         }
+      }
+    ],
+    "nodes": [
+      {
+        "id": "node-1773170878478-69",
+        "position": {
+          "x": 24,
+          "y": 20
+        },
+        "definitionId": "event-construct"
+      },
+      {
+        "id": "node-1773170878478-70",
+        "position": {
+          "x": 244,
+          "y": 20
+        },
+        "definitionId": "event-destruct"
+      },
+      {
+        "id": "node-1773170878478-71",
+        "position": {
+          "x": 24,
+          "y": 160
+        },
+        "definitionId": "event-begin-play"
+      },
+      {
+        "id": "node-1773170878478-72",
+        "position": {
+          "x": 244,
+          "y": 160
+        },
+        "definitionId": "event-tick"
+      },
+      {
+        "id": "custom-event-destroyme",
+        "data": {
+          "eventScopeId": "custom-event-destroyme"
+        },
+        "position": {
+          "x": 32,
+          "y": 345.66666666666663
+        },
+        "definitionId": "custom-event-destroyme"
+      },
+      {
+        "id": "node-1773170931778-76",
+        "data": {
+          "eventScopeId": "custom-event-destroyme"
+        },
+        "position": {
+          "x": 32.316429029466164,
+          "y": 428.4860228584919
+        },
+        "definitionId": "self"
+      },
+      {
+        "id": "node-1777452043489-12",
+        "data": {
+          "eventScopeId": "custom-event-destroyme"
+        },
+        "position": {
+          "x": 379,
+          "y": 340.66666666666663
+        },
+        "definitionId": "destroy"
+      },
+      {
+        "id": "node-1777460494841-1",
+        "data": {
+          "value": true,
+          "eventScopeId": "custom-event-destroyme"
+        },
+        "position": {
+          "x": 25.5,
+          "y": 534.6666666666666
+        },
+        "definitionId": "constant"
+      },
+      {
+        "id": "node-1777460509000-4",
+        "data": {
+          "eventScopeId": "custom-event-destroyme"
+        },
+        "position": {
+          "x": 19.5,
+          "y": 765.6666666666666
+        },
+        "definitionId": "constant"
       }
     ]
   },
@@ -159,6 +159,7 @@
     "Runtime/SceneComponent.json",
     "Runtime/SubclassOf.json"
   ],
+  "manualHeaderIncludes": [],
   "customEvents": [
     {
       "id": "custom-event-destroyme",
@@ -181,7 +182,7 @@
   "includedBlueprintIds": [],
   "recursiveIncludes": true,
   "autoLoadedFiles": [],
-  "autoIncludeAttempted": true,
+  "autoIncludeAttempted": false,
   "loadedSources": [],
   "typesPayload": null
 }

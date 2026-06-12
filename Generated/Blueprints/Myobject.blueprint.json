@@ -1,0 +1,73 @@
+{
+  "id": "bp-1778080592228-1",
+  "name": "myobject",
+  "templateId": "object",
+  "templateLabel": "Object",
+  "categoryPath": "",
+  "graph": {
+    "edges": [],
+    "nodes": [
+      {
+        "id": "node-1778080592229-2",
+        "position": {
+          "x": -250,
+          "y": 194
+        },
+        "definitionId": "event-construct"
+      },
+      {
+        "id": "node-1778080592229-3",
+        "position": {
+          "x": 244,
+          "y": 20
+        },
+        "definitionId": "event-destruct"
+      },
+      {
+        "id": "node-1778159867810-1",
+        "data": {
+          "eventScopeId": "node-1778080592229-2"
+        },
+        "position": {
+          "x": 655.1666666666666,
+          "y": 369.0499999999999
+        },
+        "definitionId": "bool-or"
+      },
+      {
+        "id": "node-1778159877448-2",
+        "data": {
+          "eventScopeId": "node-1778080592229-2"
+        },
+        "position": {
+          "x": 1148.075686882046,
+          "y": -175.26463072552826
+        },
+        "definitionId": "u-object-a2f894"
+      }
+    ]
+  },
+  "selectedFiles": [
+    "Runtime/Object.json"
+  ],
+  "loadedFileNames": [
+    "Runtime/Object.json",
+    "Runtime/ObjectMacros.json",
+    "Runtime/PrimaryAssetId.json"
+  ],
+  "manualHeaderIncludes": [],
+  "customEvents": [],
+  "delegates": [],
+  "variables": [],
+  "enums": [],
+  "structs": [],
+  "selectedProjectEnumIds": [],
+  "selectedProjectStructIds": [],
+  "selectedProjectInterfaceIds": [],
+  "includedBlueprintIds": [],
+  "recursiveIncludes": true,
+  "autoLoadedFiles": [],
+  "autoIncludeAttempted": true,
+  "loadedSources": [],
+  "typesPayload": null
+}

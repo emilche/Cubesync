@@ -1,0 +1,182 @@
+{
+  "id": "bp-1777972896860-19",
+  "name": "test",
+  "templateId": "game-mode",
+  "templateLabel": "Game Mode",
+  "categoryPath": "",
+  "graph": {
+    "edges": [],
+    "nodes": [
+      {
+        "id": "node-1777972896860-20",
+        "position": {
+          "x": 24,
+          "y": 20
+        },
+        "definitionId": "event-construct"
+      },
+      {
+        "id": "node-1777972896860-21",
+        "position": {
+          "x": 244,
+          "y": 20
+        },
+        "definitionId": "event-destruct"
+      },
+      {
+        "id": "node-1777972896860-22",
+        "position": {
+          "x": 1259,
+          "y": -697.5
+        },
+        "definitionId": "event-begin-play"
+      }
+    ]
+  },
+  "selectedFiles": [
+    "Runtime/GameModeBase.json",
+    "Runtime/GameplayStatics.json",
+    "Runtime/Material.json",
+    "Runtime/MaterialInterface.json",
+    "Runtime/PrimitiveComponent.json",
+    "Runtime/StaticMeshComponent.json"
+  ],
+  "loadedFileNames": [
+    "Runtime/GameModeBase.json",
+    "Runtime/GameplayStatics.json",
+    "Runtime/Material.json",
+    "Runtime/MaterialInterface.json",
+    "Runtime/PrimitiveComponent.json",
+    "Runtime/StaticMeshComponent.json",
+    "Runtime/ObjectMacros.json",
+    "Runtime/SubclassOf.json",
+    "Runtime/Actor.json",
+    "Runtime/Pawn.json",
+    "Runtime/Info.json",
+    "Runtime/PlayerController.json",
+    "Runtime/Object.json",
+    "Runtime/EngineTypes.json",
+    "Runtime/CollisionQueryParams.json",
+    "Runtime/KismetSystemLibrary.json",
+    "Runtime/Delegate.json",
+    "Runtime/SceneComponent.json",
+    "Runtime/InputCoreTypes.json",
+    "Runtime/EngineBaseTypes.json",
+    "Runtime/ChildActorComponent.json",
+    "Runtime/ReplicatedState.json",
+    "Runtime/Controller.json",
+    "Runtime/PlayerMuteList.json",
+    "Runtime/OnlineReplStructs.json",
+    "Runtime/PlayerCameraManager.json",
+    "Runtime/UpdateLevelVisibilityLevelInfo.json",
+    "Runtime/PrimaryAssetId.json",
+    "Runtime/HitResult.json",
+    "Runtime/SoftObjectPtr.json",
+    "Runtime/ActorComponent.json",
+    "Runtime/CameraTypes.json"
+  ],
+  "manualHeaderIncludes": [],
+  "customEvents": [],
+  "delegates": [],
+  "variables": [
+    {
+      "id": "var-platypus",
+      "name": "Platypus",
+      "valueType": "Object",
+      "typeName": "UBasePlayer",
+      "isArray": false,
+      "isMap": false,
+      "objectPointerKind": "raw",
+      "defaultValue": null,
+      "isPublic": false,
+      "isUProperty": false,
+      "forwardDeclareType": false,
+      "upropertySpecifiers": [],
+      "upropertyValues": {}
+    },
+    {
+      "id": "var-squirrel",
+      "name": "Squirrel",
+      "valueType": "Object",
+      "typeName": "UBasePlayer",
+      "isArray": false,
+      "isMap": false,
+      "objectPointerKind": "raw",
+      "defaultValue": null,
+      "isPublic": false,
+      "isUProperty": false,
+      "forwardDeclareType": false,
+      "upropertySpecifiers": [],
+      "upropertyValues": {}
+    },
+    {
+      "id": "var-material",
+      "name": "Material",
+      "valueType": "Object",
+      "typeName": "UMaterial",
+      "isArray": false,
+      "isMap": false,
+      "objectPointerKind": "raw",
+      "defaultValue": null,
+      "isPublic": false,
+      "isUProperty": false,
+      "forwardDeclareType": false,
+      "upropertySpecifiers": [],
+      "upropertyValues": {}
+    },
+    {
+      "id": "var-number",
+      "name": "Number",
+      "valueType": "Int",
+      "isArray": false,
+      "isMap": false,
+      "defaultValue": null,
+      "isPublic": false,
+      "isUProperty": false,
+      "forwardDeclareType": false,
+      "upropertySpecifiers": [],
+      "upropertyValues": {}
+    },
+    {
+      "id": "var-numbertext",
+      "name": "NumberText",
+      "valueType": "Object",
+      "typeName": "UTextRenderComponent",
+      "isArray": false,
+      "isMap": false,
+      "objectPointerKind": "raw",
+      "defaultValue": null,
+      "isPublic": false,
+      "isUProperty": false,
+      "forwardDeclareType": false,
+      "upropertySpecifiers": [],
+      "upropertyValues": {}
+    },
+    {
+      "id": "var-symbol",
+      "name": "Symbol",
+      "valueType": "Object",
+      "typeName": "UStaticMeshComponent",
+      "isArray": false,
+      "isMap": false,
+      "objectPointerKind": "raw",
+      "defaultValue": null,
+      "isPublic": false,
+      "isUProperty": false,
+      "forwardDeclareType": false,
+      "upropertySpecifiers": [],
+      "upropertyValues": {}
+    }
+  ],
+  "enums": [],
+  "structs": [],
+  "selectedProjectEnumIds": [],
+  "selectedProjectStructIds": [],
+  "selectedProjectInterfaceIds": [],
+  "includedBlueprintIds": [],
+  "recursiveIncludes": true,
+  "autoLoadedFiles": [],
+  "autoIncludeAttempted": true,
+  "loadedSources": [],
+  "typesPayload": null
+}

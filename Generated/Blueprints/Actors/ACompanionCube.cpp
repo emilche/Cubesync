@@ -25,4 +25,5 @@ void ACompanionCube::Tick(float DeltaTime)
 
 void ACompanionCube::DestroyMe()
 {
+  Destroy(true, false);
 }

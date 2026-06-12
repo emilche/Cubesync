@@ -1,0 +1,1328 @@
+{
+  "id": "bp-1778057955840-104",
+  "name": "MyCharacter",
+  "templateId": "actor",
+  "templateLabel": "Actor",
+  "categoryPath": "",
+  "graph": {
+    "edges": [
+      {
+        "id": "edge-1778057965065-114",
+        "to": {
+          "pinId": "compare-greater-b",
+          "nodeId": "node-1778057965065-112"
+        },
+        "from": {
+          "pinId": "constant-output",
+          "nodeId": "node-1778057965065-113"
+        }
+      },
+      {
+        "id": "edge-1778057965068-121",
+        "to": {
+          "pinId": "compare-not-equal-b",
+          "nodeId": "node-1778057965068-119"
+        },
+        "from": {
+          "pinId": "constant-output",
+          "nodeId": "node-1778057965068-120"
+        }
+      },
+      {
+        "id": "edge-1778057965074-126",
+        "to": {
+          "pinId": "get-player-controller-player-index-input-1",
+          "nodeId": "node-1778057965074-124"
+        },
+        "from": {
+          "pinId": "constant-output",
+          "nodeId": "node-1778057965074-125"
+        }
+      },
+      {
+        "id": "edge-1778057965093-138",
+        "to": {
+          "pinId": "compare-greater-b",
+          "nodeId": "node-1778057965093-136"
+        },
+        "from": {
+          "pinId": "constant-output",
+          "nodeId": "node-1778057965093-137"
+        }
+      },
+      {
+        "id": "edge-1778057965093-142",
+        "to": {
+          "pinId": "compare-less-b",
+          "nodeId": "node-1778057965093-140"
+        },
+        "from": {
+          "pinId": "constant-output",
+          "nodeId": "node-1778057965093-141"
+        }
+      },
+      {
+        "id": "edge-1778057965100-146",
+        "to": {
+          "pinId": "get-player-controller-player-index-input-1",
+          "nodeId": "node-1778057965099-144"
+        },
+        "from": {
+          "pinId": "constant-output",
+          "nodeId": "node-1778057965100-145"
+        }
+      },
+      {
+        "id": "edge-1778057965127-157",
+        "to": {
+          "pinId": "get-player-controller-player-index-input-1",
+          "nodeId": "node-1778057965127-155"
+        },
+        "from": {
+          "pinId": "constant-output",
+          "nodeId": "node-1778057965127-156"
+        }
+      },
+      {
+        "id": "edge-1778057965145-166",
+        "to": {
+          "pinId": "math-a",
+          "nodeId": "node-1778057965145-164"
+        },
+        "from": {
+          "pinId": "constant-output",
+          "nodeId": "node-1778057965145-165"
+        }
+      },
+      {
+        "id": "edge-1778057965146-168",
+        "to": {
+          "pinId": "branch-condition",
+          "nodeId": "node-1778057965053-109"
+        },
+        "from": {
+          "pinId": "bool-and-result",
+          "nodeId": "node-1778057965068-122"
+        }
+      },
+      {
+        "id": "edge-1778057965146-169",
+        "to": {
+          "pinId": "branch-exec-in",
+          "nodeId": "node-1778057965093-133"
+        },
+        "from": {
+          "pinId": "branch-true",
+          "nodeId": "node-1778057965053-109"
+        }
+      },
+      {
+        "id": "edge-1778057965146-170",
+        "to": {
+          "pinId": "set-control-rotation-exec-in",
+          "nodeId": "node-1778057965071-123"
+        },
+        "from": {
+          "pinId": "branch-false",
+          "nodeId": "node-1778057965053-109"
+        }
+      },
+      {
+        "id": "edge-1778057965146-171",
+        "to": {
+          "pinId": "v-size-a-input-0",
+          "nodeId": "node-1778057965065-111"
+        },
+        "from": {
+          "pinId": "get-velocity-return",
+          "nodeId": "node-1778057965061-110"
+        }
+      },
+      {
+        "id": "edge-1778057965146-172",
+        "to": {
+          "pinId": "compare-greater-a",
+          "nodeId": "node-1778057965065-112"
+        },
+        "from": {
+          "pinId": "v-size-return",
+          "nodeId": "node-1778057965065-111"
+        }
+      },
+      {
+        "id": "edge-1778057965146-173",
+        "to": {
+          "pinId": "bool-and-a",
+          "nodeId": "node-1778057965068-122"
+        },
+        "from": {
+          "pinId": "compare-greater-result",
+          "nodeId": "node-1778057965065-112"
+        }
+      },
+      {
+        "id": "edge-1778057965146-174",
+        "to": {
+          "pinId": "is-falling-target-input-0",
+          "nodeId": "node-1778057965068-116"
+        },
+        "from": {
+          "pinId": "get-variable-output",
+          "nodeId": "node-1778057965065-115"
+        }
+      },
+      {
+        "id": "edge-1778057965146-175",
+        "to": {
+          "pinId": "bool-not-a",
+          "nodeId": "node-1778057965068-117"
+        },
+        "from": {
+          "pinId": "is-falling-return",
+          "nodeId": "node-1778057965068-116"
+        }
+      },
+      {
+        "id": "edge-1778057965146-176",
+        "to": {
+          "pinId": "bool-and-b",
+          "nodeId": "node-1778057965068-122"
+        },
+        "from": {
+          "pinId": "bool-not-result",
+          "nodeId": "node-1778057965068-117"
+        }
+      },
+      {
+        "id": "edge-1778057965146-177",
+        "to": {
+          "pinId": "compare-not-equal-a",
+          "nodeId": "node-1778057965068-119"
+        },
+        "from": {
+          "pinId": "get-variable-output",
+          "nodeId": "node-1778057965068-118"
+        }
+      },
+      {
+        "id": "edge-1778057965146-178",
+        "to": {
+          "pinId": "bool-and-input-2",
+          "nodeId": "node-1778057965068-122"
+        },
+        "from": {
+          "pinId": "compare-not-equal-result",
+          "nodeId": "node-1778057965068-119"
+        }
+      },
+      {
+        "id": "edge-1778057965146-179",
+        "to": {
+          "pinId": "set-control-rotation-target-input-0",
+          "nodeId": "node-1778057965071-123"
+        },
+        "from": {
+          "pinId": "get-player-controller-return",
+          "nodeId": "node-1778057965074-124"
+        }
+      },
+      {
+        "id": "edge-1778057965146-180",
+        "to": {
+          "pinId": "set-control-rotation-new-rotation-input-1",
+          "nodeId": "node-1778057965071-123"
+        },
+        "from": {
+          "pinId": "r-interp-to-return",
+          "nodeId": "node-1778057965078-127"
+        }
+      },
+      {
+        "id": "edge-1778057965146-181",
+        "to": {
+          "pinId": "r-interp-to-current-input-0",
+          "nodeId": "node-1778057965078-127"
+        },
+        "from": {
+          "pinId": "get-control-rotation-return",
+          "nodeId": "node-1778057965090-131"
+        }
+      },
+      {
+        "id": "edge-1778057965146-182",
+        "to": {
+          "pinId": "r-interp-to-target-input-1",
+          "nodeId": "node-1778057965078-127"
+        },
+        "from": {
+          "pinId": "make-rotator-return",
+          "nodeId": "node-1778057965082-128"
+        }
+      },
+      {
+        "id": "edge-1778057965146-183",
+        "to": {
+          "pinId": "r-interp-to-delta-time-input-2",
+          "nodeId": "node-1778057965078-127"
+        },
+        "from": {
+          "pinId": "get-world-delta-seconds-return",
+          "nodeId": "node-1778057965085-129"
+        }
+      },
+      {
+        "id": "edge-1778057965146-184",
+        "to": {
+          "pinId": "r-interp-to-interp-speed-input-3",
+          "nodeId": "node-1778057965078-127"
+        },
+        "from": {
+          "pinId": "get-variable-output",
+          "nodeId": "node-1778057965085-130"
+        }
+      },
+      {
+        "id": "edge-1778057965146-185",
+        "to": {
+          "pinId": "branch-condition",
+          "nodeId": "node-1778057965093-133"
+        },
+        "from": {
+          "pinId": "compare-greater-result",
+          "nodeId": "node-1778057965093-136"
+        }
+      },
+      {
+        "id": "edge-1778057965146-186",
+        "to": {
+          "pinId": "set-control-rotation-exec-in",
+          "nodeId": "node-1778057965096-143"
+        },
+        "from": {
+          "pinId": "branch-true",
+          "nodeId": "node-1778057965093-133"
+        }
+      },
+      {
+        "id": "edge-1778057965146-187",
+        "to": {
+          "pinId": "branch-exec-in",
+          "nodeId": "node-1778057965093-134"
+        },
+        "from": {
+          "pinId": "branch-false",
+          "nodeId": "node-1778057965093-133"
+        }
+      },
+      {
+        "id": "edge-1778057965146-188",
+        "to": {
+          "pinId": "branch-condition",
+          "nodeId": "node-1778057965093-134"
+        },
+        "from": {
+          "pinId": "compare-less-result",
+          "nodeId": "node-1778057965093-140"
+        }
+      },
+      {
+        "id": "edge-1778057965146-189",
+        "to": {
+          "pinId": "set-control-rotation-exec-in",
+          "nodeId": "node-1778057965124-154"
+        },
+        "from": {
+          "pinId": "branch-true",
+          "nodeId": "node-1778057965093-134"
+        }
+      },
+      {
+        "id": "edge-1778057965146-190",
+        "to": {
+          "pinId": "compare-greater-a",
+          "nodeId": "node-1778057965093-136"
+        },
+        "from": {
+          "pinId": "get-variable-output",
+          "nodeId": "node-1778057965093-135"
+        }
+      },
+      {
+        "id": "edge-1778057965146-191",
+        "to": {
+          "pinId": "compare-less-a",
+          "nodeId": "node-1778057965093-140"
+        },
+        "from": {
+          "pinId": "get-variable-output",
+          "nodeId": "node-1778057965093-139"
+        }
+      },
+      {
+        "id": "edge-1778057965146-192",
+        "to": {
+          "pinId": "set-control-rotation-target-input-0",
+          "nodeId": "node-1778057965096-143"
+        },
+        "from": {
+          "pinId": "get-player-controller-return",
+          "nodeId": "node-1778057965099-144"
+        }
+      },
+      {
+        "id": "edge-1778057965146-193",
+        "to": {
+          "pinId": "set-control-rotation-new-rotation-input-1",
+          "nodeId": "node-1778057965096-143"
+        },
+        "from": {
+          "pinId": "r-interp-to-return",
+          "nodeId": "node-1778057965109-147"
+        }
+      },
+      {
+        "id": "edge-1778057965146-194",
+        "to": {
+          "pinId": "r-interp-to-current-input-0",
+          "nodeId": "node-1778057965109-147"
+        },
+        "from": {
+          "pinId": "get-control-rotation-return",
+          "nodeId": "node-1778057965118-151"
+        }
+      },
+      {
+        "id": "edge-1778057965146-195",
+        "to": {
+          "pinId": "r-interp-to-target-input-1",
+          "nodeId": "node-1778057965109-147"
+        },
+        "from": {
+          "pinId": "make-rotator-return",
+          "nodeId": "node-1778057965112-148"
+        }
+      },
+      {
+        "id": "edge-1778057965146-196",
+        "to": {
+          "pinId": "r-interp-to-delta-time-input-2",
+          "nodeId": "node-1778057965109-147"
+        },
+        "from": {
+          "pinId": "get-world-delta-seconds-return",
+          "nodeId": "node-1778057965116-149"
+        }
+      },
+      {
+        "id": "edge-1778057965146-197",
+        "to": {
+          "pinId": "r-interp-to-interp-speed-input-3",
+          "nodeId": "node-1778057965109-147"
+        },
+        "from": {
+          "pinId": "get-variable-output",
+          "nodeId": "node-1778057965116-150"
+        }
+      },
+      {
+        "id": "edge-1778057965146-198",
+        "to": {
+          "pinId": "make-rotator-roll-input-0",
+          "nodeId": "node-1778057965112-148"
+        },
+        "from": {
+          "pinId": "get-variable-output",
+          "nodeId": "node-1778057965121-153"
+        }
+      },
+      {
+        "id": "edge-1778057965146-199",
+        "to": {
+          "pinId": "set-control-rotation-target-input-0",
+          "nodeId": "node-1778057965124-154"
+        },
+        "from": {
+          "pinId": "get-player-controller-return",
+          "nodeId": "node-1778057965127-155"
+        }
+      },
+      {
+        "id": "edge-1778057965146-200",
+        "to": {
+          "pinId": "set-control-rotation-new-rotation-input-1",
+          "nodeId": "node-1778057965124-154"
+        },
+        "from": {
+          "pinId": "r-interp-to-return",
+          "nodeId": "node-1778057965131-158"
+        }
+      },
+      {
+        "id": "edge-1778057965146-201",
+        "to": {
+          "pinId": "r-interp-to-current-input-0",
+          "nodeId": "node-1778057965131-158"
+        },
+        "from": {
+          "pinId": "get-control-rotation-return",
+          "nodeId": "node-1778057965142-162"
+        }
+      },
+      {
+        "id": "edge-1778057965146-202",
+        "to": {
+          "pinId": "r-interp-to-target-input-1",
+          "nodeId": "node-1778057965131-158"
+        },
+        "from": {
+          "pinId": "make-rotator-return",
+          "nodeId": "node-1778057965134-159"
+        }
+      },
+      {
+        "id": "edge-1778057965146-203",
+        "to": {
+          "pinId": "r-interp-to-delta-time-input-2",
+          "nodeId": "node-1778057965131-158"
+        },
+        "from": {
+          "pinId": "get-world-delta-seconds-return",
+          "nodeId": "node-1778057965137-160"
+        }
+      },
+      {
+        "id": "edge-1778057965146-204",
+        "to": {
+          "pinId": "r-interp-to-interp-speed-input-3",
+          "nodeId": "node-1778057965131-158"
+        },
+        "from": {
+          "pinId": "get-variable-output",
+          "nodeId": "node-1778057965137-161"
+        }
+      },
+      {
+        "id": "edge-1778057965146-205",
+        "to": {
+          "pinId": "make-rotator-roll-input-0",
+          "nodeId": "node-1778057965134-159"
+        },
+        "from": {
+          "pinId": "math-result",
+          "nodeId": "node-1778057965145-164"
+        }
+      },
+      {
+        "id": "edge-1778057965146-206",
+        "to": {
+          "pinId": "math-b",
+          "nodeId": "node-1778057965145-164"
+        },
+        "from": {
+          "pinId": "get-variable-output",
+          "nodeId": "node-1778057965145-167"
+        }
+      },
+      {
+        "id": "edge-1778489988555-1",
+        "to": {
+          "pinId": "branch-exec-in",
+          "nodeId": "node-1778057965053-109"
+        },
+        "from": {
+          "pinId": "event-begin-play-exec",
+          "nodeId": "node-1778057955840-107"
+        }
+      }
+    ],
+    "nodes": [
+      {
+        "id": "node-1778057955840-105",
+        "position": {
+          "x": 24,
+          "y": 20
+        },
+        "definitionId": "event-construct"
+      },
+      {
+        "id": "node-1778057955840-106",
+        "position": {
+          "x": 244,
+          "y": 20
+        },
+        "definitionId": "event-destruct"
+      },
+      {
+        "id": "node-1778057955840-107",
+        "position": {
+          "x": 151.1111111111111,
+          "y": 48.44444444444446
+        },
+        "definitionId": "event-begin-play"
+      },
+      {
+        "id": "node-1778057955840-108",
+        "position": {
+          "x": 244,
+          "y": 160
+        },
+        "definitionId": "event-tick"
+      },
+      {
+        "id": "node-1778057965053-109",
+        "data": {
+          "eventScopeId": "node-1778057955840-107"
+        },
+        "position": {
+          "x": 437.2777777777777,
+          "y": 224.5555555555556
+        },
+        "definitionId": "branch"
+      },
+      {
+        "id": "node-1778057965061-110",
+        "data": {
+          "eventScopeId": "node-1778057955840-107"
+        },
+        "position": {
+          "x": -1098,
+          "y": -169.99999999999994
+        },
+        "definitionId": "get-velocity"
+      },
+      {
+        "id": "node-1778057965065-111",
+        "data": {
+          "eventScopeId": "node-1778057955840-107"
+        },
+        "position": {
+          "x": -630,
+          "y": -275.99999999999994
+        },
+        "definitionId": "v-size"
+      },
+      {
+        "id": "node-1778057965065-112",
+        "data": {
+          "eventScopeId": "node-1778057955840-107"
+        },
+        "position": {
+          "x": -391.00000000000006,
+          "y": -202.99999999999994
+        },
+        "definitionId": "compare-greater"
+      },
+      {
+        "id": "node-1778057965065-113",
+        "data": {
+          "value": "0.0",
+          "eventScopeId": "node-1778057955840-107",
+          "constantTypeValue": "Float"
+        },
+        "position": {
+          "x": -646,
+          "y": -137.99999999999994
+        },
+        "definitionId": "constant"
+      },
+      {
+        "id": "node-1778057965065-115",
+        "data": {
+          "variableId": "var-charactermovement",
+          "eventScopeId": "node-1778057955840-107"
+        },
+        "position": {
+          "x": -1130,
+          "y": 22.000000000000057
+        },
+        "definitionId": "get-variable"
+      },
+      {
+        "id": "node-1778057965068-116",
+        "data": {
+          "eventScopeId": "node-1778057955840-107"
+        },
+        "position": {
+          "x": -890,
+          "y": -9.999999999999943
+        },
+        "definitionId": "is-falling"
+      },
+      {
+        "id": "node-1778057965068-117",
+        "data": {
+          "eventScopeId": "node-1778057955840-107"
+        },
+        "position": {
+          "x": -474.00000000000006,
+          "y": 22.000000000000057
+        },
+        "definitionId": "bool-not"
+      },
+      {
+        "id": "node-1778057965068-118",
+        "data": {
+          "variableId": "var-scalevalue",
+          "eventScopeId": "node-1778057955840-107"
+        },
+        "position": {
+          "x": -1098,
+          "y": 134.00000000000006
+        },
+        "definitionId": "get-variable"
+      },
+      {
+        "id": "node-1778057965068-119",
+        "data": {
+          "eventScopeId": "node-1778057955840-107"
+        },
+        "position": {
+          "x": -452.00000000000006,
+          "y": 159.00000000000006
+        },
+        "definitionId": "compare-not-equal"
+      },
+      {
+        "id": "node-1778057965068-120",
+        "data": {
+          "value": "0.0",
+          "eventScopeId": "node-1778057955840-107",
+          "constantTypeValue": "Float"
+        },
+        "position": {
+          "x": -694,
+          "y": 118.00000000000006
+        },
+        "definitionId": "constant"
+      },
+      {
+        "id": "node-1778057965068-122",
+        "data": {
+          "inputCount": 3,
+          "eventScopeId": "node-1778057955840-107"
+        },
+        "position": {
+          "x": -162.00000000000006,
+          "y": 69.00000000000006
+        },
+        "definitionId": "bool-and"
+      },
+      {
+        "id": "node-1778057965071-123",
+        "data": {
+          "eventScopeId": "node-1778057955840-107"
+        },
+        "position": {
+          "x": 635,
+          "y": 454.00000000000006
+        },
+        "definitionId": "set-control-rotation"
+      },
+      {
+        "id": "node-1778057965074-124",
+        "data": {
+          "eventScopeId": "node-1778057955840-107"
+        },
+        "position": {
+          "x": 159.99999999999994,
+          "y": 335.00000000000006
+        },
+        "definitionId": "get-player-controller"
+      },
+      {
+        "id": "node-1778057965074-125",
+        "data": {
+          "value": "0",
+          "eventScopeId": "node-1778057955840-107",
+          "constantTypeValue": "Int"
+        },
+        "position": {
+          "x": -149.00000000000006,
+          "y": 284.00000000000006
+        },
+        "definitionId": "constant"
+      },
+      {
+        "id": "node-1778057965078-127",
+        "data": {
+          "eventScopeId": "node-1778057955840-107"
+        },
+        "position": {
+          "x": 337.99999999999994,
+          "y": 680
+        },
+        "definitionId": "r-interp-to"
+      },
+      {
+        "id": "node-1778057965082-128",
+        "data": {
+          "eventScopeId": "node-1778057955840-107"
+        },
+        "position": {
+          "x": -154.00000000000006,
+          "y": 646
+        },
+        "definitionId": "make-rotator"
+      },
+      {
+        "id": "node-1778057965085-129",
+        "data": {
+          "eventScopeId": "node-1778057955840-107"
+        },
+        "position": {
+          "x": -154.00000000000006,
+          "y": 806
+        },
+        "definitionId": "get-world-delta-seconds"
+      },
+      {
+        "id": "node-1778057965085-130",
+        "data": {
+          "variableId": "var-interp-speed",
+          "eventScopeId": "node-1778057955840-107"
+        },
+        "position": {
+          "x": -58.00000000000006,
+          "y": 886
+        },
+        "definitionId": "get-variable"
+      },
+      {
+        "id": "node-1778057965090-131",
+        "data": {
+          "eventScopeId": "node-1778057955840-107"
+        },
+        "position": {
+          "x": -170.00000000000006,
+          "y": 518
+        },
+        "definitionId": "get-control-rotation"
+      },
+      {
+        "id": "node-1778057965093-132",
+        "data": {
+          "eventScopeId": "node-1778057955840-107"
+        },
+        "position": {
+          "x": -570,
+          "y": 646
+        },
+        "definitionId": "get-control-rotation"
+      },
+      {
+        "id": "node-1778057965093-133",
+        "data": {
+          "eventScopeId": "node-1778057955840-107"
+        },
+        "position": {
+          "x": 1424,
+          "y": 198.00000000000006
+        },
+        "definitionId": "branch"
+      },
+      {
+        "id": "node-1778057965093-134",
+        "data": {
+          "eventScopeId": "node-1778057955840-107"
+        },
+        "position": {
+          "x": 1414,
+          "y": 1110
+        },
+        "definitionId": "branch"
+      },
+      {
+        "id": "node-1778057965093-135",
+        "data": {
+          "variableId": "var-scalevalue",
+          "eventScopeId": "node-1778057955840-107"
+        },
+        "position": {
+          "x": 789,
+          "y": 44.00000000000006
+        },
+        "definitionId": "get-variable"
+      },
+      {
+        "id": "node-1778057965093-136",
+        "data": {
+          "eventScopeId": "node-1778057955840-107"
+        },
+        "position": {
+          "x": 1114,
+          "y": 440.00000000000006
+        },
+        "definitionId": "compare-greater"
+      },
+      {
+        "id": "node-1778057965093-137",
+        "data": {
+          "value": "0.0",
+          "eventScopeId": "node-1778057955840-107",
+          "constantTypeValue": "Float"
+        },
+        "position": {
+          "x": 733,
+          "y": 738
+        },
+        "definitionId": "constant"
+      },
+      {
+        "id": "node-1778057965093-139",
+        "data": {
+          "variableId": "var-scalevalue",
+          "eventScopeId": "node-1778057955840-107"
+        },
+        "position": {
+          "x": 790,
+          "y": 1142
+        },
+        "definitionId": "get-variable"
+      },
+      {
+        "id": "node-1778057965093-140",
+        "data": {
+          "eventScopeId": "node-1778057955840-107"
+        },
+        "position": {
+          "x": 966,
+          "y": 1158
+        },
+        "definitionId": "compare-less"
+      },
+      {
+        "id": "node-1778057965093-141",
+        "data": {
+          "value": "0.0",
+          "eventScopeId": "node-1778057955840-107",
+          "constantTypeValue": "Float"
+        },
+        "position": {
+          "x": 746,
+          "y": 1158
+        },
+        "definitionId": "constant"
+      },
+      {
+        "id": "node-1778057965096-143",
+        "data": {
+          "eventScopeId": "node-1778057955840-107"
+        },
+        "position": {
+          "x": 2918,
+          "y": 246.00000000000006
+        },
+        "definitionId": "set-control-rotation"
+      },
+      {
+        "id": "node-1778057965099-144",
+        "data": {
+          "eventScopeId": "node-1778057955840-107"
+        },
+        "position": {
+          "x": 2438,
+          "y": 374.00000000000006
+        },
+        "definitionId": "get-player-controller"
+      },
+      {
+        "id": "node-1778057965100-145",
+        "data": {
+          "value": "0",
+          "eventScopeId": "node-1778057955840-107",
+          "constantTypeValue": "Int"
+        },
+        "position": {
+          "x": 2218,
+          "y": 374.00000000000006
+        },
+        "definitionId": "constant"
+      },
+      {
+        "id": "node-1778057965109-147",
+        "data": {
+          "eventScopeId": "node-1778057955840-107"
+        },
+        "position": {
+          "x": 2582,
+          "y": 534
+        },
+        "definitionId": "r-interp-to"
+      },
+      {
+        "id": "node-1778057965112-148",
+        "data": {
+          "eventScopeId": "node-1778057955840-107"
+        },
+        "position": {
+          "x": 2246,
+          "y": 614
+        },
+        "definitionId": "make-rotator"
+      },
+      {
+        "id": "node-1778057965116-149",
+        "data": {
+          "eventScopeId": "node-1778057955840-107"
+        },
+        "position": {
+          "x": 2246,
+          "y": 774
+        },
+        "definitionId": "get-world-delta-seconds"
+      },
+      {
+        "id": "node-1778057965116-150",
+        "data": {
+          "variableId": "var-interp-speed",
+          "eventScopeId": "node-1778057955840-107"
+        },
+        "position": {
+          "x": 2342,
+          "y": 854
+        },
+        "definitionId": "get-variable"
+      },
+      {
+        "id": "node-1778057965118-151",
+        "data": {
+          "eventScopeId": "node-1778057955840-107"
+        },
+        "position": {
+          "x": 2230,
+          "y": 486.00000000000006
+        },
+        "definitionId": "get-control-rotation"
+      },
+      {
+        "id": "node-1778057965121-152",
+        "data": {
+          "eventScopeId": "node-1778057955840-107"
+        },
+        "position": {
+          "x": 1634,
+          "y": 568
+        },
+        "definitionId": "get-control-rotation"
+      },
+      {
+        "id": "node-1778057965121-153",
+        "data": {
+          "variableId": "var-lean-angle",
+          "eventScopeId": "node-1778057955840-107"
+        },
+        "position": {
+          "x": 1908,
+          "y": 540
+        },
+        "definitionId": "get-variable"
+      },
+      {
+        "id": "node-1778057965124-154",
+        "data": {
+          "eventScopeId": "node-1778057955840-107"
+        },
+        "position": {
+          "x": 2454,
+          "y": 1110
+        },
+        "definitionId": "set-control-rotation"
+      },
+      {
+        "id": "node-1778057965127-155",
+        "data": {
+          "eventScopeId": "node-1778057955840-107"
+        },
+        "position": {
+          "x": 1990,
+          "y": 1222
+        },
+        "definitionId": "get-player-controller"
+      },
+      {
+        "id": "node-1778057965127-156",
+        "data": {
+          "value": "0",
+          "eventScopeId": "node-1778057955840-107",
+          "constantTypeValue": "Int"
+        },
+        "position": {
+          "x": 1770,
+          "y": 1222
+        },
+        "definitionId": "constant"
+      },
+      {
+        "id": "node-1778057965131-158",
+        "data": {
+          "eventScopeId": "node-1778057955840-107"
+        },
+        "position": {
+          "x": 2134,
+          "y": 1382
+        },
+        "definitionId": "r-interp-to"
+      },
+      {
+        "id": "node-1778057965134-159",
+        "data": {
+          "eventScopeId": "node-1778057955840-107"
+        },
+        "position": {
+          "x": 1798,
+          "y": 1462
+        },
+        "definitionId": "make-rotator"
+      },
+      {
+        "id": "node-1778057965137-160",
+        "data": {
+          "eventScopeId": "node-1778057955840-107"
+        },
+        "position": {
+          "x": 1798,
+          "y": 1622
+        },
+        "definitionId": "get-world-delta-seconds"
+      },
+      {
+        "id": "node-1778057965137-161",
+        "data": {
+          "variableId": "var-interp-speed",
+          "eventScopeId": "node-1778057955840-107"
+        },
+        "position": {
+          "x": 1894,
+          "y": 1702
+        },
+        "definitionId": "get-variable"
+      },
+      {
+        "id": "node-1778057965142-162",
+        "data": {
+          "eventScopeId": "node-1778057955840-107"
+        },
+        "position": {
+          "x": 1782,
+          "y": 1334
+        },
+        "definitionId": "get-control-rotation"
+      },
+      {
+        "id": "node-1778057965145-163",
+        "data": {
+          "eventScopeId": "node-1778057955840-107"
+        },
+        "position": {
+          "x": 1478.6666666666667,
+          "y": 1550.3333333333333
+        },
+        "definitionId": "get-control-rotation"
+      },
+      {
+        "id": "node-1778057965145-164",
+        "data": {
+          "operator": "subtract",
+          "eventScopeId": "node-1778057955840-107"
+        },
+        "position": {
+          "x": 1574,
+          "y": 1318
+        },
+        "definitionId": "math"
+      },
+      {
+        "id": "node-1778057965145-165",
+        "data": {
+          "value": "350.000000",
+          "eventScopeId": "node-1778057955840-107",
+          "constantTypeValue": "Float"
+        },
+        "position": {
+          "x": 1249,
+          "y": 1256.3333333333333
+        },
+        "definitionId": "constant"
+      },
+      {
+        "id": "node-1778057965145-167",
+        "data": {
+          "variableId": "var-lean-angle",
+          "eventScopeId": "node-1778057955840-107"
+        },
+        "position": {
+          "x": 1173.6666666666667,
+          "y": 1611.3333333333333
+        },
+        "definitionId": "get-variable"
+      }
+    ]
+  },
+  "selectedFiles": [
+    "Runtime/Actor.json",
+    "Runtime/Character.json",
+    "Runtime/CharacterMovementComponent.json",
+    "Runtime/Controller.json",
+    "Runtime/GameplayStatics.json",
+    "Runtime/KismetMathLibrary.json",
+    "Runtime/NavMovementComponent.json",
+    "Runtime/Pawn.json",
+    "Runtime/PlayerController.json"
+  ],
+  "loadedFileNames": [
+    "Runtime/Actor.json",
+    "Runtime/ActorComponent.json",
+    "Runtime/AnimMontage.json",
+    "Runtime/AnimationAsset.json",
+    "Runtime/CameraTypes.json",
+    "Runtime/Character.json",
+    "Runtime/CharacterMovementComponent.json",
+    "Runtime/CharacterMovementReplication.json",
+    "Runtime/ChildActorComponent.json",
+    "Runtime/CollisionQueryParams.json",
+    "Runtime/Controller.json",
+    "Runtime/EngineBaseTypes.json",
+    "Runtime/EngineTypes.json",
+    "Runtime/GameplayStatics.json",
+    "Runtime/HitResult.json",
+    "Runtime/InputCoreTypes.json",
+    "Runtime/KismetMathLibrary.json",
+    "Runtime/KismetSystemLibrary.json",
+    "Runtime/MovementComponent.json",
+    "Runtime/NavMovementComponent.json",
+    "Runtime/NavMovementInterface.json",
+    "Runtime/NavigationTypes.json",
+    "Runtime/Object.json",
+    "Runtime/ObjectMacros.json",
+    "Runtime/OnlineReplStructs.json",
+    "Runtime/Pawn.json",
+    "Runtime/PawnMovementComponent.json",
+    "Runtime/PlayerCameraManager.json",
+    "Runtime/PlayerController.json",
+    "Runtime/PlayerMuteList.json",
+    "Runtime/PrimaryAssetId.json",
+    "Runtime/ReplicatedState.json",
+    "Runtime/RootMotionSource.json",
+    "Runtime/SceneComponent.json",
+    "Runtime/SoftObjectPtr.json",
+    "Runtime/SubclassOf.json",
+    "Runtime/UpdateLevelVisibilityLevelInfo.json",
+    "Runtime/WorldCollision.json"
+  ],
+  "manualHeaderIncludes": [
+    "GameFramework/Actor.h",
+    "Layout/Visibility.h"
+  ],
+  "customEvents": [],
+  "delegates": [],
+  "variables": [
+    {
+      "id": "var-charactermovement",
+      "name": "CharacterMovement",
+      "valueType": "Object",
+      "isArray": false,
+      "isMap": false,
+      "objectPointerKind": "raw",
+      "defaultValue": null,
+      "isPublic": false,
+      "isUProperty": false,
+      "forwardDeclareType": false,
+      "upropertySpecifiers": [],
+      "upropertyValues": {}
+    },
+    {
+      "id": "var-interp-speed",
+      "name": "INTERP SPEED",
+      "valueType": "Float",
+      "isArray": false,
+      "isMap": false,
+      "defaultValue": null,
+      "isPublic": false,
+      "isUProperty": false,
+      "forwardDeclareType": false,
+      "upropertySpecifiers": [],
+      "upropertyValues": {}
+    },
+    {
+      "id": "var-lean-angle",
+      "name": "lean angle",
+      "valueType": "Float",
+      "isArray": false,
+      "isMap": false,
+      "defaultValue": null,
+      "isPublic": false,
+      "isUProperty": false,
+      "forwardDeclareType": false,
+      "upropertySpecifiers": [],
+      "upropertyValues": {}
+    },
+    {
+      "id": "var-scalevalue",
+      "name": "ScaleValue",
+      "valueType": "Float",
+      "isArray": false,
+      "isMap": false,
+      "defaultValue": null,
+      "isPublic": false,
+      "isUProperty": false,
+      "forwardDeclareType": false,
+      "upropertySpecifiers": [],
+      "upropertyValues": {}
+    },
+    {
+      "id": "var-myactor",
+      "name": "myactor",
+      "valueType": "Object",
+      "typeName": "AActor",
+      "isArray": false,
+      "isMap": false,
+      "objectPointerKind": "none",
+      "defaultValue": null,
+      "isPublic": false,
+      "isUProperty": false,
+      "forwardDeclareType": false,
+      "upropertySpecifiers": [],
+      "upropertyValues": {}
+    },
+    {
+      "id": "var-newcharacter",
+      "name": "NewCharacter",
+      "valueType": "Object",
+      "typeName": "ACharacter",
+      "isArray": false,
+      "isMap": false,
+      "objectPointerKind": "none",
+      "defaultValue": null,
+      "isPublic": false,
+      "isUProperty": false,
+      "forwardDeclareType": true,
+      "upropertySpecifiers": [],
+      "upropertyValues": {}
+    },
+    {
+      "id": "var-myvisibility",
+      "name": "MyVisibility",
+      "valueType": "Unknown",
+      "typeName": "EVisibility",
+      "isArray": false,
+      "isMap": false,
+      "defaultValue": null,
+      "isPublic": false,
+      "isUProperty": false,
+      "forwardDeclareType": false,
+      "upropertySpecifiers": [],
+      "upropertyValues": {}
+    }
+  ],
+  "enums": [],
+  "structs": [],
+  "selectedProjectEnumIds": [],
+  "selectedProjectStructIds": [],
+  "selectedProjectInterfaceIds": [],
+  "includedBlueprintIds": [],
+  "recursiveIncludes": true,
+  "autoLoadedFiles": [],
+  "autoIncludeAttempted": true,
+  "loadedSources": [],
+  "typesPayload": null
+}

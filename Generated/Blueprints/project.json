@@ -4,7 +4,7 @@
   "enums": [],
   "structs": [],
   "interfaces": [],
-  "activeBlueprintId": "bp-1773169014053-2",
+  "activeBlueprintId": "bp-1778057955840-104",
   "blueprints": [
     {
       "id": "bp-1773169014053-2",
@@ -13,1785 +13,1785 @@
       "templateLabel": "Game Mode",
       "categoryPath": "GameModes",
       "graph": {
+        "edges": [
+          {
+            "id": "edge-1773169662288-21",
+            "to": {
+              "pinId": "compare-greater-equal-b",
+              "nodeId": "node-1773169559523-16"
+            },
+            "from": {
+              "pinId": "get-variable-output",
+              "nodeId": "node-1773169654672-20"
+            }
+          },
+          {
+            "id": "edge-1773169667355-22",
+            "to": {
+              "pinId": "branch-condition",
+              "nodeId": "node-1773169529918-14"
+            },
+            "from": {
+              "pinId": "compare-greater-equal-result",
+              "nodeId": "node-1773169559523-16"
+            }
+          },
+          {
+            "id": "edge-1773169692347-24",
+            "to": {
+              "pinId": "broadcast-delegate-delegate-onmaxcubespawned-exec-in",
+              "nodeId": "node-1773169688776-23"
+            },
+            "from": {
+              "pinId": "branch-true",
+              "nodeId": "node-1773169529918-14"
+            }
+          },
+          {
+            "id": "edge-1773171018327-79",
+            "to": {
+              "pinId": "bind-delegate-delegate-onmaxcubespawned-exec-in",
+              "nodeId": "node-1773171013552-78"
+            },
+            "from": {
+              "pinId": "custom-event-cubespawned-exec-out",
+              "nodeId": "custom-event-cubespawned"
+            }
+          },
+          {
+            "id": "edge-1773171047917-82",
+            "to": {
+              "pinId": "compare-greater-equal-a",
+              "nodeId": "node-1773169559523-16"
+            },
+            "from": {
+              "pinId": "get-variable-output",
+              "nodeId": "node-1773169501296-12"
+            }
+          },
+          {
+            "id": "edge-1773171587657-94",
+            "to": {
+              "pinId": "set-variable-exec-in",
+              "nodeId": "node-1773171585154-93"
+            },
+            "from": {
+              "pinId": "event-tick-exec",
+              "nodeId": "node-1773171320780-87"
+            }
+          },
+          {
+            "id": "edge-1773171615862-97",
+            "to": {
+              "pinId": "math-a",
+              "nodeId": "node-1773171612586-96"
+            },
+            "from": {
+              "pinId": "event-tick-delta-seconds",
+              "nodeId": "node-1773171320780-87"
+            }
+          },
+          {
+            "id": "edge-1773171617838-98",
+            "to": {
+              "pinId": "math-b",
+              "nodeId": "node-1773171612586-96"
+            },
+            "from": {
+              "pinId": "get-variable-output",
+              "nodeId": "node-1773171598166-95"
+            }
+          },
+          {
+            "id": "edge-1773171624370-99",
+            "to": {
+              "pinId": "set-variable-value",
+              "nodeId": "node-1773171585154-93"
+            },
+            "from": {
+              "pinId": "math-result",
+              "nodeId": "node-1773171612586-96"
+            }
+          },
+          {
+            "id": "edge-1773171637921-101",
+            "to": {
+              "pinId": "branch-exec-in",
+              "nodeId": "node-1773171635027-100"
+            },
+            "from": {
+              "pinId": "set-variable-exec-out",
+              "nodeId": "node-1773171585154-93"
+            }
+          },
+          {
+            "id": "edge-1773171682868-109",
+            "to": {
+              "pinId": "compare-greater-equal-b",
+              "nodeId": "node-1773171644933-102"
+            },
+            "from": {
+              "pinId": "get-variable-output",
+              "nodeId": "node-1773171658351-104"
+            }
+          },
+          {
+            "id": "edge-1773171684656-110",
+            "to": {
+              "pinId": "compare-greater-equal-a",
+              "nodeId": "node-1773171644933-102"
+            },
+            "from": {
+              "pinId": "get-variable-output",
+              "nodeId": "node-1773171655544-103"
+            }
+          },
+          {
+            "id": "edge-1773171690905-111",
+            "to": {
+              "pinId": "branch-condition",
+              "nodeId": "node-1773171635027-100"
+            },
+            "from": {
+              "pinId": "compare-greater-equal-result",
+              "nodeId": "node-1773171644933-102"
+            }
+          },
+          {
+            "id": "edge-1773235462758-3",
+            "to": {
+              "pinId": "is-valid-object",
+              "nodeId": "node-1773235457844-2"
+            },
+            "from": {
+              "pinId": "get-world-world-return",
+              "nodeId": "node-1773233598824-3"
+            }
+          },
+          {
+            "id": "edge-1773235478265-6",
+            "to": {
+              "pinId": "get-world-world-exec-in",
+              "nodeId": "node-1773233598824-3"
+            },
+            "from": {
+              "pinId": "branch-true",
+              "nodeId": "node-1773171635027-100"
+            }
+          },
+          {
+            "id": "edge-1773235479969-7",
+            "to": {
+              "pinId": "branch-exec-in",
+              "nodeId": "node-1773235466634-4"
+            },
+            "from": {
+              "pinId": "get-world-world-exec-out",
+              "nodeId": "node-1773233598824-3"
+            }
+          },
+          {
+            "id": "edge-1773235482314-8",
+            "to": {
+              "pinId": "branch-condition",
+              "nodeId": "node-1773235466634-4"
+            },
+            "from": {
+              "pinId": "is-valid-result",
+              "nodeId": "node-1773235457844-2"
+            }
+          },
+          {
+            "id": "edge-1773235485083-9",
+            "to": {
+              "pinId": "spawn-actor-a95be1-exec-in",
+              "nodeId": "node-1773235391080-1"
+            },
+            "from": {
+              "pinId": "branch-true",
+              "nodeId": "node-1773235466634-4"
+            }
+          },
+          {
+            "id": "edge-1773235491033-10",
+            "to": {
+              "pinId": "spawn-actor-a95be1-target-input-0",
+              "nodeId": "node-1773235391080-1"
+            },
+            "from": {
+              "pinId": "get-world-world-return",
+              "nodeId": "node-1773233598824-3"
+            }
+          },
+          {
+            "id": "edge-1773235625299-14",
+            "to": {
+              "pinId": "spawn-actor-a95be1-in-class-input-1",
+              "nodeId": "node-1773235391080-1"
+            },
+            "from": {
+              "pinId": "get-variable-output",
+              "nodeId": "node-1773235616539-13"
+            }
+          },
+          {
+            "id": "edge-1773235646882-16",
+            "to": {
+              "pinId": "spawn-actor-a95be1-location-input-2",
+              "nodeId": "node-1773235391080-1"
+            },
+            "from": {
+              "pinId": "constant-output",
+              "nodeId": "node-1773235641972-15"
+            }
+          },
+          {
+            "id": "edge-1773235657125-18",
+            "to": {
+              "pinId": "spawn-actor-a95be1-rotation-input-3",
+              "nodeId": "node-1773235391080-1"
+            },
+            "from": {
+              "pinId": "constant-output",
+              "nodeId": "node-1773235651426-17"
+            }
+          },
+          {
+            "id": "edge-1773236046670-30",
+            "to": {
+              "pinId": "set-struct-member-input",
+              "nodeId": "node-1773235932981-24"
+            },
+            "from": {
+              "pinId": "math-result",
+              "nodeId": "node-1773235712748-19"
+            }
+          },
+          {
+            "id": "edge-1773264079256-2",
+            "to": {
+              "pinId": "spawn-actor-a95be1-spawn-parameters-input-4",
+              "nodeId": "node-1773235391080-1"
+            },
+            "from": {
+              "pinId": "constant-output",
+              "nodeId": "node-1773264075449-1"
+            }
+          },
+          {
+            "id": "edge-1773264157877-4",
+            "to": {
+              "pinId": "is-valid-object",
+              "nodeId": "node-1773264153547-3"
+            },
+            "from": {
+              "pinId": "spawn-actor-a95be1-return",
+              "nodeId": "node-1773235391080-1"
+            }
+          },
+          {
+            "id": "edge-1773264168088-6",
+            "to": {
+              "pinId": "branch-condition",
+              "nodeId": "node-1773264162472-5"
+            },
+            "from": {
+              "pinId": "is-valid-result",
+              "nodeId": "node-1773264153547-3"
+            }
+          },
+          {
+            "id": "edge-1773264170894-7",
+            "to": {
+              "pinId": "branch-exec-in",
+              "nodeId": "node-1773264162472-5"
+            },
+            "from": {
+              "pinId": "spawn-actor-a95be1-exec-out",
+              "nodeId": "node-1773235391080-1"
+            }
+          },
+          {
+            "id": "edge-1773264188028-9",
+            "to": {
+              "pinId": "broadcast-delegate-delegate-oncubespawned-exec-in",
+              "nodeId": "node-1773264183917-8"
+            },
+            "from": {
+              "pinId": "branch-true",
+              "nodeId": "node-1773264162472-5"
+            }
+          },
+          {
+            "id": "edge-1773264193058-10",
+            "to": {
+              "pinId": "broadcast-delegate-delegate-oncubespawned-in-spawnedcube",
+              "nodeId": "node-1773264183917-8"
+            },
+            "from": {
+              "pinId": "spawn-actor-a95be1-return",
+              "nodeId": "node-1773235391080-1"
+            }
+          },
+          {
+            "id": "edge-1773265486574-8",
+            "to": {
+              "pinId": "branch-condition",
+              "nodeId": "node-1773265479443-7"
+            },
+            "from": {
+              "pinId": "is-valid-result",
+              "nodeId": "node-1773265468273-6"
+            }
+          },
+          {
+            "id": "edge-1773265493883-11",
+            "to": {
+              "pinId": "get-timer-manager-exec-in",
+              "nodeId": "node-1773265427244-2"
+            },
+            "from": {
+              "pinId": "branch-true",
+              "nodeId": "node-1773265479443-7"
+            }
+          },
+          {
+            "id": "edge-1773599704398-8",
+            "to": {
+              "pinId": "set-timer-8bf8d1-target-input-0",
+              "nodeId": "node-1773599541851-6"
+            },
+            "from": {
+              "pinId": "get-timer-manager-return",
+              "nodeId": "node-1773265427244-2"
+            }
+          },
+          {
+            "id": "edge-1773599729209-10",
+            "to": {
+              "pinId": "set-timer-8bf8d1-in-out-handle-input-1",
+              "nodeId": "node-1773599541851-6"
+            },
+            "from": {
+              "pinId": "get-variable-output",
+              "nodeId": "node-1773599719651-9"
+            }
+          },
+          {
+            "id": "edge-1773599778494-14",
+            "to": {
+              "pinId": "set-timer-8bf8d1-in-rate-input-3",
+              "nodeId": "node-1773599541851-6"
+            },
+            "from": {
+              "pinId": "get-variable-output",
+              "nodeId": "node-1773599768602-13"
+            }
+          },
+          {
+            "id": "edge-1773600096270-31",
+            "to": {
+              "pinId": "branch-condition",
+              "nodeId": "node-1773600088484-29"
+            },
+            "from": {
+              "pinId": "is-valid-result",
+              "nodeId": "node-1773600074334-27"
+            }
+          },
+          {
+            "id": "edge-1773600273100-37",
+            "to": {
+              "pinId": "math-a",
+              "nodeId": "node-1773600267983-36"
+            },
+            "from": {
+              "pinId": "constant-output",
+              "nodeId": "node-1773600128279-34"
+            }
+          },
+          {
+            "id": "edge-1773600325205-40",
+            "to": {
+              "pinId": "math-a",
+              "nodeId": "node-1773600317398-39"
+            },
+            "from": {
+              "pinId": "constant-output",
+              "nodeId": "node-1773600301962-38"
+            }
+          },
+          {
+            "id": "edge-1773600341960-42",
+            "to": {
+              "pinId": "math-b",
+              "nodeId": "node-1773600317398-39"
+            },
+            "from": {
+              "pinId": "get-variable-output",
+              "nodeId": "node-1773600331501-41"
+            }
+          },
+          {
+            "id": "edge-1773600345982-43",
+            "to": {
+              "pinId": "math-b",
+              "nodeId": "node-1773600267983-36"
+            },
+            "from": {
+              "pinId": "math-result",
+              "nodeId": "node-1773600317398-39"
+            }
+          },
+          {
+            "id": "edge-1773600468252-50",
+            "to": {
+              "pinId": "branch-condition",
+              "nodeId": "node-1773600453955-48"
+            },
+            "from": {
+              "pinId": "is-valid-result",
+              "nodeId": "node-1773600418684-47"
+            }
+          },
+          {
+            "id": "edge-1773600664903-59",
+            "to": {
+              "pinId": "is-valid-object",
+              "nodeId": "node-1773600418684-47"
+            },
+            "from": {
+              "pinId": "get-local-variable-output",
+              "nodeId": "node-1773600561412-56"
+            }
+          },
+          {
+            "id": "edge-1773600671909-61",
+            "to": {
+              "pinId": "branch-exec-in",
+              "nodeId": "node-1773600453955-48"
+            },
+            "from": {
+              "pinId": "set-local-variable-exec-out",
+              "nodeId": "node-1773600559190-55"
+            }
+          },
+          {
+            "id": "edge-1773600833600-64",
+            "to": {
+              "pinId": "clear-timer-in-handle-input-1",
+              "nodeId": "node-1773600810500-62"
+            },
+            "from": {
+              "pinId": "get-variable-output",
+              "nodeId": "node-1773600823307-63"
+            }
+          },
+          {
+            "id": "edge-1773600900165-69",
+            "to": {
+              "pinId": "get-timer-manager-target-input-0",
+              "nodeId": "node-1773600894611-68"
+            },
+            "from": {
+              "pinId": "get-world-world-return",
+              "nodeId": "node-1773600870007-65"
+            }
+          },
+          {
+            "id": "edge-1773600901903-70",
+            "to": {
+              "pinId": "get-timer-manager-exec-in",
+              "nodeId": "node-1773600894611-68"
+            },
+            "from": {
+              "pinId": "get-world-world-exec-out",
+              "nodeId": "node-1773600870007-65"
+            }
+          },
+          {
+            "id": "edge-1773600906476-71",
+            "to": {
+              "pinId": "clear-timer-exec-in",
+              "nodeId": "node-1773600810500-62"
+            },
+            "from": {
+              "pinId": "get-timer-manager-exec-out",
+              "nodeId": "node-1773600894611-68"
+            }
+          },
+          {
+            "id": "edge-1773600908585-72",
+            "to": {
+              "pinId": "clear-timer-target-input-0",
+              "nodeId": "node-1773600810500-62"
+            },
+            "from": {
+              "pinId": "get-timer-manager-return",
+              "nodeId": "node-1773600894611-68"
+            }
+          },
+          {
+            "id": "edge-1773601001925-75",
+            "to": {
+              "pinId": "set-variable-exec-in",
+              "nodeId": "node-1773600987590-73"
+            },
+            "from": {
+              "pinId": "broadcast-delegate-delegate-onmaxcubespawned-exec-out",
+              "nodeId": "node-1773169688776-23"
+            }
+          },
+          {
+            "id": "edge-1773601031056-77",
+            "to": {
+              "pinId": "set-variable-value",
+              "nodeId": "node-1773600987590-73"
+            },
+            "from": {
+              "pinId": "constant-output",
+              "nodeId": "node-1773601019234-76"
+            }
+          },
+          {
+            "id": "edge-1777460997549-8",
+            "to": {
+              "pinId": "set-timer-8bf8d1-in-first-delay-input-5",
+              "nodeId": "node-1773599541851-6"
+            },
+            "from": {
+              "pinId": "constant-output",
+              "nodeId": "node-1777460994262-7"
+            }
+          },
+          {
+            "id": "edge-1777461147228-11",
+            "to": {
+              "pinId": "set-timer-8bf8d1-in-dyn-delegate-input-2",
+              "nodeId": "node-1773599541851-6"
+            },
+            "from": {
+              "pinId": "function-ref-output",
+              "nodeId": "node-1777461119938-10"
+            }
+          },
+          {
+            "id": "edge-1777664480632-13",
+            "to": {
+              "pinId": "bind-delegate-delegate-onmaxcubespawned-target",
+              "nodeId": "node-1773171013552-78"
+            },
+            "from": {
+              "pinId": "custom-event-cubespawned-out-spawnedcube",
+              "nodeId": "custom-event-cubespawned"
+            }
+          },
+          {
+            "id": "edge-1777664654358-15",
+            "to": {
+              "pinId": "call-custom-event-cubespawned-exec-in",
+              "nodeId": "node-1777664650599-14"
+            },
+            "from": {
+              "pinId": "branch-true",
+              "nodeId": "node-1773600453955-48"
+            }
+          },
+          {
+            "id": "edge-1777664656722-16",
+            "to": {
+              "pinId": "call-custom-event-cubespawned-in-spawnedcube",
+              "nodeId": "node-1777664650599-14"
+            },
+            "from": {
+              "pinId": "get-local-variable-output",
+              "nodeId": "node-1773600561412-56"
+            }
+          },
+          {
+            "id": "edge-1777664669761-17",
+            "to": {
+              "pinId": "call-custom-event-startspawning-exec-in",
+              "nodeId": "node-1773599822651-15"
+            },
+            "from": {
+              "pinId": "event-begin-play-exec",
+              "nodeId": "node-1773171367114-88"
+            }
+          },
+          {
+            "id": "edge-1777666127409-11",
+            "to": {
+              "pinId": "set-timer-33bac6-target-input-0",
+              "nodeId": "node-1777666118557-10"
+            },
+            "from": {
+              "pinId": "get-timer-manager-return",
+              "nodeId": "node-1773265427244-2"
+            }
+          },
+          {
+            "id": "edge-1777666131260-12",
+            "to": {
+              "pinId": "set-timer-33bac6-exec-in",
+              "nodeId": "node-1777666118557-10"
+            },
+            "from": {
+              "pinId": "get-timer-manager-exec-out",
+              "nodeId": "node-1773265427244-2"
+            }
+          },
+          {
+            "id": "edge-1777666141238-13",
+            "to": {
+              "pinId": "set-timer-33bac6-in-out-handle-input-1",
+              "nodeId": "node-1777666118557-10"
+            },
+            "from": {
+              "pinId": "get-variable-output",
+              "nodeId": "node-1773599719651-9"
+            }
+          },
+          {
+            "id": "edge-1777666148024-15",
+            "to": {
+              "pinId": "set-timer-33bac6-in-obj-input-2",
+              "nodeId": "node-1777666118557-10"
+            },
+            "from": {
+              "pinId": "self-output",
+              "nodeId": "node-1777666145407-14"
+            }
+          },
+          {
+            "id": "edge-1777666153939-16",
+            "to": {
+              "pinId": "set-timer-33bac6-in-timer-method-input-3",
+              "nodeId": "node-1777666118557-10"
+            },
+            "from": {
+              "pinId": "function-ref-output",
+              "nodeId": "node-1777461119938-10"
+            }
+          },
+          {
+            "id": "edge-1777666159932-17",
+            "to": {
+              "pinId": "set-timer-33bac6-in-rate-input-4",
+              "nodeId": "node-1777666118557-10"
+            },
+            "from": {
+              "pinId": "get-variable-output",
+              "nodeId": "node-1773599768602-13"
+            }
+          },
+          {
+            "id": "edge-1777666165273-19",
+            "to": {
+              "pinId": "set-timer-33bac6-in-first-delay-input-6",
+              "nodeId": "node-1777666118557-10"
+            },
+            "from": {
+              "pinId": "constant-output",
+              "nodeId": "node-1777460994262-7"
+            }
+          },
+          {
+            "id": "edge-1777666530852-23",
+            "to": {
+              "pinId": "spawn-actor-59543f-class-input-1",
+              "nodeId": "node-1777666217330-20"
+            },
+            "from": {
+              "pinId": "get-variable-output",
+              "nodeId": "node-1773599965102-21"
+            }
+          },
+          {
+            "id": "edge-1777667074488-1",
+            "to": {
+              "pinId": "get-world-world-exec-in",
+              "nodeId": "node-1773599995173-25"
+            },
+            "from": {
+              "pinId": "custom-event-spawncube-exec-out",
+              "nodeId": "custom-event-spawncube"
+            }
+          },
+          {
+            "id": "edge-1777667077936-2",
+            "to": {
+              "pinId": "branch-exec-in",
+              "nodeId": "node-1773600088484-29"
+            },
+            "from": {
+              "pinId": "get-world-world-exec-out",
+              "nodeId": "node-1773599995173-25"
+            }
+          },
+          {
+            "id": "edge-1777667084909-3",
+            "to": {
+              "pinId": "spawn-actor-59543f-target-input-0",
+              "nodeId": "node-1777666217330-20"
+            },
+            "from": {
+              "pinId": "get-world-world-return",
+              "nodeId": "node-1773599995173-25"
+            }
+          },
+          {
+            "id": "edge-1777667087980-4",
+            "to": {
+              "pinId": "is-valid-object",
+              "nodeId": "node-1773600074334-27"
+            },
+            "from": {
+              "pinId": "get-world-world-return",
+              "nodeId": "node-1773599995173-25"
+            }
+          },
+          {
+            "id": "edge-1777667422727-14",
+            "to": {
+              "pinId": "set-local-variable-exec-in",
+              "nodeId": "node-1773600559190-55"
+            },
+            "from": {
+              "pinId": "spawn-actor-59543f-exec-out",
+              "nodeId": "node-1777666217330-20"
+            }
+          },
+          {
+            "id": "edge-1777667425118-15",
+            "to": {
+              "pinId": "set-local-variable-value",
+              "nodeId": "node-1773600559190-55"
+            },
+            "from": {
+              "pinId": "spawn-actor-59543f-return",
+              "nodeId": "node-1777666217330-20"
+            }
+          },
+          {
+            "id": "edge-1777716915875-2",
+            "to": {
+              "pinId": "get-world-world-exec-in",
+              "nodeId": "node-1777716912314-1"
+            },
+            "from": {
+              "pinId": "custom-event-startspawning-exec-out",
+              "nodeId": "custom-event-startspawning"
+            }
+          },
+          {
+            "id": "edge-1777716916859-3",
+            "to": {
+              "pinId": "branch-exec-in",
+              "nodeId": "node-1773265479443-7"
+            },
+            "from": {
+              "pinId": "get-world-world-exec-out",
+              "nodeId": "node-1777716912314-1"
+            }
+          },
+          {
+            "id": "edge-1777716918177-4",
+            "to": {
+              "pinId": "is-valid-object",
+              "nodeId": "node-1773265468273-6"
+            },
+            "from": {
+              "pinId": "get-world-world-return",
+              "nodeId": "node-1777716912314-1"
+            }
+          },
+          {
+            "id": "edge-1777716920024-5",
+            "to": {
+              "pinId": "get-timer-manager-target-input-0",
+              "nodeId": "node-1773265427244-2"
+            },
+            "from": {
+              "pinId": "get-world-world-return",
+              "nodeId": "node-1777716912314-1"
+            }
+          },
+          {
+            "id": "edge-1777717044950-13",
+            "to": {
+              "pinId": "make-struct-field-translation-1",
+              "nodeId": "node-1777717034219-12"
+            },
+            "from": {
+              "pinId": "math-result",
+              "nodeId": "node-1773600267983-36"
+            }
+          },
+          {
+            "id": "edge-1777717077531-15",
+            "to": {
+              "pinId": "spawn-actor-59543f-exec-in",
+              "nodeId": "node-1777666217330-20"
+            },
+            "from": {
+              "pinId": "branch-true",
+              "nodeId": "node-1773600088484-29"
+            }
+          },
+          {
+            "id": "edge-1777717165473-18",
+            "to": {
+              "pinId": "spawn-actor-59543f-spawn-parameters-input-3",
+              "nodeId": "node-1777666217330-20"
+            },
+            "from": {
+              "pinId": "make-struct-result",
+              "nodeId": "node-1777717139531-17"
+            }
+          },
+          {
+            "id": "edge-1777718763742-20",
+            "to": {
+              "pinId": "spawn-actor-59543f-transform-input-2",
+              "nodeId": "node-1777666217330-20"
+            },
+            "from": {
+              "pinId": "make-struct-result",
+              "nodeId": "node-1777717034219-12"
+            }
+          },
+          {
+            "id": "edge-1777719369773-26",
+            "to": {
+              "pinId": "math-a",
+              "nodeId": "node-1777719366490-25"
+            },
+            "from": {
+              "pinId": "get-variable-output",
+              "nodeId": "node-1777719356263-24"
+            }
+          },
+          {
+            "id": "edge-1777719374845-28",
+            "to": {
+              "pinId": "math-b",
+              "nodeId": "node-1777719366490-25"
+            },
+            "from": {
+              "pinId": "constant-output",
+              "nodeId": "node-1777719372482-27"
+            }
+          },
+          {
+            "id": "edge-1777719384265-29",
+            "to": {
+              "pinId": "set-variable-value",
+              "nodeId": "node-1777719340476-21"
+            },
+            "from": {
+              "pinId": "math-result",
+              "nodeId": "node-1777719366490-25"
+            }
+          },
+          {
+            "id": "edge-1777719399358-31",
+            "to": {
+              "pinId": "branch-exec-in",
+              "nodeId": "node-1773169529918-14"
+            },
+            "from": {
+              "pinId": "set-variable-exec-out",
+              "nodeId": "node-1777719340476-21"
+            }
+          },
+          {
+            "id": "edge-1777748435428-1",
+            "to": {
+              "pinId": "set-timer-8bf8d1-inb-loop-input-4",
+              "nodeId": "node-1773599541851-6"
+            },
+            "from": {
+              "pinId": "constant-output",
+              "nodeId": "node-1773599761070-11"
+            }
+          },
+          {
+            "id": "edge-1777748437496-2",
+            "to": {
+              "pinId": "set-timer-33bac6-inb-loop-input-5",
+              "nodeId": "node-1777666118557-10"
+            },
+            "from": {
+              "pinId": "constant-output",
+              "nodeId": "node-1773599761070-11"
+            }
+          },
+          {
+            "id": "edge-1777972818707-18",
+            "to": {
+              "pinId": "set-variable-exec-in",
+              "nodeId": "node-1777719340476-21"
+            },
+            "from": {
+              "pinId": "bind-delegate-delegate-onmaxcubespawned-exec-out",
+              "nodeId": "node-1773171013552-78"
+            }
+          }
+        ],
         "nodes": [
           {
             "id": "node-1773169014053-3",
-            "definitionId": "event-construct",
             "position": {
               "x": 56.13865844368393,
               "y": 38.10628644714593
-            }
+            },
+            "definitionId": "event-construct"
           },
           {
             "id": "node-1773169014053-4",
-            "definitionId": "event-destruct",
             "position": {
               "x": 244,
               "y": 20
-            }
+            },
+            "definitionId": "event-destruct"
           },
           {
             "id": "custom-event-cubespawned",
-            "definitionId": "custom-event-cubespawned",
+            "data": {
+              "eventScopeId": "custom-event-cubespawned"
+            },
             "position": {
               "x": 436.4131021086593,
               "y": 38.503812983201186
             },
-            "data": {
-              "eventScopeId": "custom-event-cubespawned"
-            }
+            "definitionId": "custom-event-cubespawned"
           },
           {
             "id": "node-1773169501296-12",
-            "definitionId": "get-variable",
+            "data": {
+              "variableId": "var-currentnumberofcubes",
+              "eventScopeId": "custom-event-cubespawned"
+            },
             "position": {
               "x": 516.4000647279596,
               "y": 186.60358073999728
             },
-            "data": {
-              "variableId": "var-currentnumberofcubes",
-              "eventScopeId": "custom-event-cubespawned"
-            }
+            "definitionId": "get-variable"
           },
           {
             "id": "node-1773169529918-14",
-            "definitionId": "branch",
+            "data": {
+              "eventScopeId": "custom-event-cubespawned"
+            },
             "position": {
               "x": 964.245160650696,
               "y": 161.88377084975772
             },
-            "data": {
-              "eventScopeId": "custom-event-cubespawned"
-            }
+            "definitionId": "branch"
           },
           {
             "id": "node-1773169559523-16",
-            "definitionId": "compare-greater-equal",
+            "data": {
+              "eventScopeId": "custom-event-cubespawned"
+            },
             "position": {
               "x": 748.3276947684813,
               "y": 294.9649762362798
             },
-            "data": {
-              "eventScopeId": "custom-event-cubespawned"
-            }
+            "definitionId": "compare-greater-equal"
           },
           {
             "id": "node-1773169654672-20",
-            "definitionId": "get-variable",
+            "data": {
+              "variableId": "var-maxspawnedcubes",
+              "eventScopeId": "custom-event-cubespawned"
+            },
             "position": {
               "x": 535.6478828411821,
               "y": 411.63020629175026
             },
-            "data": {
-              "variableId": "var-maxspawnedcubes",
-              "eventScopeId": "custom-event-cubespawned"
-            }
+            "definitionId": "get-variable"
           },
           {
             "id": "node-1773169688776-23",
-            "definitionId": "broadcast-delegate-delegate-onmaxcubespawned",
+            "data": {
+              "eventScopeId": "custom-event-cubespawned"
+            },
             "position": {
               "x": 1174.7307405987667,
               "y": 163.2417423332941
             },
-            "data": {
-              "eventScopeId": "custom-event-cubespawned"
-            }
+            "definitionId": "broadcast-delegate-delegate-onmaxcubespawned"
           },
           {
             "id": "node-1773171013552-78",
-            "definitionId": "bind-delegate-delegate-onmaxcubespawned",
+            "data": {
+              "eventScopeId": "custom-event-cubespawned",
+              "customEventId": "local:bp-1773170878478-68:custom-event-destroyme",
+              "customEventFunctionName": "DestroyMe",
+              "customEventOwnerClassName": "ACompanionCube"
+            },
             "position": {
               "x": 655.3175306101743,
               "y": -36.26770351941516
             },
-            "data": {
-              "eventScopeId": "custom-event-cubespawned",
-              "customEventId": "local:bp-1773170878478-68:custom-event-destroyme",
-              "customEventOwnerClassName": "ACompanionCube",
-              "customEventFunctionName": "DestroyMe"
-            }
+            "definitionId": "bind-delegate-delegate-onmaxcubespawned"
           },
           {
             "id": "node-1773171320780-87",
-            "definitionId": "event-tick",
+            "data": {
+              "eventScopeId": "node-1773169014053-3"
+            },
             "position": {
               "x": 37.21725294729319,
               "y": 36.909521472669965
             },
-            "data": {
-              "eventScopeId": "node-1773169014053-3"
-            }
+            "definitionId": "event-tick"
           },
           {
             "id": "node-1773171367114-88",
-            "definitionId": "event-begin-play",
+            "data": {
+              "eventScopeId": "node-1773171320780-87"
+            },
             "position": {
               "x": 268.43486703646954,
               "y": -4.443486703646798
             },
-            "data": {
-              "eventScopeId": "node-1773171320780-87"
-            }
+            "definitionId": "event-begin-play"
           },
           {
             "id": "node-1773171585154-93",
-            "definitionId": "set-variable",
+            "data": {
+              "variableId": "var-currenttime",
+              "eventScopeId": "node-1773171320780-87"
+            },
             "position": {
               "x": 460.3615033762158,
               "y": -19.833830183720764
             },
-            "data": {
-              "variableId": "var-currenttime",
-              "eventScopeId": "node-1773171320780-87"
-            }
+            "definitionId": "set-variable"
           },
           {
             "id": "node-1773171598166-95",
-            "definitionId": "get-variable",
+            "data": {
+              "variableId": "var-currenttime",
+              "eventScopeId": "node-1773171320780-87"
+            },
             "position": {
               "x": 24.452657161178678,
               "y": 294.7628968354387
             },
-            "data": {
-              "variableId": "var-currenttime",
-              "eventScopeId": "node-1773171320780-87"
-            }
+            "definitionId": "get-variable"
           },
           {
             "id": "node-1773171612586-96",
-            "definitionId": "math",
+            "data": {
+              "operator": "add",
+              "eventScopeId": "node-1773171320780-87"
+            },
             "position": {
               "x": 296.9522681907242,
               "y": 162.58700577127385
             },
-            "data": {
-              "operator": "add",
-              "eventScopeId": "node-1773171320780-87"
-            }
+            "definitionId": "math"
           },
           {
             "id": "node-1773171635027-100",
-            "definitionId": "branch",
+            "data": {
+              "eventScopeId": "node-1773171320780-87"
+            },
             "position": {
               "x": 793.0645168425214,
               "y": 41.27488657539636
             },
-            "data": {
-              "eventScopeId": "node-1773171320780-87"
-            }
+            "definitionId": "branch"
           },
           {
             "id": "node-1773171644933-102",
-            "definitionId": "compare-greater-equal",
+            "data": {
+              "eventScopeId": "node-1773171320780-87"
+            },
             "position": {
               "x": 582.5789368944505,
               "y": 267.1508100035412
             },
-            "data": {
-              "eventScopeId": "node-1773171320780-87"
-            }
+            "definitionId": "compare-greater-equal"
           },
           {
             "id": "node-1773171655544-103",
-            "definitionId": "get-variable",
+            "data": {
+              "variableId": "var-currenttime",
+              "eventScopeId": "node-1773171320780-87"
+            },
             "position": {
               "x": 332.8783537401164,
               "y": 361.92232650615745
             },
-            "data": {
-              "variableId": "var-currenttime",
-              "eventScopeId": "node-1773171320780-87"
-            }
+            "definitionId": "get-variable"
           },
           {
             "id": "node-1773171658351-104",
-            "definitionId": "get-variable",
+            "data": {
+              "variableId": "var-spawnrate",
+              "eventScopeId": "node-1773171320780-87"
+            },
             "position": {
               "x": 335.7604665234673,
               "y": 518.2552169290699
             },
-            "data": {
-              "variableId": "var-spawnrate",
-              "eventScopeId": "node-1773171320780-87"
-            }
+            "definitionId": "get-variable"
           },
           {
             "id": "node-1773233598824-3",
-            "definitionId": "get-world-world",
+            "data": {
+              "eventScopeId": "node-1773171320780-87"
+            },
             "position": {
               "x": 808.7970554362807,
               "y": 235.07205686800256
             },
-            "data": {
-              "eventScopeId": "node-1773171320780-87"
-            }
+            "definitionId": "get-world-world"
           },
           {
             "id": "node-1773235391080-1",
-            "definitionId": "spawn-actor-a95be1",
+            "data": {
+              "eventScopeId": "node-1773171320780-87"
+            },
             "position": {
               "x": 1402.1204770933034,
               "y": 100.72771942080024
             },
-            "data": {
-              "eventScopeId": "node-1773171320780-87"
-            }
+            "definitionId": "spawn-actor-a95be1"
           },
           {
             "id": "node-1773235457844-2",
-            "definitionId": "is-valid",
+            "data": {
+              "eventScopeId": "node-1773171320780-87"
+            },
             "position": {
               "x": 1000.4196646558131,
               "y": 344.07192067679546
             },
-            "data": {
-              "eventScopeId": "node-1773171320780-87"
-            }
+            "definitionId": "is-valid"
           },
           {
             "id": "node-1773235466634-4",
-            "definitionId": "branch",
+            "data": {
+              "eventScopeId": "node-1773171320780-87"
+            },
             "position": {
               "x": 1067.9108303359897,
               "y": 17.225891986268678
             },
-            "data": {
-              "eventScopeId": "node-1773171320780-87"
-            }
+            "definitionId": "branch"
           },
           {
             "id": "node-1773235616539-13",
-            "definitionId": "get-variable",
+            "data": {
+              "variableId": "var-cubetospawn",
+              "eventScopeId": "node-1773171320780-87"
+            },
             "position": {
               "x": 1169.4741537754157,
               "y": 219.89529851420102
             },
-            "data": {
-              "variableId": "var-cubetospawn",
-              "eventScopeId": "node-1773171320780-87"
-            }
+            "definitionId": "get-variable"
           },
           {
             "id": "node-1773235641972-15",
-            "definitionId": "constant",
-            "position": {
-              "x": 1034.840552904392,
-              "y": 453.4344896691156
-            },
             "data": {
-              "eventScopeId": "node-1773171320780-87",
-              "value": {
-                "y": "0",
-                "z": "0",
-                "x": "0"
-              }
-            }
-          },
-          {
-            "id": "node-1773235651426-17",
-            "definitionId": "constant",
-            "position": {
-              "x": 1024.7341965931698,
-              "y": 666.4103458043788
-            },
-            "data": {
-              "eventScopeId": "node-1773171320780-87"
-            }
-          },
-          {
-            "id": "node-1773235712748-19",
-            "definitionId": "math",
-            "position": {
-              "x": 1519.7829405077878,
-              "y": 427.7277503442277
-            },
-            "data": {
-              "operator": "add",
-              "eventScopeId": "node-1773171320780-87"
-            }
-          },
-          {
-            "id": "node-1773235932981-24",
-            "definitionId": "set-struct-member",
-            "position": {
-              "x": 1676.2019136880383,
-              "y": 678.2595319003398
-            },
-            "data": {
-              "eventScopeId": "node-1773171320780-87"
-            }
-          },
-          {
-            "id": "node-1773264075449-1",
-            "definitionId": "constant",
-            "position": {
-              "x": 1060.9231193265966,
-              "y": 890.6124136887486
-            },
-            "data": {
-              "eventScopeId": "node-1773171320780-87"
-            }
-          },
-          {
-            "id": "node-1773264153547-3",
-            "definitionId": "is-valid",
-            "position": {
-              "x": 1668.5177726445277,
-              "y": 183.40651551914817
-            },
-            "data": {
-              "eventScopeId": "node-1773171320780-87"
-            }
-          },
-          {
-            "id": "node-1773264162472-5",
-            "definitionId": "branch",
-            "position": {
-              "x": 1864.376575114657,
-              "y": 96.23029857979466
-            },
-            "data": {
-              "eventScopeId": "node-1773171320780-87"
-            }
-          },
-          {
-            "id": "node-1773264183917-8",
-            "definitionId": "broadcast-delegate-delegate-oncubespawned",
-            "position": {
-              "x": 2066.8022061699694,
-              "y": 158.13605490925815
-            },
-            "data": {
-              "eventScopeId": "node-1773171320780-87"
-            }
-          },
-          {
-            "id": "node-1773265427244-2",
-            "definitionId": "get-timer-manager",
-            "position": {
-              "x": 1152.3156494063116,
-              "y": -23.79133045541034
-            },
-            "data": {
-              "eventScopeId": "custom-event-startspawning"
-            }
-          },
-          {
-            "id": "node-1773265468273-6",
-            "definitionId": "is-valid",
-            "position": {
-              "x": 805.7013363455088,
-              "y": -171.09686182356694
-            },
-            "data": {
-              "eventScopeId": "custom-event-startspawning"
-            }
-          },
-          {
-            "id": "node-1773265479443-7",
-            "definitionId": "branch",
-            "position": {
-              "x": 929.5522272764814,
-              "y": -81.27058055416799
-            },
-            "data": {
-              "eventScopeId": "custom-event-startspawning"
-            }
-          },
-          {
-            "id": "node-1773599541851-6",
-            "definitionId": "set-timer-8bf8d1",
-            "position": {
-              "x": 1663.1122000746034,
-              "y": 341.4398551735168
-            },
-            "data": {
-              "eventScopeId": "custom-event-startspawning"
-            }
-          },
-          {
-            "id": "node-1773599719651-9",
-            "definitionId": "get-variable",
-            "position": {
-              "x": 1119.8743789311295,
-              "y": 94.84351469572476
-            },
-            "data": {
-              "variableId": "var-spawntimerhandle",
-              "eventScopeId": "custom-event-startspawning"
-            }
-          },
-          {
-            "id": "node-1773599761070-11",
-            "definitionId": "constant",
-            "position": {
-              "x": 1156.9408984798865,
-              "y": 593.3401404957189
-            },
-            "data": {
-              "eventScopeId": "custom-event-startspawning",
-              "value": true
-            }
-          },
-          {
-            "id": "node-1773599768602-13",
-            "definitionId": "get-variable",
-            "position": {
-              "x": 1121.9639922063811,
-              "y": 438.67766884032534
-            },
-            "data": {
-              "variableId": "var-spawnrate",
-              "eventScopeId": "custom-event-startspawning"
-            }
-          },
-          {
-            "id": "custom-event-startspawning",
-            "definitionId": "custom-event-startspawning",
-            "position": {
-              "x": 435.7013363455088,
-              "y": -114.09686182356694
-            },
-            "data": {
-              "eventScopeId": "custom-event-startspawning"
-            }
-          },
-          {
-            "id": "node-1773599822651-15",
-            "definitionId": "call-custom-event-startspawning",
-            "position": {
-              "x": 715.845454679343,
-              "y": -21.21098699853853
-            },
-            "data": {
-              "eventScopeId": "node-1773171367114-88"
-            }
-          },
-          {
-            "id": "custom-event-spawncube",
-            "definitionId": "custom-event-spawncube",
-            "position": {
-              "x": -425.17905081897754,
-              "y": 2786.5479411250435
-            },
-            "data": {
-              "eventScopeId": "custom-event-spawncube"
-            }
-          },
-          {
-            "id": "node-1773599965102-21",
-            "definitionId": "get-variable",
-            "position": {
-              "x": -212.37392066572343,
-              "y": 2993.6966086899315
-            },
-            "data": {
-              "variableId": "var-cubetospawn",
-              "eventScopeId": "custom-event-spawncube"
-            }
-          },
-          {
-            "id": "node-1773599995173-25",
-            "definitionId": "get-world-world",
-            "position": {
-              "x": -121.67738644375163,
-              "y": 2766.932358163972
-            },
-            "data": {
-              "eventScopeId": "custom-event-spawncube"
-            }
-          },
-          {
-            "id": "node-1773600074334-27",
-            "definitionId": "is-valid",
-            "position": {
-              "x": 109.7512389729246,
-              "y": 2929.2229613248846
-            },
-            "data": {
-              "eventScopeId": "custom-event-spawncube"
-            }
-          },
-          {
-            "id": "node-1773600088484-29",
-            "definitionId": "branch",
-            "position": {
-              "x": 317.13922485458124,
-              "y": 2785.214444667317
-            },
-            "data": {
-              "eventScopeId": "custom-event-spawncube"
-            }
-          },
-          {
-            "id": "node-1773600128279-34",
-            "definitionId": "constant",
-            "position": {
-              "x": -661.8688911638078,
-              "y": 3226.1219076457182
-            },
-            "data": {
-              "eventScopeId": "custom-event-spawncube",
-              "constantTypeValue": "Vector",
-              "constantTypeName": "FVector",
               "value": {
                 "x": "0",
                 "y": "0",
                 "z": "0"
-              }
-            }
+              },
+              "eventScopeId": "node-1773171320780-87"
+            },
+            "position": {
+              "x": 1034.840552904392,
+              "y": 453.4344896691156
+            },
+            "definitionId": "constant"
+          },
+          {
+            "id": "node-1773235651426-17",
+            "data": {
+              "eventScopeId": "node-1773171320780-87"
+            },
+            "position": {
+              "x": 1024.7341965931698,
+              "y": 666.4103458043788
+            },
+            "definitionId": "constant"
+          },
+          {
+            "id": "node-1773235712748-19",
+            "data": {
+              "operator": "add",
+              "eventScopeId": "node-1773171320780-87"
+            },
+            "position": {
+              "x": 1519.7829405077878,
+              "y": 427.7277503442277
+            },
+            "definitionId": "math"
+          },
+          {
+            "id": "node-1773235932981-24",
+            "data": {
+              "eventScopeId": "node-1773171320780-87"
+            },
+            "position": {
+              "x": 1676.2019136880383,
+              "y": 678.2595319003398
+            },
+            "definitionId": "set-struct-member"
+          },
+          {
+            "id": "node-1773264075449-1",
+            "data": {
+              "eventScopeId": "node-1773171320780-87"
+            },
+            "position": {
+              "x": 1060.9231193265966,
+              "y": 890.6124136887486
+            },
+            "definitionId": "constant"
+          },
+          {
+            "id": "node-1773264153547-3",
+            "data": {
+              "eventScopeId": "node-1773171320780-87"
+            },
+            "position": {
+              "x": 1668.5177726445277,
+              "y": 183.40651551914817
+            },
+            "definitionId": "is-valid"
+          },
+          {
+            "id": "node-1773264162472-5",
+            "data": {
+              "eventScopeId": "node-1773171320780-87"
+            },
+            "position": {
+              "x": 1864.376575114657,
+              "y": 96.23029857979466
+            },
+            "definitionId": "branch"
+          },
+          {
+            "id": "node-1773264183917-8",
+            "data": {
+              "eventScopeId": "node-1773171320780-87"
+            },
+            "position": {
+              "x": 2066.8022061699694,
+              "y": 158.13605490925815
+            },
+            "definitionId": "broadcast-delegate-delegate-oncubespawned"
+          },
+          {
+            "id": "node-1773265427244-2",
+            "data": {
+              "eventScopeId": "custom-event-startspawning"
+            },
+            "position": {
+              "x": 1152.3156494063116,
+              "y": -23.79133045541034
+            },
+            "definitionId": "get-timer-manager"
+          },
+          {
+            "id": "node-1773265468273-6",
+            "data": {
+              "eventScopeId": "custom-event-startspawning"
+            },
+            "position": {
+              "x": 805.7013363455088,
+              "y": -171.09686182356694
+            },
+            "definitionId": "is-valid"
+          },
+          {
+            "id": "node-1773265479443-7",
+            "data": {
+              "eventScopeId": "custom-event-startspawning"
+            },
+            "position": {
+              "x": 929.5522272764814,
+              "y": -81.27058055416799
+            },
+            "definitionId": "branch"
+          },
+          {
+            "id": "node-1773599541851-6",
+            "data": {
+              "eventScopeId": "custom-event-startspawning"
+            },
+            "position": {
+              "x": 1663.1122000746034,
+              "y": 341.4398551735168
+            },
+            "definitionId": "set-timer-8bf8d1"
+          },
+          {
+            "id": "node-1773599719651-9",
+            "data": {
+              "variableId": "var-spawntimerhandle",
+              "eventScopeId": "custom-event-startspawning"
+            },
+            "position": {
+              "x": 1119.8743789311295,
+              "y": 94.84351469572476
+            },
+            "definitionId": "get-variable"
+          },
+          {
+            "id": "node-1773599761070-11",
+            "data": {
+              "value": true,
+              "eventScopeId": "custom-event-startspawning"
+            },
+            "position": {
+              "x": 1156.9408984798865,
+              "y": 593.3401404957189
+            },
+            "definitionId": "constant"
+          },
+          {
+            "id": "node-1773599768602-13",
+            "data": {
+              "variableId": "var-spawnrate",
+              "eventScopeId": "custom-event-startspawning"
+            },
+            "position": {
+              "x": 1121.9639922063811,
+              "y": 438.67766884032534
+            },
+            "definitionId": "get-variable"
+          },
+          {
+            "id": "custom-event-startspawning",
+            "data": {
+              "eventScopeId": "custom-event-startspawning"
+            },
+            "position": {
+              "x": 435.7013363455088,
+              "y": -114.09686182356694
+            },
+            "definitionId": "custom-event-startspawning"
+          },
+          {
+            "id": "node-1773599822651-15",
+            "data": {
+              "eventScopeId": "node-1773171367114-88"
+            },
+            "position": {
+              "x": 715.845454679343,
+              "y": -21.21098699853853
+            },
+            "definitionId": "call-custom-event-startspawning"
+          },
+          {
+            "id": "custom-event-spawncube",
+            "data": {
+              "eventScopeId": "custom-event-spawncube"
+            },
+            "position": {
+              "x": -425.17905081897754,
+              "y": 2786.5479411250435
+            },
+            "definitionId": "custom-event-spawncube"
+          },
+          {
+            "id": "node-1773599965102-21",
+            "data": {
+              "variableId": "var-cubetospawn",
+              "eventScopeId": "custom-event-spawncube"
+            },
+            "position": {
+              "x": -212.37392066572343,
+              "y": 2993.6966086899315
+            },
+            "definitionId": "get-variable"
+          },
+          {
+            "id": "node-1773599995173-25",
+            "data": {
+              "eventScopeId": "custom-event-spawncube"
+            },
+            "position": {
+              "x": -121.67738644375163,
+              "y": 2766.932358163972
+            },
+            "definitionId": "get-world-world"
+          },
+          {
+            "id": "node-1773600074334-27",
+            "data": {
+              "eventScopeId": "custom-event-spawncube"
+            },
+            "position": {
+              "x": 109.7512389729246,
+              "y": 2929.2229613248846
+            },
+            "definitionId": "is-valid"
+          },
+          {
+            "id": "node-1773600088484-29",
+            "data": {
+              "eventScopeId": "custom-event-spawncube"
+            },
+            "position": {
+              "x": 317.13922485458124,
+              "y": 2785.214444667317
+            },
+            "definitionId": "branch"
+          },
+          {
+            "id": "node-1773600128279-34",
+            "data": {
+              "value": {
+                "x": "0",
+                "y": "0",
+                "z": "0"
+              },
+              "eventScopeId": "custom-event-spawncube",
+              "constantTypeName": "FVector",
+              "constantTypeValue": "Vector"
+            },
+            "position": {
+              "x": -661.8688911638078,
+              "y": 3226.1219076457182
+            },
+            "definitionId": "constant"
           },
           {
             "id": "node-1773600267983-36",
-            "definitionId": "math",
+            "data": {
+              "operator": "add",
+              "eventScopeId": "custom-event-spawncube"
+            },
             "position": {
               "x": 18.921905619426866,
               "y": 3191.6344403298503
             },
-            "data": {
-              "operator": "add",
-              "eventScopeId": "custom-event-spawncube"
-            }
+            "definitionId": "math"
           },
           {
             "id": "node-1773600301962-38",
-            "definitionId": "constant",
-            "position": {
-              "x": -938.0930342000765,
-              "y": 3454.2839943630893
-            },
             "data": {
-              "eventScopeId": "custom-event-spawncube",
-              "constantTypeValue": "Vector",
-              "constantTypeName": "FVector",
               "value": {
                 "x": "100",
                 "y": "0",
                 "z": "0"
-              }
-            }
+              },
+              "eventScopeId": "custom-event-spawncube",
+              "constantTypeName": "FVector",
+              "constantTypeValue": "Vector"
+            },
+            "position": {
+              "x": -938.0930342000765,
+              "y": 3454.2839943630893
+            },
+            "definitionId": "constant"
           },
           {
             "id": "node-1773600317398-39",
-            "definitionId": "math",
+            "data": {
+              "operator": "multiply",
+              "eventScopeId": "custom-event-spawncube"
+            },
             "position": {
               "x": -218.0067341805596,
               "y": 3426.4775036333776
             },
-            "data": {
-              "operator": "multiply",
-              "eventScopeId": "custom-event-spawncube"
-            }
+            "definitionId": "math"
           },
           {
             "id": "node-1773600331501-41",
-            "definitionId": "get-variable",
+            "data": {
+              "variableId": "var-currentnumberofcubes",
+              "eventScopeId": "custom-event-spawncube"
+            },
             "position": {
               "x": -552.0149075357883,
               "y": 3665.7016746802415
             },
-            "data": {
-              "variableId": "var-currentnumberofcubes",
-              "eventScopeId": "custom-event-spawncube"
-            }
+            "definitionId": "get-variable"
           },
           {
             "id": "node-1773600418684-47",
-            "definitionId": "is-valid",
+            "data": {
+              "eventScopeId": "custom-event-spawncube"
+            },
             "position": {
               "x": 876.4468062883024,
               "y": 3207.7110058737576
             },
-            "data": {
-              "eventScopeId": "custom-event-spawncube"
-            }
+            "definitionId": "is-valid"
           },
           {
             "id": "node-1773600453955-48",
-            "definitionId": "branch",
+            "data": {
+              "eventScopeId": "custom-event-spawncube"
+            },
             "position": {
               "x": 1098.5062859042298,
               "y": 3116.893832154745
             },
-            "data": {
-              "eventScopeId": "custom-event-spawncube"
-            }
+            "definitionId": "branch"
           },
           {
             "id": "node-1773600559190-55",
-            "definitionId": "set-local-variable",
+            "data": {
+              "localVarId": "node-1773600559190-55",
+              "eventScopeId": "custom-event-spawncube",
+              "localVarName": "SpawnedCube",
+              "localVarType": "ACompanionCube*"
+            },
             "position": {
               "x": 858.3029402836314,
               "y": 2977.1749061353567
             },
-            "data": {
-              "eventScopeId": "custom-event-spawncube",
-              "localVarName": "SpawnedCube",
-              "localVarId": "node-1773600559190-55",
-              "localVarType": "ACompanionCube*"
-            }
+            "definitionId": "set-local-variable"
           },
           {
             "id": "node-1773600561412-56",
-            "definitionId": "get-local-variable",
+            "data": {
+              "localVarId": "node-1773600559190-55",
+              "eventScopeId": "custom-event-spawncube"
+            },
             "position": {
               "x": 639.7030479679933,
               "y": 3275.0315280498976
             },
-            "data": {
-              "eventScopeId": "custom-event-spawncube",
-              "localVarId": "node-1773600559190-55"
-            }
+            "definitionId": "get-local-variable"
           },
           {
             "id": "node-1773600810500-62",
-            "definitionId": "clear-timer",
+            "data": {
+              "eventScopeId": "custom-event-cubespawned"
+            },
             "position": {
               "x": 1867.3903954207503,
               "y": 176.73488047981664
             },
-            "data": {
-              "eventScopeId": "custom-event-cubespawned"
-            }
+            "definitionId": "clear-timer"
           },
           {
             "id": "node-1773600823307-63",
-            "definitionId": "get-variable",
+            "data": {
+              "variableId": "var-spawntimerhandle",
+              "eventScopeId": "custom-event-cubespawned"
+            },
             "position": {
               "x": 1648.603891758032,
               "y": 291.09838151372134
             },
-            "data": {
-              "variableId": "var-spawntimerhandle",
-              "eventScopeId": "custom-event-cubespawned"
-            }
+            "definitionId": "get-variable"
           },
           {
             "id": "node-1773600870007-65",
-            "definitionId": "get-world-world",
+            "data": {
+              "eventScopeId": "custom-event-cubespawned"
+            },
             "position": {
               "x": 1447.2294101677046,
               "y": 178.98992499345482
             },
-            "data": {
-              "eventScopeId": "custom-event-cubespawned"
-            }
+            "definitionId": "get-world-world"
           },
           {
             "id": "node-1773600894611-68",
-            "definitionId": "get-timer-manager",
+            "data": {
+              "eventScopeId": "custom-event-cubespawned"
+            },
             "position": {
               "x": 1658.3488419445164,
               "y": 178.6748840354573
             },
-            "data": {
-              "eventScopeId": "custom-event-cubespawned"
-            }
+            "definitionId": "get-timer-manager"
           },
           {
             "id": "node-1773600987590-73",
-            "definitionId": "set-variable",
+            "data": {
+              "variableId": "var-currentnumberofcubes",
+              "eventScopeId": "custom-event-cubespawned"
+            },
             "position": {
               "x": 1429.6926313510212,
               "y": 5.858496449682399
             },
-            "data": {
-              "variableId": "var-currentnumberofcubes",
-              "eventScopeId": "custom-event-cubespawned"
-            }
+            "definitionId": "set-variable"
           },
           {
             "id": "node-1773601019234-76",
-            "definitionId": "constant",
+            "data": {
+              "value": "0",
+              "eventScopeId": "custom-event-cubespawned"
+            },
             "position": {
               "x": 1223.346958403984,
               "y": 273.6511040979196
             },
-            "data": {
-              "eventScopeId": "custom-event-cubespawned",
-              "value": "0"
-            }
+            "definitionId": "constant"
           },
           {
             "id": "node-1777460994262-7",
-            "definitionId": "constant",
+            "data": {
+              "eventScopeId": "custom-event-startspawning"
+            },
             "position": {
               "x": 901.7013363455089,
               "y": 404.90313817643306
             },
-            "data": {
-              "eventScopeId": "custom-event-startspawning"
-            }
+            "definitionId": "constant"
           },
           {
             "id": "node-1777461119938-10",
-            "definitionId": "function-ref",
+            "data": {
+              "eventScopeId": "custom-event-startspawning",
+              "functionRefName": "SpawnCube",
+              "functionRefClass": "ACubicGM"
+            },
             "position": {
               "x": 1124.701336345509,
               "y": 225.90313817643306
             },
-            "data": {
-              "eventScopeId": "custom-event-startspawning",
-              "functionRefClass": "ACubicGM",
-              "functionRefName": "SpawnCube"
-            }
+            "definitionId": "function-ref"
           },
           {
             "id": "node-1777664650599-14",
-            "definitionId": "call-custom-event-cubespawned",
+            "data": {
+              "eventScopeId": "custom-event-spawncube"
+            },
             "position": {
               "x": 1334.8209491810226,
               "y": 3141.5479411250435
             },
-            "data": {
-              "eventScopeId": "custom-event-spawncube"
-            }
+            "definitionId": "call-custom-event-cubespawned"
           },
           {
             "id": "node-1777666118557-10",
-            "definitionId": "set-timer-33bac6",
+            "data": {
+              "eventScopeId": "custom-event-startspawning"
+            },
             "position": {
               "x": 1651.701336345509,
               "y": -25.09686182356694
             },
-            "data": {
-              "eventScopeId": "custom-event-startspawning"
-            }
+            "definitionId": "set-timer-33bac6"
           },
           {
             "id": "node-1777666145407-14",
-            "definitionId": "self",
+            "data": {
+              "eventScopeId": "custom-event-startspawning"
+            },
             "position": {
               "x": 1437.701336345509,
               "y": 266.90313817643306
             },
-            "data": {
-              "eventScopeId": "custom-event-startspawning"
-            }
+            "definitionId": "self"
           },
           {
             "id": "node-1777666217330-20",
-            "definitionId": "spawn-actor-59543f",
-            "position": {
-              "x": 581.8209491810226,
-              "y": 2787.5479411250435
-            },
             "data": {
               "eventScopeId": "custom-event-spawncube",
               "templateTypeSelections": {
                 "T": "ACompanionCube"
               }
-            }
+            },
+            "position": {
+              "x": 581.8209491810226,
+              "y": 2787.5479411250435
+            },
+            "definitionId": "spawn-actor-59543f"
           },
           {
             "id": "node-1777716912314-1",
-            "definitionId": "get-world-world",
+            "data": {
+              "eventScopeId": "custom-event-startspawning"
+            },
             "position": {
               "x": 625.7013363455089,
               "y": -11.09686182356694
             },
-            "data": {
-              "eventScopeId": "custom-event-startspawning"
-            }
+            "definitionId": "get-world-world"
           },
           {
             "id": "node-1777717034219-12",
-            "definitionId": "make-struct",
+            "data": {
+              "eventScopeId": "custom-event-spawncube",
+              "structTypeName": "FTransform"
+            },
             "position": {
               "x": 260.82094918102257,
               "y": 3044.5479411250435
             },
-            "data": {
-              "eventScopeId": "custom-event-spawncube",
-              "structTypeName": "FTransform"
-            }
+            "definitionId": "make-struct"
           },
           {
             "id": "node-1777717139531-17",
-            "definitionId": "make-struct",
+            "data": {
+              "eventScopeId": "custom-event-spawncube",
+              "structTypeName": "FActorSpawnParameters"
+            },
             "position": {
               "x": 259.82094918102257,
               "y": 3224.5479411250435
             },
-            "data": {
-              "eventScopeId": "custom-event-spawncube",
-              "structTypeName": "FActorSpawnParameters"
-            }
+            "definitionId": "make-struct"
           },
           {
             "id": "node-1777719340476-21",
-            "definitionId": "set-variable",
+            "data": {
+              "variableId": "var-currentnumberofcubes",
+              "eventScopeId": "custom-event-cubespawned"
+            },
             "position": {
               "x": 932.6926313510212,
               "y": 1.8584964496823773
             },
-            "data": {
-              "variableId": "var-currentnumberofcubes",
-              "eventScopeId": "custom-event-cubespawned"
-            }
+            "definitionId": "set-variable"
           },
           {
             "id": "node-1777719356263-24",
-            "definitionId": "get-variable",
+            "data": {
+              "variableId": "var-currentnumberofcubes",
+              "eventScopeId": "custom-event-cubespawned"
+            },
             "position": {
               "x": 512.4000647279596,
               "y": 542.6035807399973
             },
-            "data": {
-              "variableId": "var-currentnumberofcubes",
-              "eventScopeId": "custom-event-cubespawned"
-            }
+            "definitionId": "get-variable"
           },
           {
             "id": "node-1777719366490-25",
-            "definitionId": "math",
+            "data": {
+              "operator": "add",
+              "eventScopeId": "custom-event-cubespawned"
+            },
             "position": {
               "x": 816.4131021086594,
               "y": 503.5038129832012
             },
-            "data": {
-              "operator": "add",
-              "eventScopeId": "custom-event-cubespawned"
-            }
+            "definitionId": "math"
           },
           {
             "id": "node-1777719372482-27",
-            "definitionId": "constant",
+            "data": {
+              "value": "1",
+              "eventScopeId": "custom-event-cubespawned"
+            },
             "position": {
               "x": 436.41310210865936,
               "y": 693.5038129832012
             },
-            "data": {
-              "eventScopeId": "custom-event-cubespawned",
-              "value": "1"
-            }
-          }
-        ],
-        "edges": [
-          {
-            "id": "edge-1773169662288-21",
-            "from": {
-              "nodeId": "node-1773169654672-20",
-              "pinId": "get-variable-output"
-            },
-            "to": {
-              "nodeId": "node-1773169559523-16",
-              "pinId": "compare-greater-equal-b"
-            }
-          },
-          {
-            "id": "edge-1773169667355-22",
-            "from": {
-              "nodeId": "node-1773169559523-16",
-              "pinId": "compare-greater-equal-result"
-            },
-            "to": {
-              "nodeId": "node-1773169529918-14",
-              "pinId": "branch-condition"
-            }
-          },
-          {
-            "id": "edge-1773169692347-24",
-            "from": {
-              "nodeId": "node-1773169529918-14",
-              "pinId": "branch-true"
-            },
-            "to": {
-              "nodeId": "node-1773169688776-23",
-              "pinId": "broadcast-delegate-delegate-onmaxcubespawned-exec-in"
-            }
-          },
-          {
-            "id": "edge-1773171018327-79",
-            "from": {
-              "nodeId": "custom-event-cubespawned",
-              "pinId": "custom-event-cubespawned-exec-out"
-            },
-            "to": {
-              "nodeId": "node-1773171013552-78",
-              "pinId": "bind-delegate-delegate-onmaxcubespawned-exec-in"
-            }
-          },
-          {
-            "id": "edge-1773171047917-82",
-            "from": {
-              "nodeId": "node-1773169501296-12",
-              "pinId": "get-variable-output"
-            },
-            "to": {
-              "nodeId": "node-1773169559523-16",
-              "pinId": "compare-greater-equal-a"
-            }
-          },
-          {
-            "id": "edge-1773171587657-94",
-            "from": {
-              "nodeId": "node-1773171320780-87",
-              "pinId": "event-tick-exec"
-            },
-            "to": {
-              "nodeId": "node-1773171585154-93",
-              "pinId": "set-variable-exec-in"
-            }
-          },
-          {
-            "id": "edge-1773171615862-97",
-            "from": {
-              "nodeId": "node-1773171320780-87",
-              "pinId": "event-tick-delta-seconds"
-            },
-            "to": {
-              "nodeId": "node-1773171612586-96",
-              "pinId": "math-a"
-            }
-          },
-          {
-            "id": "edge-1773171617838-98",
-            "from": {
-              "nodeId": "node-1773171598166-95",
-              "pinId": "get-variable-output"
-            },
-            "to": {
-              "nodeId": "node-1773171612586-96",
-              "pinId": "math-b"
-            }
-          },
-          {
-            "id": "edge-1773171624370-99",
-            "from": {
-              "nodeId": "node-1773171612586-96",
-              "pinId": "math-result"
-            },
-            "to": {
-              "nodeId": "node-1773171585154-93",
-              "pinId": "set-variable-value"
-            }
-          },
-          {
-            "id": "edge-1773171637921-101",
-            "from": {
-              "nodeId": "node-1773171585154-93",
-              "pinId": "set-variable-exec-out"
-            },
-            "to": {
-              "nodeId": "node-1773171635027-100",
-              "pinId": "branch-exec-in"
-            }
-          },
-          {
-            "id": "edge-1773171682868-109",
-            "from": {
-              "nodeId": "node-1773171658351-104",
-              "pinId": "get-variable-output"
-            },
-            "to": {
-              "nodeId": "node-1773171644933-102",
-              "pinId": "compare-greater-equal-b"
-            }
-          },
-          {
-            "id": "edge-1773171684656-110",
-            "from": {
-              "nodeId": "node-1773171655544-103",
-              "pinId": "get-variable-output"
-            },
-            "to": {
-              "nodeId": "node-1773171644933-102",
-              "pinId": "compare-greater-equal-a"
-            }
-          },
-          {
-            "id": "edge-1773171690905-111",
-            "from": {
-              "nodeId": "node-1773171644933-102",
-              "pinId": "compare-greater-equal-result"
-            },
-            "to": {
-              "nodeId": "node-1773171635027-100",
-              "pinId": "branch-condition"
-            }
-          },
-          {
-            "id": "edge-1773235462758-3",
-            "from": {
-              "nodeId": "node-1773233598824-3",
-              "pinId": "get-world-world-return"
-            },
-            "to": {
-              "nodeId": "node-1773235457844-2",
-              "pinId": "is-valid-object"
-            }
-          },
-          {
-            "id": "edge-1773235478265-6",
-            "from": {
-              "nodeId": "node-1773171635027-100",
-              "pinId": "branch-true"
-            },
-            "to": {
-              "nodeId": "node-1773233598824-3",
-              "pinId": "get-world-world-exec-in"
-            }
-          },
-          {
-            "id": "edge-1773235479969-7",
-            "from": {
-              "nodeId": "node-1773233598824-3",
-              "pinId": "get-world-world-exec-out"
-            },
-            "to": {
-              "nodeId": "node-1773235466634-4",
-              "pinId": "branch-exec-in"
-            }
-          },
-          {
-            "id": "edge-1773235482314-8",
-            "from": {
-              "nodeId": "node-1773235457844-2",
-              "pinId": "is-valid-result"
-            },
-            "to": {
-              "nodeId": "node-1773235466634-4",
-              "pinId": "branch-condition"
-            }
-          },
-          {
-            "id": "edge-1773235485083-9",
-            "from": {
-              "nodeId": "node-1773235466634-4",
-              "pinId": "branch-true"
-            },
-            "to": {
-              "nodeId": "node-1773235391080-1",
-              "pinId": "spawn-actor-a95be1-exec-in"
-            }
-          },
-          {
-            "id": "edge-1773235491033-10",
-            "from": {
-              "nodeId": "node-1773233598824-3",
-              "pinId": "get-world-world-return"
-            },
-            "to": {
-              "nodeId": "node-1773235391080-1",
-              "pinId": "spawn-actor-a95be1-target-input-0"
-            }
-          },
-          {
-            "id": "edge-1773235625299-14",
-            "from": {
-              "nodeId": "node-1773235616539-13",
-              "pinId": "get-variable-output"
-            },
-            "to": {
-              "nodeId": "node-1773235391080-1",
-              "pinId": "spawn-actor-a95be1-in-class-input-1"
-            }
-          },
-          {
-            "id": "edge-1773235646882-16",
-            "from": {
-              "nodeId": "node-1773235641972-15",
-              "pinId": "constant-output"
-            },
-            "to": {
-              "nodeId": "node-1773235391080-1",
-              "pinId": "spawn-actor-a95be1-location-input-2"
-            }
-          },
-          {
-            "id": "edge-1773235657125-18",
-            "from": {
-              "nodeId": "node-1773235651426-17",
-              "pinId": "constant-output"
-            },
-            "to": {
-              "nodeId": "node-1773235391080-1",
-              "pinId": "spawn-actor-a95be1-rotation-input-3"
-            }
-          },
-          {
-            "id": "edge-1773236046670-30",
-            "from": {
-              "nodeId": "node-1773235712748-19",
-              "pinId": "math-result"
-            },
-            "to": {
-              "nodeId": "node-1773235932981-24",
-              "pinId": "set-struct-member-input"
-            }
-          },
-          {
-            "id": "edge-1773264079256-2",
-            "from": {
-              "nodeId": "node-1773264075449-1",
-              "pinId": "constant-output"
-            },
-            "to": {
-              "nodeId": "node-1773235391080-1",
-              "pinId": "spawn-actor-a95be1-spawn-parameters-input-4"
-            }
-          },
-          {
-            "id": "edge-1773264157877-4",
-            "from": {
-              "nodeId": "node-1773235391080-1",
-              "pinId": "spawn-actor-a95be1-return"
-            },
-            "to": {
-              "nodeId": "node-1773264153547-3",
-              "pinId": "is-valid-object"
-            }
-          },
-          {
-            "id": "edge-1773264168088-6",
-            "from": {
-              "nodeId": "node-1773264153547-3",
-              "pinId": "is-valid-result"
-            },
-            "to": {
-              "nodeId": "node-1773264162472-5",
-              "pinId": "branch-condition"
-            }
-          },
-          {
-            "id": "edge-1773264170894-7",
-            "from": {
-              "nodeId": "node-1773235391080-1",
-              "pinId": "spawn-actor-a95be1-exec-out"
-            },
-            "to": {
-              "nodeId": "node-1773264162472-5",
-              "pinId": "branch-exec-in"
-            }
-          },
-          {
-            "id": "edge-1773264188028-9",
-            "from": {
-              "nodeId": "node-1773264162472-5",
-              "pinId": "branch-true"
-            },
-            "to": {
-              "nodeId": "node-1773264183917-8",
-              "pinId": "broadcast-delegate-delegate-oncubespawned-exec-in"
-            }
-          },
-          {
-            "id": "edge-1773264193058-10",
-            "from": {
-              "nodeId": "node-1773235391080-1",
-              "pinId": "spawn-actor-a95be1-return"
-            },
-            "to": {
-              "nodeId": "node-1773264183917-8",
-              "pinId": "broadcast-delegate-delegate-oncubespawned-in-spawnedcube"
-            }
-          },
-          {
-            "id": "edge-1773265486574-8",
-            "from": {
-              "nodeId": "node-1773265468273-6",
-              "pinId": "is-valid-result"
-            },
-            "to": {
-              "nodeId": "node-1773265479443-7",
-              "pinId": "branch-condition"
-            }
-          },
-          {
-            "id": "edge-1773265493883-11",
-            "from": {
-              "nodeId": "node-1773265479443-7",
-              "pinId": "branch-true"
-            },
-            "to": {
-              "nodeId": "node-1773265427244-2",
-              "pinId": "get-timer-manager-exec-in"
-            }
-          },
-          {
-            "id": "edge-1773599704398-8",
-            "from": {
-              "nodeId": "node-1773265427244-2",
-              "pinId": "get-timer-manager-return"
-            },
-            "to": {
-              "nodeId": "node-1773599541851-6",
-              "pinId": "set-timer-8bf8d1-target-input-0"
-            }
-          },
-          {
-            "id": "edge-1773599729209-10",
-            "from": {
-              "nodeId": "node-1773599719651-9",
-              "pinId": "get-variable-output"
-            },
-            "to": {
-              "nodeId": "node-1773599541851-6",
-              "pinId": "set-timer-8bf8d1-in-out-handle-input-1"
-            }
-          },
-          {
-            "id": "edge-1773599778494-14",
-            "from": {
-              "nodeId": "node-1773599768602-13",
-              "pinId": "get-variable-output"
-            },
-            "to": {
-              "nodeId": "node-1773599541851-6",
-              "pinId": "set-timer-8bf8d1-in-rate-input-3"
-            }
-          },
-          {
-            "id": "edge-1773600096270-31",
-            "from": {
-              "nodeId": "node-1773600074334-27",
-              "pinId": "is-valid-result"
-            },
-            "to": {
-              "nodeId": "node-1773600088484-29",
-              "pinId": "branch-condition"
-            }
-          },
-          {
-            "id": "edge-1773600273100-37",
-            "from": {
-              "nodeId": "node-1773600128279-34",
-              "pinId": "constant-output"
-            },
-            "to": {
-              "nodeId": "node-1773600267983-36",
-              "pinId": "math-a"
-            }
-          },
-          {
-            "id": "edge-1773600325205-40",
-            "from": {
-              "nodeId": "node-1773600301962-38",
-              "pinId": "constant-output"
-            },
-            "to": {
-              "nodeId": "node-1773600317398-39",
-              "pinId": "math-a"
-            }
-          },
-          {
-            "id": "edge-1773600341960-42",
-            "from": {
-              "nodeId": "node-1773600331501-41",
-              "pinId": "get-variable-output"
-            },
-            "to": {
-              "nodeId": "node-1773600317398-39",
-              "pinId": "math-b"
-            }
-          },
-          {
-            "id": "edge-1773600345982-43",
-            "from": {
-              "nodeId": "node-1773600317398-39",
-              "pinId": "math-result"
-            },
-            "to": {
-              "nodeId": "node-1773600267983-36",
-              "pinId": "math-b"
-            }
-          },
-          {
-            "id": "edge-1773600468252-50",
-            "from": {
-              "nodeId": "node-1773600418684-47",
-              "pinId": "is-valid-result"
-            },
-            "to": {
-              "nodeId": "node-1773600453955-48",
-              "pinId": "branch-condition"
-            }
-          },
-          {
-            "id": "edge-1773600664903-59",
-            "from": {
-              "nodeId": "node-1773600561412-56",
-              "pinId": "get-local-variable-output"
-            },
-            "to": {
-              "nodeId": "node-1773600418684-47",
-              "pinId": "is-valid-object"
-            }
-          },
-          {
-            "id": "edge-1773600671909-61",
-            "from": {
-              "nodeId": "node-1773600559190-55",
-              "pinId": "set-local-variable-exec-out"
-            },
-            "to": {
-              "nodeId": "node-1773600453955-48",
-              "pinId": "branch-exec-in"
-            }
-          },
-          {
-            "id": "edge-1773600833600-64",
-            "from": {
-              "nodeId": "node-1773600823307-63",
-              "pinId": "get-variable-output"
-            },
-            "to": {
-              "nodeId": "node-1773600810500-62",
-              "pinId": "clear-timer-in-handle-input-1"
-            }
-          },
-          {
-            "id": "edge-1773600900165-69",
-            "from": {
-              "nodeId": "node-1773600870007-65",
-              "pinId": "get-world-world-return"
-            },
-            "to": {
-              "nodeId": "node-1773600894611-68",
-              "pinId": "get-timer-manager-target-input-0"
-            }
-          },
-          {
-            "id": "edge-1773600901903-70",
-            "from": {
-              "nodeId": "node-1773600870007-65",
-              "pinId": "get-world-world-exec-out"
-            },
-            "to": {
-              "nodeId": "node-1773600894611-68",
-              "pinId": "get-timer-manager-exec-in"
-            }
-          },
-          {
-            "id": "edge-1773600906476-71",
-            "from": {
-              "nodeId": "node-1773600894611-68",
-              "pinId": "get-timer-manager-exec-out"
-            },
-            "to": {
-              "nodeId": "node-1773600810500-62",
-              "pinId": "clear-timer-exec-in"
-            }
-          },
-          {
-            "id": "edge-1773600908585-72",
-            "from": {
-              "nodeId": "node-1773600894611-68",
-              "pinId": "get-timer-manager-return"
-            },
-            "to": {
-              "nodeId": "node-1773600810500-62",
-              "pinId": "clear-timer-target-input-0"
-            }
-          },
-          {
-            "id": "edge-1773601001925-75",
-            "from": {
-              "nodeId": "node-1773169688776-23",
-              "pinId": "broadcast-delegate-delegate-onmaxcubespawned-exec-out"
-            },
-            "to": {
-              "nodeId": "node-1773600987590-73",
-              "pinId": "set-variable-exec-in"
-            }
-          },
-          {
-            "id": "edge-1773601031056-77",
-            "from": {
-              "nodeId": "node-1773601019234-76",
-              "pinId": "constant-output"
-            },
-            "to": {
-              "nodeId": "node-1773600987590-73",
-              "pinId": "set-variable-value"
-            }
-          },
-          {
-            "id": "edge-1777460997549-8",
-            "from": {
-              "nodeId": "node-1777460994262-7",
-              "pinId": "constant-output"
-            },
-            "to": {
-              "nodeId": "node-1773599541851-6",
-              "pinId": "set-timer-8bf8d1-in-first-delay-input-5"
-            }
-          },
-          {
-            "id": "edge-1777461147228-11",
-            "from": {
-              "nodeId": "node-1777461119938-10",
-              "pinId": "function-ref-output"
-            },
-            "to": {
-              "nodeId": "node-1773599541851-6",
-              "pinId": "set-timer-8bf8d1-in-dyn-delegate-input-2"
-            }
-          },
-          {
-            "id": "edge-1777664480632-13",
-            "from": {
-              "nodeId": "custom-event-cubespawned",
-              "pinId": "custom-event-cubespawned-out-spawnedcube"
-            },
-            "to": {
-              "nodeId": "node-1773171013552-78",
-              "pinId": "bind-delegate-delegate-onmaxcubespawned-target"
-            }
-          },
-          {
-            "id": "edge-1777664654358-15",
-            "from": {
-              "nodeId": "node-1773600453955-48",
-              "pinId": "branch-true"
-            },
-            "to": {
-              "nodeId": "node-1777664650599-14",
-              "pinId": "call-custom-event-cubespawned-exec-in"
-            }
-          },
-          {
-            "id": "edge-1777664656722-16",
-            "from": {
-              "nodeId": "node-1773600561412-56",
-              "pinId": "get-local-variable-output"
-            },
-            "to": {
-              "nodeId": "node-1777664650599-14",
-              "pinId": "call-custom-event-cubespawned-in-spawnedcube"
-            }
-          },
-          {
-            "id": "edge-1777664669761-17",
-            "from": {
-              "nodeId": "node-1773171367114-88",
-              "pinId": "event-begin-play-exec"
-            },
-            "to": {
-              "nodeId": "node-1773599822651-15",
-              "pinId": "call-custom-event-startspawning-exec-in"
-            }
-          },
-          {
-            "id": "edge-1777666127409-11",
-            "from": {
-              "nodeId": "node-1773265427244-2",
-              "pinId": "get-timer-manager-return"
-            },
-            "to": {
-              "nodeId": "node-1777666118557-10",
-              "pinId": "set-timer-33bac6-target-input-0"
-            }
-          },
-          {
-            "id": "edge-1777666131260-12",
-            "from": {
-              "nodeId": "node-1773265427244-2",
-              "pinId": "get-timer-manager-exec-out"
-            },
-            "to": {
-              "nodeId": "node-1777666118557-10",
-              "pinId": "set-timer-33bac6-exec-in"
-            }
-          },
-          {
-            "id": "edge-1777666141238-13",
-            "from": {
-              "nodeId": "node-1773599719651-9",
-              "pinId": "get-variable-output"
-            },
-            "to": {
-              "nodeId": "node-1777666118557-10",
-              "pinId": "set-timer-33bac6-in-out-handle-input-1"
-            }
-          },
-          {
-            "id": "edge-1777666148024-15",
-            "from": {
-              "nodeId": "node-1777666145407-14",
-              "pinId": "self-output"
-            },
-            "to": {
-              "nodeId": "node-1777666118557-10",
-              "pinId": "set-timer-33bac6-in-obj-input-2"
-            }
-          },
-          {
-            "id": "edge-1777666153939-16",
-            "from": {
-              "nodeId": "node-1777461119938-10",
-              "pinId": "function-ref-output"
-            },
-            "to": {
-              "nodeId": "node-1777666118557-10",
-              "pinId": "set-timer-33bac6-in-timer-method-input-3"
-            }
-          },
-          {
-            "id": "edge-1777666159932-17",
-            "from": {
-              "nodeId": "node-1773599768602-13",
-              "pinId": "get-variable-output"
-            },
-            "to": {
-              "nodeId": "node-1777666118557-10",
-              "pinId": "set-timer-33bac6-in-rate-input-4"
-            }
-          },
-          {
-            "id": "edge-1777666165273-19",
-            "from": {
-              "nodeId": "node-1777460994262-7",
-              "pinId": "constant-output"
-            },
-            "to": {
-              "nodeId": "node-1777666118557-10",
-              "pinId": "set-timer-33bac6-in-first-delay-input-6"
-            }
-          },
-          {
-            "id": "edge-1777666530852-23",
-            "from": {
-              "nodeId": "node-1773599965102-21",
-              "pinId": "get-variable-output"
-            },
-            "to": {
-              "nodeId": "node-1777666217330-20",
-              "pinId": "spawn-actor-59543f-class-input-1"
-            }
-          },
-          {
-            "id": "edge-1777667074488-1",
-            "from": {
-              "nodeId": "custom-event-spawncube",
-              "pinId": "custom-event-spawncube-exec-out"
-            },
-            "to": {
-              "nodeId": "node-1773599995173-25",
-              "pinId": "get-world-world-exec-in"
-            }
-          },
-          {
-            "id": "edge-1777667077936-2",
-            "from": {
-              "nodeId": "node-1773599995173-25",
-              "pinId": "get-world-world-exec-out"
-            },
-            "to": {
-              "nodeId": "node-1773600088484-29",
-              "pinId": "branch-exec-in"
-            }
-          },
-          {
-            "id": "edge-1777667084909-3",
-            "from": {
-              "nodeId": "node-1773599995173-25",
-              "pinId": "get-world-world-return"
-            },
-            "to": {
-              "nodeId": "node-1777666217330-20",
-              "pinId": "spawn-actor-59543f-target-input-0"
-            }
-          },
-          {
-            "id": "edge-1777667087980-4",
-            "from": {
-              "nodeId": "node-1773599995173-25",
-              "pinId": "get-world-world-return"
-            },
-            "to": {
-              "nodeId": "node-1773600074334-27",
-              "pinId": "is-valid-object"
-            }
-          },
-          {
-            "id": "edge-1777667422727-14",
-            "from": {
-              "nodeId": "node-1777666217330-20",
-              "pinId": "spawn-actor-59543f-exec-out"
-            },
-            "to": {
-              "nodeId": "node-1773600559190-55",
-              "pinId": "set-local-variable-exec-in"
-            }
-          },
-          {
-            "id": "edge-1777667425118-15",
-            "from": {
-              "nodeId": "node-1777666217330-20",
-              "pinId": "spawn-actor-59543f-return"
-            },
-            "to": {
-              "nodeId": "node-1773600559190-55",
-              "pinId": "set-local-variable-value"
-            }
-          },
-          {
-            "id": "edge-1777716915875-2",
-            "from": {
-              "nodeId": "custom-event-startspawning",
-              "pinId": "custom-event-startspawning-exec-out"
-            },
-            "to": {
-              "nodeId": "node-1777716912314-1",
-              "pinId": "get-world-world-exec-in"
-            }
-          },
-          {
-            "id": "edge-1777716916859-3",
-            "from": {
-              "nodeId": "node-1777716912314-1",
-              "pinId": "get-world-world-exec-out"
-            },
-            "to": {
-              "nodeId": "node-1773265479443-7",
-              "pinId": "branch-exec-in"
-            }
-          },
-          {
-            "id": "edge-1777716918177-4",
-            "from": {
-              "nodeId": "node-1777716912314-1",
-              "pinId": "get-world-world-return"
-            },
-            "to": {
-              "nodeId": "node-1773265468273-6",
-              "pinId": "is-valid-object"
-            }
-          },
-          {
-            "id": "edge-1777716920024-5",
-            "from": {
-              "nodeId": "node-1777716912314-1",
-              "pinId": "get-world-world-return"
-            },
-            "to": {
-              "nodeId": "node-1773265427244-2",
-              "pinId": "get-timer-manager-target-input-0"
-            }
-          },
-          {
-            "id": "edge-1777717044950-13",
-            "from": {
-              "nodeId": "node-1773600267983-36",
-              "pinId": "math-result"
-            },
-            "to": {
-              "nodeId": "node-1777717034219-12",
-              "pinId": "make-struct-field-translation-1"
-            }
-          },
-          {
-            "id": "edge-1777717077531-15",
-            "from": {
-              "nodeId": "node-1773600088484-29",
-              "pinId": "branch-true"
-            },
-            "to": {
-              "nodeId": "node-1777666217330-20",
-              "pinId": "spawn-actor-59543f-exec-in"
-            }
-          },
-          {
-            "id": "edge-1777717165473-18",
-            "from": {
-              "nodeId": "node-1777717139531-17",
-              "pinId": "make-struct-result"
-            },
-            "to": {
-              "nodeId": "node-1777666217330-20",
-              "pinId": "spawn-actor-59543f-spawn-parameters-input-3"
-            }
-          },
-          {
-            "id": "edge-1777718763742-20",
-            "from": {
-              "nodeId": "node-1777717034219-12",
-              "pinId": "make-struct-result"
-            },
-            "to": {
-              "nodeId": "node-1777666217330-20",
-              "pinId": "spawn-actor-59543f-transform-input-2"
-            }
-          },
-          {
-            "id": "edge-1777719369773-26",
-            "from": {
-              "nodeId": "node-1777719356263-24",
-              "pinId": "get-variable-output"
-            },
-            "to": {
-              "nodeId": "node-1777719366490-25",
-              "pinId": "math-a"
-            }
-          },
-          {
-            "id": "edge-1777719374845-28",
-            "from": {
-              "nodeId": "node-1777719372482-27",
-              "pinId": "constant-output"
-            },
-            "to": {
-              "nodeId": "node-1777719366490-25",
-              "pinId": "math-b"
-            }
-          },
-          {
-            "id": "edge-1777719384265-29",
-            "from": {
-              "nodeId": "node-1777719366490-25",
-              "pinId": "math-result"
-            },
-            "to": {
-              "nodeId": "node-1777719340476-21",
-              "pinId": "set-variable-value"
-            }
-          },
-          {
-            "id": "edge-1777719397805-30",
-            "from": {
-              "nodeId": "node-1773171013552-78",
-              "pinId": "bind-delegate-delegate-onmaxcubespawned-exec-out"
-            },
-            "to": {
-              "nodeId": "node-1777719340476-21",
-              "pinId": "set-variable-exec-in"
-            }
-          },
-          {
-            "id": "edge-1777719399358-31",
-            "from": {
-              "nodeId": "node-1777719340476-21",
-              "pinId": "set-variable-exec-out"
-            },
-            "to": {
-              "nodeId": "node-1773169529918-14",
-              "pinId": "branch-exec-in"
-            }
-          },
-          {
-            "id": "edge-1777748435428-1",
-            "from": {
-              "nodeId": "node-1773599761070-11",
-              "pinId": "constant-output"
-            },
-            "to": {
-              "nodeId": "node-1773599541851-6",
-              "pinId": "set-timer-8bf8d1-inb-loop-input-4"
-            }
-          },
-          {
-            "id": "edge-1777748437496-2",
-            "from": {
-              "nodeId": "node-1773599761070-11",
-              "pinId": "constant-output"
-            },
-            "to": {
-              "nodeId": "node-1777666118557-10",
-              "pinId": "set-timer-33bac6-inb-loop-input-5"
-            }
+            "definitionId": "constant"
           }
         ]
       },
@@ -1832,6 +1832,7 @@
         "Runtime/WorldCollision.json",
         "Runtime/WorldSubsystem.json"
       ],
+      "manualHeaderIncludes": [],
       "customEvents": [
         {
           "id": "custom-event-cubespawned",
@@ -2040,140 +2041,140 @@
       "templateLabel": "Actor",
       "categoryPath": "Actors",
       "graph": {
-        "nodes": [
-          {
-            "id": "node-1773170878478-69",
-            "definitionId": "event-construct",
-            "position": {
-              "x": 24,
-              "y": 20
-            }
-          },
-          {
-            "id": "node-1773170878478-70",
-            "definitionId": "event-destruct",
-            "position": {
-              "x": 244,
-              "y": 20
-            }
-          },
-          {
-            "id": "node-1773170878478-71",
-            "definitionId": "event-begin-play",
-            "position": {
-              "x": 24,
-              "y": 160
-            }
-          },
-          {
-            "id": "node-1773170878478-72",
-            "definitionId": "event-tick",
-            "position": {
-              "x": 244,
-              "y": 160
-            }
-          },
-          {
-            "id": "custom-event-destroyme",
-            "definitionId": "custom-event-destroyme",
-            "position": {
-              "x": 32,
-              "y": 345.66666666666663
-            },
-            "data": {
-              "eventScopeId": "custom-event-destroyme"
-            }
-          },
-          {
-            "id": "node-1773170931778-76",
-            "definitionId": "self",
-            "position": {
-              "x": 32.316429029466164,
-              "y": 428.4860228584919
-            },
-            "data": {
-              "eventScopeId": "custom-event-destroyme"
-            }
-          },
-          {
-            "id": "node-1777452043489-12",
-            "definitionId": "destroy",
-            "position": {
-              "x": 379,
-              "y": 340.66666666666663
-            },
-            "data": {
-              "eventScopeId": "custom-event-destroyme"
-            }
-          },
-          {
-            "id": "node-1777460494841-1",
-            "definitionId": "constant",
-            "position": {
-              "x": 25.5,
-              "y": 534.6666666666666
-            },
-            "data": {
-              "eventScopeId": "custom-event-destroyme",
-              "value": true
-            }
-          },
-          {
-            "id": "node-1777460509000-4",
-            "definitionId": "constant",
-            "position": {
-              "x": 19.5,
-              "y": 765.6666666666666
-            },
-            "data": {
-              "eventScopeId": "custom-event-destroyme"
-            }
-          }
-        ],
         "edges": [
           {
             "id": "edge-1777452054334-13",
-            "from": {
-              "nodeId": "custom-event-destroyme",
-              "pinId": "custom-event-destroyme-exec-out"
-            },
             "to": {
-              "nodeId": "node-1777452043489-12",
-              "pinId": "destroy-exec-in"
+              "pinId": "destroy-exec-in",
+              "nodeId": "node-1777452043489-12"
+            },
+            "from": {
+              "pinId": "custom-event-destroyme-exec-out",
+              "nodeId": "custom-event-destroyme"
             }
           },
           {
             "id": "edge-1777452055604-14",
-            "from": {
-              "nodeId": "node-1773170931778-76",
-              "pinId": "self-output"
-            },
             "to": {
-              "nodeId": "node-1777452043489-12",
-              "pinId": "destroy-target-input-0"
+              "pinId": "destroy-target-input-0",
+              "nodeId": "node-1777452043489-12"
+            },
+            "from": {
+              "pinId": "self-output",
+              "nodeId": "node-1773170931778-76"
             }
           },
           {
             "id": "edge-1777460503468-3",
-            "from": {
-              "nodeId": "node-1777460494841-1",
-              "pinId": "constant-output"
-            },
             "to": {
-              "nodeId": "node-1777452043489-12",
-              "pinId": "destroy-net-force-input-1"
+              "pinId": "destroy-net-force-input-1",
+              "nodeId": "node-1777452043489-12"
+            },
+            "from": {
+              "pinId": "constant-output",
+              "nodeId": "node-1777460494841-1"
             }
           },
           {
             "id": "edge-1777460514581-5",
-            "from": {
-              "nodeId": "node-1777460509000-4",
-              "pinId": "constant-output"
-            },
             "to": {
-              "nodeId": "node-1777452043489-12",
-              "pinId": "destroy-should-modify-level-input-2"
+              "pinId": "destroy-should-modify-level-input-2",
+              "nodeId": "node-1777452043489-12"
+            },
+            "from": {
+              "pinId": "constant-output",
+              "nodeId": "node-1777460509000-4"
             }
+          }
+        ],
+        "nodes": [
+          {
+            "id": "node-1773170878478-69",
+            "position": {
+              "x": 24,
+              "y": 20
+            },
+            "definitionId": "event-construct"
+          },
+          {
+            "id": "node-1773170878478-70",
+            "position": {
+              "x": 244,
+              "y": 20
+            },
+            "definitionId": "event-destruct"
+          },
+          {
+            "id": "node-1773170878478-71",
+            "position": {
+              "x": 24,
+              "y": 160
+            },
+            "definitionId": "event-begin-play"
+          },
+          {
+            "id": "node-1773170878478-72",
+            "position": {
+              "x": 244,
+              "y": 160
+            },
+            "definitionId": "event-tick"
+          },
+          {
+            "id": "custom-event-destroyme",
+            "data": {
+              "eventScopeId": "custom-event-destroyme"
+            },
+            "position": {
+              "x": 32,
+              "y": 345.66666666666663
+            },
+            "definitionId": "custom-event-destroyme"
+          },
+          {
+            "id": "node-1773170931778-76",
+            "data": {
+              "eventScopeId": "custom-event-destroyme"
+            },
+            "position": {
+              "x": 32.316429029466164,
+              "y": 428.4860228584919
+            },
+            "definitionId": "self"
+          },
+          {
+            "id": "node-1777452043489-12",
+            "data": {
+              "eventScopeId": "custom-event-destroyme"
+            },
+            "position": {
+              "x": 379,
+              "y": 340.66666666666663
+            },
+            "definitionId": "destroy"
+          },
+          {
+            "id": "node-1777460494841-1",
+            "data": {
+              "value": true,
+              "eventScopeId": "custom-event-destroyme"
+            },
+            "position": {
+              "x": 25.5,
+              "y": 534.6666666666666
+            },
+            "definitionId": "constant"
+          },
+          {
+            "id": "node-1777460509000-4",
+            "data": {
+              "eventScopeId": "custom-event-destroyme"
+            },
+            "position": {
+              "x": 19.5,
+              "y": 765.6666666666666
+            },
+            "definitionId": "constant"
           }
         ]
       },
@@ -2194,6 +2195,7 @@
         "Runtime/SceneComponent.json",
         "Runtime/SubclassOf.json"
       ],
+      "manualHeaderIncludes": [],
       "customEvents": [
         {
           "id": "custom-event-destroyme",
@@ -2206,6 +2208,1574 @@
           "ufunctionValues": {}
         }
       ],
+      "delegates": [],
+      "variables": [],
+      "enums": [],
+      "structs": [],
+      "selectedProjectEnumIds": [],
+      "selectedProjectStructIds": [],
+      "selectedProjectInterfaceIds": [],
+      "includedBlueprintIds": []
+    },
+    {
+      "id": "bp-1777972896860-19",
+      "name": "test",
+      "templateId": "game-mode",
+      "templateLabel": "Game Mode",
+      "categoryPath": "",
+      "graph": {
+        "edges": [],
+        "nodes": [
+          {
+            "id": "node-1777972896860-20",
+            "position": {
+              "x": 24,
+              "y": 20
+            },
+            "definitionId": "event-construct"
+          },
+          {
+            "id": "node-1777972896860-21",
+            "position": {
+              "x": 244,
+              "y": 20
+            },
+            "definitionId": "event-destruct"
+          },
+          {
+            "id": "node-1777972896860-22",
+            "position": {
+              "x": 1259,
+              "y": -697.5
+            },
+            "definitionId": "event-begin-play"
+          }
+        ]
+      },
+      "selectedFiles": [
+        "Runtime/GameModeBase.json",
+        "Runtime/GameplayStatics.json",
+        "Runtime/Material.json",
+        "Runtime/MaterialInterface.json",
+        "Runtime/PrimitiveComponent.json",
+        "Runtime/StaticMeshComponent.json"
+      ],
+      "loadedFileNames": [
+        "Runtime/GameModeBase.json",
+        "Runtime/GameplayStatics.json",
+        "Runtime/Material.json",
+        "Runtime/MaterialInterface.json",
+        "Runtime/PrimitiveComponent.json",
+        "Runtime/StaticMeshComponent.json",
+        "Runtime/ObjectMacros.json",
+        "Runtime/SubclassOf.json",
+        "Runtime/Actor.json",
+        "Runtime/Pawn.json",
+        "Runtime/Info.json",
+        "Runtime/PlayerController.json",
+        "Runtime/Object.json",
+        "Runtime/EngineTypes.json",
+        "Runtime/CollisionQueryParams.json",
+        "Runtime/KismetSystemLibrary.json",
+        "Runtime/Delegate.json",
+        "Runtime/SceneComponent.json",
+        "Runtime/InputCoreTypes.json",
+        "Runtime/EngineBaseTypes.json",
+        "Runtime/ChildActorComponent.json",
+        "Runtime/ReplicatedState.json",
+        "Runtime/Controller.json",
+        "Runtime/PlayerMuteList.json",
+        "Runtime/OnlineReplStructs.json",
+        "Runtime/PlayerCameraManager.json",
+        "Runtime/UpdateLevelVisibilityLevelInfo.json",
+        "Runtime/PrimaryAssetId.json",
+        "Runtime/HitResult.json",
+        "Runtime/SoftObjectPtr.json",
+        "Runtime/ActorComponent.json",
+        "Runtime/CameraTypes.json"
+      ],
+      "manualHeaderIncludes": [],
+      "customEvents": [],
+      "delegates": [],
+      "variables": [
+        {
+          "id": "var-platypus",
+          "name": "Platypus",
+          "valueType": "Object",
+          "typeName": "UBasePlayer",
+          "isArray": false,
+          "isMap": false,
+          "objectPointerKind": "raw",
+          "defaultValue": null,
+          "isPublic": false,
+          "isUProperty": false,
+          "forwardDeclareType": false,
+          "upropertySpecifiers": [],
+          "upropertyValues": {}
+        },
+        {
+          "id": "var-squirrel",
+          "name": "Squirrel",
+          "valueType": "Object",
+          "typeName": "UBasePlayer",
+          "isArray": false,
+          "isMap": false,
+          "objectPointerKind": "raw",
+          "defaultValue": null,
+          "isPublic": false,
+          "isUProperty": false,
+          "forwardDeclareType": false,
+          "upropertySpecifiers": [],
+          "upropertyValues": {}
+        },
+        {
+          "id": "var-material",
+          "name": "Material",
+          "valueType": "Object",
+          "typeName": "UMaterial",
+          "isArray": false,
+          "isMap": false,
+          "objectPointerKind": "raw",
+          "defaultValue": null,
+          "isPublic": false,
+          "isUProperty": false,
+          "forwardDeclareType": false,
+          "upropertySpecifiers": [],
+          "upropertyValues": {}
+        },
+        {
+          "id": "var-number",
+          "name": "Number",
+          "valueType": "Int",
+          "isArray": false,
+          "isMap": false,
+          "defaultValue": null,
+          "isPublic": false,
+          "isUProperty": false,
+          "forwardDeclareType": false,
+          "upropertySpecifiers": [],
+          "upropertyValues": {}
+        },
+        {
+          "id": "var-numbertext",
+          "name": "NumberText",
+          "valueType": "Object",
+          "typeName": "UTextRenderComponent",
+          "isArray": false,
+          "isMap": false,
+          "objectPointerKind": "raw",
+          "defaultValue": null,
+          "isPublic": false,
+          "isUProperty": false,
+          "forwardDeclareType": false,
+          "upropertySpecifiers": [],
+          "upropertyValues": {}
+        },
+        {
+          "id": "var-symbol",
+          "name": "Symbol",
+          "valueType": "Object",
+          "typeName": "UStaticMeshComponent",
+          "isArray": false,
+          "isMap": false,
+          "objectPointerKind": "raw",
+          "defaultValue": null,
+          "isPublic": false,
+          "isUProperty": false,
+          "forwardDeclareType": false,
+          "upropertySpecifiers": [],
+          "upropertyValues": {}
+        }
+      ],
+      "enums": [],
+      "structs": [],
+      "selectedProjectEnumIds": [],
+      "selectedProjectStructIds": [],
+      "selectedProjectInterfaceIds": [],
+      "includedBlueprintIds": []
+    },
+    {
+      "id": "bp-1778057955840-104",
+      "name": "MyCharacter",
+      "templateId": "actor",
+      "templateLabel": "Actor",
+      "categoryPath": "",
+      "graph": {
+        "edges": [
+          {
+            "id": "edge-1778057965065-114",
+            "to": {
+              "pinId": "compare-greater-b",
+              "nodeId": "node-1778057965065-112"
+            },
+            "from": {
+              "pinId": "constant-output",
+              "nodeId": "node-1778057965065-113"
+            }
+          },
+          {
+            "id": "edge-1778057965068-121",
+            "to": {
+              "pinId": "compare-not-equal-b",
+              "nodeId": "node-1778057965068-119"
+            },
+            "from": {
+              "pinId": "constant-output",
+              "nodeId": "node-1778057965068-120"
+            }
+          },
+          {
+            "id": "edge-1778057965074-126",
+            "to": {
+              "pinId": "get-player-controller-player-index-input-1",
+              "nodeId": "node-1778057965074-124"
+            },
+            "from": {
+              "pinId": "constant-output",
+              "nodeId": "node-1778057965074-125"
+            }
+          },
+          {
+            "id": "edge-1778057965093-138",
+            "to": {
+              "pinId": "compare-greater-b",
+              "nodeId": "node-1778057965093-136"
+            },
+            "from": {
+              "pinId": "constant-output",
+              "nodeId": "node-1778057965093-137"
+            }
+          },
+          {
+            "id": "edge-1778057965093-142",
+            "to": {
+              "pinId": "compare-less-b",
+              "nodeId": "node-1778057965093-140"
+            },
+            "from": {
+              "pinId": "constant-output",
+              "nodeId": "node-1778057965093-141"
+            }
+          },
+          {
+            "id": "edge-1778057965100-146",
+            "to": {
+              "pinId": "get-player-controller-player-index-input-1",
+              "nodeId": "node-1778057965099-144"
+            },
+            "from": {
+              "pinId": "constant-output",
+              "nodeId": "node-1778057965100-145"
+            }
+          },
+          {
+            "id": "edge-1778057965127-157",
+            "to": {
+              "pinId": "get-player-controller-player-index-input-1",
+              "nodeId": "node-1778057965127-155"
+            },
+            "from": {
+              "pinId": "constant-output",
+              "nodeId": "node-1778057965127-156"
+            }
+          },
+          {
+            "id": "edge-1778057965145-166",
+            "to": {
+              "pinId": "math-a",
+              "nodeId": "node-1778057965145-164"
+            },
+            "from": {
+              "pinId": "constant-output",
+              "nodeId": "node-1778057965145-165"
+            }
+          },
+          {
+            "id": "edge-1778057965146-168",
+            "to": {
+              "pinId": "branch-condition",
+              "nodeId": "node-1778057965053-109"
+            },
+            "from": {
+              "pinId": "bool-and-result",
+              "nodeId": "node-1778057965068-122"
+            }
+          },
+          {
+            "id": "edge-1778057965146-169",
+            "to": {
+              "pinId": "branch-exec-in",
+              "nodeId": "node-1778057965093-133"
+            },
+            "from": {
+              "pinId": "branch-true",
+              "nodeId": "node-1778057965053-109"
+            }
+          },
+          {
+            "id": "edge-1778057965146-170",
+            "to": {
+              "pinId": "set-control-rotation-exec-in",
+              "nodeId": "node-1778057965071-123"
+            },
+            "from": {
+              "pinId": "branch-false",
+              "nodeId": "node-1778057965053-109"
+            }
+          },
+          {
+            "id": "edge-1778057965146-171",
+            "to": {
+              "pinId": "v-size-a-input-0",
+              "nodeId": "node-1778057965065-111"
+            },
+            "from": {
+              "pinId": "get-velocity-return",
+              "nodeId": "node-1778057965061-110"
+            }
+          },
+          {
+            "id": "edge-1778057965146-172",
+            "to": {
+              "pinId": "compare-greater-a",
+              "nodeId": "node-1778057965065-112"
+            },
+            "from": {
+              "pinId": "v-size-return",
+              "nodeId": "node-1778057965065-111"
+            }
+          },
+          {
+            "id": "edge-1778057965146-173",
+            "to": {
+              "pinId": "bool-and-a",
+              "nodeId": "node-1778057965068-122"
+            },
+            "from": {
+              "pinId": "compare-greater-result",
+              "nodeId": "node-1778057965065-112"
+            }
+          },
+          {
+            "id": "edge-1778057965146-174",
+            "to": {
+              "pinId": "is-falling-target-input-0",
+              "nodeId": "node-1778057965068-116"
+            },
+            "from": {
+              "pinId": "get-variable-output",
+              "nodeId": "node-1778057965065-115"
+            }
+          },
+          {
+            "id": "edge-1778057965146-175",
+            "to": {
+              "pinId": "bool-not-a",
+              "nodeId": "node-1778057965068-117"
+            },
+            "from": {
+              "pinId": "is-falling-return",
+              "nodeId": "node-1778057965068-116"
+            }
+          },
+          {
+            "id": "edge-1778057965146-176",
+            "to": {
+              "pinId": "bool-and-b",
+              "nodeId": "node-1778057965068-122"
+            },
+            "from": {
+              "pinId": "bool-not-result",
+              "nodeId": "node-1778057965068-117"
+            }
+          },
+          {
+            "id": "edge-1778057965146-177",
+            "to": {
+              "pinId": "compare-not-equal-a",
+              "nodeId": "node-1778057965068-119"
+            },
+            "from": {
+              "pinId": "get-variable-output",
+              "nodeId": "node-1778057965068-118"
+            }
+          },
+          {
+            "id": "edge-1778057965146-178",
+            "to": {
+              "pinId": "bool-and-input-2",
+              "nodeId": "node-1778057965068-122"
+            },
+            "from": {
+              "pinId": "compare-not-equal-result",
+              "nodeId": "node-1778057965068-119"
+            }
+          },
+          {
+            "id": "edge-1778057965146-179",
+            "to": {
+              "pinId": "set-control-rotation-target-input-0",
+              "nodeId": "node-1778057965071-123"
+            },
+            "from": {
+              "pinId": "get-player-controller-return",
+              "nodeId": "node-1778057965074-124"
+            }
+          },
+          {
+            "id": "edge-1778057965146-180",
+            "to": {
+              "pinId": "set-control-rotation-new-rotation-input-1",
+              "nodeId": "node-1778057965071-123"
+            },
+            "from": {
+              "pinId": "r-interp-to-return",
+              "nodeId": "node-1778057965078-127"
+            }
+          },
+          {
+            "id": "edge-1778057965146-181",
+            "to": {
+              "pinId": "r-interp-to-current-input-0",
+              "nodeId": "node-1778057965078-127"
+            },
+            "from": {
+              "pinId": "get-control-rotation-return",
+              "nodeId": "node-1778057965090-131"
+            }
+          },
+          {
+            "id": "edge-1778057965146-182",
+            "to": {
+              "pinId": "r-interp-to-target-input-1",
+              "nodeId": "node-1778057965078-127"
+            },
+            "from": {
+              "pinId": "make-rotator-return",
+              "nodeId": "node-1778057965082-128"
+            }
+          },
+          {
+            "id": "edge-1778057965146-183",
+            "to": {
+              "pinId": "r-interp-to-delta-time-input-2",
+              "nodeId": "node-1778057965078-127"
+            },
+            "from": {
+              "pinId": "get-world-delta-seconds-return",
+              "nodeId": "node-1778057965085-129"
+            }
+          },
+          {
+            "id": "edge-1778057965146-184",
+            "to": {
+              "pinId": "r-interp-to-interp-speed-input-3",
+              "nodeId": "node-1778057965078-127"
+            },
+            "from": {
+              "pinId": "get-variable-output",
+              "nodeId": "node-1778057965085-130"
+            }
+          },
+          {
+            "id": "edge-1778057965146-185",
+            "to": {
+              "pinId": "branch-condition",
+              "nodeId": "node-1778057965093-133"
+            },
+            "from": {
+              "pinId": "compare-greater-result",
+              "nodeId": "node-1778057965093-136"
+            }
+          },
+          {
+            "id": "edge-1778057965146-186",
+            "to": {
+              "pinId": "set-control-rotation-exec-in",
+              "nodeId": "node-1778057965096-143"
+            },
+            "from": {
+              "pinId": "branch-true",
+              "nodeId": "node-1778057965093-133"
+            }
+          },
+          {
+            "id": "edge-1778057965146-187",
+            "to": {
+              "pinId": "branch-exec-in",
+              "nodeId": "node-1778057965093-134"
+            },
+            "from": {
+              "pinId": "branch-false",
+              "nodeId": "node-1778057965093-133"
+            }
+          },
+          {
+            "id": "edge-1778057965146-188",
+            "to": {
+              "pinId": "branch-condition",
+              "nodeId": "node-1778057965093-134"
+            },
+            "from": {
+              "pinId": "compare-less-result",
+              "nodeId": "node-1778057965093-140"
+            }
+          },
+          {
+            "id": "edge-1778057965146-189",
+            "to": {
+              "pinId": "set-control-rotation-exec-in",
+              "nodeId": "node-1778057965124-154"
+            },
+            "from": {
+              "pinId": "branch-true",
+              "nodeId": "node-1778057965093-134"
+            }
+          },
+          {
+            "id": "edge-1778057965146-190",
+            "to": {
+              "pinId": "compare-greater-a",
+              "nodeId": "node-1778057965093-136"
+            },
+            "from": {
+              "pinId": "get-variable-output",
+              "nodeId": "node-1778057965093-135"
+            }
+          },
+          {
+            "id": "edge-1778057965146-191",
+            "to": {
+              "pinId": "compare-less-a",
+              "nodeId": "node-1778057965093-140"
+            },
+            "from": {
+              "pinId": "get-variable-output",
+              "nodeId": "node-1778057965093-139"
+            }
+          },
+          {
+            "id": "edge-1778057965146-192",
+            "to": {
+              "pinId": "set-control-rotation-target-input-0",
+              "nodeId": "node-1778057965096-143"
+            },
+            "from": {
+              "pinId": "get-player-controller-return",
+              "nodeId": "node-1778057965099-144"
+            }
+          },
+          {
+            "id": "edge-1778057965146-193",
+            "to": {
+              "pinId": "set-control-rotation-new-rotation-input-1",
+              "nodeId": "node-1778057965096-143"
+            },
+            "from": {
+              "pinId": "r-interp-to-return",
+              "nodeId": "node-1778057965109-147"
+            }
+          },
+          {
+            "id": "edge-1778057965146-194",
+            "to": {
+              "pinId": "r-interp-to-current-input-0",
+              "nodeId": "node-1778057965109-147"
+            },
+            "from": {
+              "pinId": "get-control-rotation-return",
+              "nodeId": "node-1778057965118-151"
+            }
+          },
+          {
+            "id": "edge-1778057965146-195",
+            "to": {
+              "pinId": "r-interp-to-target-input-1",
+              "nodeId": "node-1778057965109-147"
+            },
+            "from": {
+              "pinId": "make-rotator-return",
+              "nodeId": "node-1778057965112-148"
+            }
+          },
+          {
+            "id": "edge-1778057965146-196",
+            "to": {
+              "pinId": "r-interp-to-delta-time-input-2",
+              "nodeId": "node-1778057965109-147"
+            },
+            "from": {
+              "pinId": "get-world-delta-seconds-return",
+              "nodeId": "node-1778057965116-149"
+            }
+          },
+          {
+            "id": "edge-1778057965146-197",
+            "to": {
+              "pinId": "r-interp-to-interp-speed-input-3",
+              "nodeId": "node-1778057965109-147"
+            },
+            "from": {
+              "pinId": "get-variable-output",
+              "nodeId": "node-1778057965116-150"
+            }
+          },
+          {
+            "id": "edge-1778057965146-198",
+            "to": {
+              "pinId": "make-rotator-roll-input-0",
+              "nodeId": "node-1778057965112-148"
+            },
+            "from": {
+              "pinId": "get-variable-output",
+              "nodeId": "node-1778057965121-153"
+            }
+          },
+          {
+            "id": "edge-1778057965146-199",
+            "to": {
+              "pinId": "set-control-rotation-target-input-0",
+              "nodeId": "node-1778057965124-154"
+            },
+            "from": {
+              "pinId": "get-player-controller-return",
+              "nodeId": "node-1778057965127-155"
+            }
+          },
+          {
+            "id": "edge-1778057965146-200",
+            "to": {
+              "pinId": "set-control-rotation-new-rotation-input-1",
+              "nodeId": "node-1778057965124-154"
+            },
+            "from": {
+              "pinId": "r-interp-to-return",
+              "nodeId": "node-1778057965131-158"
+            }
+          },
+          {
+            "id": "edge-1778057965146-201",
+            "to": {
+              "pinId": "r-interp-to-current-input-0",
+              "nodeId": "node-1778057965131-158"
+            },
+            "from": {
+              "pinId": "get-control-rotation-return",
+              "nodeId": "node-1778057965142-162"
+            }
+          },
+          {
+            "id": "edge-1778057965146-202",
+            "to": {
+              "pinId": "r-interp-to-target-input-1",
+              "nodeId": "node-1778057965131-158"
+            },
+            "from": {
+              "pinId": "make-rotator-return",
+              "nodeId": "node-1778057965134-159"
+            }
+          },
+          {
+            "id": "edge-1778057965146-203",
+            "to": {
+              "pinId": "r-interp-to-delta-time-input-2",
+              "nodeId": "node-1778057965131-158"
+            },
+            "from": {
+              "pinId": "get-world-delta-seconds-return",
+              "nodeId": "node-1778057965137-160"
+            }
+          },
+          {
+            "id": "edge-1778057965146-204",
+            "to": {
+              "pinId": "r-interp-to-interp-speed-input-3",
+              "nodeId": "node-1778057965131-158"
+            },
+            "from": {
+              "pinId": "get-variable-output",
+              "nodeId": "node-1778057965137-161"
+            }
+          },
+          {
+            "id": "edge-1778057965146-205",
+            "to": {
+              "pinId": "make-rotator-roll-input-0",
+              "nodeId": "node-1778057965134-159"
+            },
+            "from": {
+              "pinId": "math-result",
+              "nodeId": "node-1778057965145-164"
+            }
+          },
+          {
+            "id": "edge-1778057965146-206",
+            "to": {
+              "pinId": "math-b",
+              "nodeId": "node-1778057965145-164"
+            },
+            "from": {
+              "pinId": "get-variable-output",
+              "nodeId": "node-1778057965145-167"
+            }
+          },
+          {
+            "id": "edge-1778489988555-1",
+            "to": {
+              "pinId": "branch-exec-in",
+              "nodeId": "node-1778057965053-109"
+            },
+            "from": {
+              "pinId": "event-begin-play-exec",
+              "nodeId": "node-1778057955840-107"
+            }
+          }
+        ],
+        "nodes": [
+          {
+            "id": "node-1778057955840-105",
+            "position": {
+              "x": 24,
+              "y": 20
+            },
+            "definitionId": "event-construct"
+          },
+          {
+            "id": "node-1778057955840-106",
+            "position": {
+              "x": 244,
+              "y": 20
+            },
+            "definitionId": "event-destruct"
+          },
+          {
+            "id": "node-1778057955840-107",
+            "position": {
+              "x": 151.1111111111111,
+              "y": 48.44444444444446
+            },
+            "definitionId": "event-begin-play"
+          },
+          {
+            "id": "node-1778057955840-108",
+            "position": {
+              "x": 244,
+              "y": 160
+            },
+            "definitionId": "event-tick"
+          },
+          {
+            "id": "node-1778057965053-109",
+            "data": {
+              "eventScopeId": "node-1778057955840-107"
+            },
+            "position": {
+              "x": 437.2777777777777,
+              "y": 224.5555555555556
+            },
+            "definitionId": "branch"
+          },
+          {
+            "id": "node-1778057965061-110",
+            "data": {
+              "eventScopeId": "node-1778057955840-107"
+            },
+            "position": {
+              "x": -1098,
+              "y": -169.99999999999994
+            },
+            "definitionId": "get-velocity"
+          },
+          {
+            "id": "node-1778057965065-111",
+            "data": {
+              "eventScopeId": "node-1778057955840-107"
+            },
+            "position": {
+              "x": -630,
+              "y": -275.99999999999994
+            },
+            "definitionId": "v-size"
+          },
+          {
+            "id": "node-1778057965065-112",
+            "data": {
+              "eventScopeId": "node-1778057955840-107"
+            },
+            "position": {
+              "x": -391.00000000000006,
+              "y": -202.99999999999994
+            },
+            "definitionId": "compare-greater"
+          },
+          {
+            "id": "node-1778057965065-113",
+            "data": {
+              "value": "0.0",
+              "eventScopeId": "node-1778057955840-107",
+              "constantTypeValue": "Float"
+            },
+            "position": {
+              "x": -646,
+              "y": -137.99999999999994
+            },
+            "definitionId": "constant"
+          },
+          {
+            "id": "node-1778057965065-115",
+            "data": {
+              "variableId": "var-charactermovement",
+              "eventScopeId": "node-1778057955840-107"
+            },
+            "position": {
+              "x": -1130,
+              "y": 22.000000000000057
+            },
+            "definitionId": "get-variable"
+          },
+          {
+            "id": "node-1778057965068-116",
+            "data": {
+              "eventScopeId": "node-1778057955840-107"
+            },
+            "position": {
+              "x": -890,
+              "y": -9.999999999999943
+            },
+            "definitionId": "is-falling"
+          },
+          {
+            "id": "node-1778057965068-117",
+            "data": {
+              "eventScopeId": "node-1778057955840-107"
+            },
+            "position": {
+              "x": -474.00000000000006,
+              "y": 22.000000000000057
+            },
+            "definitionId": "bool-not"
+          },
+          {
+            "id": "node-1778057965068-118",
+            "data": {
+              "variableId": "var-scalevalue",
+              "eventScopeId": "node-1778057955840-107"
+            },
+            "position": {
+              "x": -1098,
+              "y": 134.00000000000006
+            },
+            "definitionId": "get-variable"
+          },
+          {
+            "id": "node-1778057965068-119",
+            "data": {
+              "eventScopeId": "node-1778057955840-107"
+            },
+            "position": {
+              "x": -452.00000000000006,
+              "y": 159.00000000000006
+            },
+            "definitionId": "compare-not-equal"
+          },
+          {
+            "id": "node-1778057965068-120",
+            "data": {
+              "value": "0.0",
+              "eventScopeId": "node-1778057955840-107",
+              "constantTypeValue": "Float"
+            },
+            "position": {
+              "x": -694,
+              "y": 118.00000000000006
+            },
+            "definitionId": "constant"
+          },
+          {
+            "id": "node-1778057965068-122",
+            "data": {
+              "inputCount": 3,
+              "eventScopeId": "node-1778057955840-107"
+            },
+            "position": {
+              "x": -162.00000000000006,
+              "y": 69.00000000000006
+            },
+            "definitionId": "bool-and"
+          },
+          {
+            "id": "node-1778057965071-123",
+            "data": {
+              "eventScopeId": "node-1778057955840-107"
+            },
+            "position": {
+              "x": 635,
+              "y": 454.00000000000006
+            },
+            "definitionId": "set-control-rotation"
+          },
+          {
+            "id": "node-1778057965074-124",
+            "data": {
+              "eventScopeId": "node-1778057955840-107"
+            },
+            "position": {
+              "x": 159.99999999999994,
+              "y": 335.00000000000006
+            },
+            "definitionId": "get-player-controller"
+          },
+          {
+            "id": "node-1778057965074-125",
+            "data": {
+              "value": "0",
+              "eventScopeId": "node-1778057955840-107",
+              "constantTypeValue": "Int"
+            },
+            "position": {
+              "x": -149.00000000000006,
+              "y": 284.00000000000006
+            },
+            "definitionId": "constant"
+          },
+          {
+            "id": "node-1778057965078-127",
+            "data": {
+              "eventScopeId": "node-1778057955840-107"
+            },
+            "position": {
+              "x": 337.99999999999994,
+              "y": 680
+            },
+            "definitionId": "r-interp-to"
+          },
+          {
+            "id": "node-1778057965082-128",
+            "data": {
+              "eventScopeId": "node-1778057955840-107"
+            },
+            "position": {
+              "x": -154.00000000000006,
+              "y": 646
+            },
+            "definitionId": "make-rotator"
+          },
+          {
+            "id": "node-1778057965085-129",
+            "data": {
+              "eventScopeId": "node-1778057955840-107"
+            },
+            "position": {
+              "x": -154.00000000000006,
+              "y": 806
+            },
+            "definitionId": "get-world-delta-seconds"
+          },
+          {
+            "id": "node-1778057965085-130",
+            "data": {
+              "variableId": "var-interp-speed",
+              "eventScopeId": "node-1778057955840-107"
+            },
+            "position": {
+              "x": -58.00000000000006,
+              "y": 886
+            },
+            "definitionId": "get-variable"
+          },
+          {
+            "id": "node-1778057965090-131",
+            "data": {
+              "eventScopeId": "node-1778057955840-107"
+            },
+            "position": {
+              "x": -170.00000000000006,
+              "y": 518
+            },
+            "definitionId": "get-control-rotation"
+          },
+          {
+            "id": "node-1778057965093-132",
+            "data": {
+              "eventScopeId": "node-1778057955840-107"
+            },
+            "position": {
+              "x": -570,
+              "y": 646
+            },
+            "definitionId": "get-control-rotation"
+          },
+          {
+            "id": "node-1778057965093-133",
+            "data": {
+              "eventScopeId": "node-1778057955840-107"
+            },
+            "position": {
+              "x": 1424,
+              "y": 198.00000000000006
+            },
+            "definitionId": "branch"
+          },
+          {
+            "id": "node-1778057965093-134",
+            "data": {
+              "eventScopeId": "node-1778057955840-107"
+            },
+            "position": {
+              "x": 1414,
+              "y": 1110
+            },
+            "definitionId": "branch"
+          },
+          {
+            "id": "node-1778057965093-135",
+            "data": {
+              "variableId": "var-scalevalue",
+              "eventScopeId": "node-1778057955840-107"
+            },
+            "position": {
+              "x": 789,
+              "y": 44.00000000000006
+            },
+            "definitionId": "get-variable"
+          },
+          {
+            "id": "node-1778057965093-136",
+            "data": {
+              "eventScopeId": "node-1778057955840-107"
+            },
+            "position": {
+              "x": 1114,
+              "y": 440.00000000000006
+            },
+            "definitionId": "compare-greater"
+          },
+          {
+            "id": "node-1778057965093-137",
+            "data": {
+              "value": "0.0",
+              "eventScopeId": "node-1778057955840-107",
+              "constantTypeValue": "Float"
+            },
+            "position": {
+              "x": 733,
+              "y": 738
+            },
+            "definitionId": "constant"
+          },
+          {
+            "id": "node-1778057965093-139",
+            "data": {
+              "variableId": "var-scalevalue",
+              "eventScopeId": "node-1778057955840-107"
+            },
+            "position": {
+              "x": 790,
+              "y": 1142
+            },
+            "definitionId": "get-variable"
+          },
+          {
+            "id": "node-1778057965093-140",
+            "data": {
+              "eventScopeId": "node-1778057955840-107"
+            },
+            "position": {
+              "x": 966,
+              "y": 1158
+            },
+            "definitionId": "compare-less"
+          },
+          {
+            "id": "node-1778057965093-141",
+            "data": {
+              "value": "0.0",
+              "eventScopeId": "node-1778057955840-107",
+              "constantTypeValue": "Float"
+            },
+            "position": {
+              "x": 746,
+              "y": 1158
+            },
+            "definitionId": "constant"
+          },
+          {
+            "id": "node-1778057965096-143",
+            "data": {
+              "eventScopeId": "node-1778057955840-107"
+            },
+            "position": {
+              "x": 2918,
+              "y": 246.00000000000006
+            },
+            "definitionId": "set-control-rotation"
+          },
+          {
+            "id": "node-1778057965099-144",
+            "data": {
+              "eventScopeId": "node-1778057955840-107"
+            },
+            "position": {
+              "x": 2438,
+              "y": 374.00000000000006
+            },
+            "definitionId": "get-player-controller"
+          },
+          {
+            "id": "node-1778057965100-145",
+            "data": {
+              "value": "0",
+              "eventScopeId": "node-1778057955840-107",
+              "constantTypeValue": "Int"
+            },
+            "position": {
+              "x": 2218,
+              "y": 374.00000000000006
+            },
+            "definitionId": "constant"
+          },
+          {
+            "id": "node-1778057965109-147",
+            "data": {
+              "eventScopeId": "node-1778057955840-107"
+            },
+            "position": {
+              "x": 2582,
+              "y": 534
+            },
+            "definitionId": "r-interp-to"
+          },
+          {
+            "id": "node-1778057965112-148",
+            "data": {
+              "eventScopeId": "node-1778057955840-107"
+            },
+            "position": {
+              "x": 2246,
+              "y": 614
+            },
+            "definitionId": "make-rotator"
+          },
+          {
+            "id": "node-1778057965116-149",
+            "data": {
+              "eventScopeId": "node-1778057955840-107"
+            },
+            "position": {
+              "x": 2246,
+              "y": 774
+            },
+            "definitionId": "get-world-delta-seconds"
+          },
+          {
+            "id": "node-1778057965116-150",
+            "data": {
+              "variableId": "var-interp-speed",
+              "eventScopeId": "node-1778057955840-107"
+            },
+            "position": {
+              "x": 2342,
+              "y": 854
+            },
+            "definitionId": "get-variable"
+          },
+          {
+            "id": "node-1778057965118-151",
+            "data": {
+              "eventScopeId": "node-1778057955840-107"
+            },
+            "position": {
+              "x": 2230,
+              "y": 486.00000000000006
+            },
+            "definitionId": "get-control-rotation"
+          },
+          {
+            "id": "node-1778057965121-152",
+            "data": {
+              "eventScopeId": "node-1778057955840-107"
+            },
+            "position": {
+              "x": 1634,
+              "y": 568
+            },
+            "definitionId": "get-control-rotation"
+          },
+          {
+            "id": "node-1778057965121-153",
+            "data": {
+              "variableId": "var-lean-angle",
+              "eventScopeId": "node-1778057955840-107"
+            },
+            "position": {
+              "x": 1908,
+              "y": 540
+            },
+            "definitionId": "get-variable"
+          },
+          {
+            "id": "node-1778057965124-154",
+            "data": {
+              "eventScopeId": "node-1778057955840-107"
+            },
+            "position": {
+              "x": 2454,
+              "y": 1110
+            },
+            "definitionId": "set-control-rotation"
+          },
+          {
+            "id": "node-1778057965127-155",
+            "data": {
+              "eventScopeId": "node-1778057955840-107"
+            },
+            "position": {
+              "x": 1990,
+              "y": 1222
+            },
+            "definitionId": "get-player-controller"
+          },
+          {
+            "id": "node-1778057965127-156",
+            "data": {
+              "value": "0",
+              "eventScopeId": "node-1778057955840-107",
+              "constantTypeValue": "Int"
+            },
+            "position": {
+              "x": 1770,
+              "y": 1222
+            },
+            "definitionId": "constant"
+          },
+          {
+            "id": "node-1778057965131-158",
+            "data": {
+              "eventScopeId": "node-1778057955840-107"
+            },
+            "position": {
+              "x": 2134,
+              "y": 1382
+            },
+            "definitionId": "r-interp-to"
+          },
+          {
+            "id": "node-1778057965134-159",
+            "data": {
+              "eventScopeId": "node-1778057955840-107"
+            },
+            "position": {
+              "x": 1798,
+              "y": 1462
+            },
+            "definitionId": "make-rotator"
+          },
+          {
+            "id": "node-1778057965137-160",
+            "data": {
+              "eventScopeId": "node-1778057955840-107"
+            },
+            "position": {
+              "x": 1798,
+              "y": 1622
+            },
+            "definitionId": "get-world-delta-seconds"
+          },
+          {
+            "id": "node-1778057965137-161",
+            "data": {
+              "variableId": "var-interp-speed",
+              "eventScopeId": "node-1778057955840-107"
+            },
+            "position": {
+              "x": 1894,
+              "y": 1702
+            },
+            "definitionId": "get-variable"
+          },
+          {
+            "id": "node-1778057965142-162",
+            "data": {
+              "eventScopeId": "node-1778057955840-107"
+            },
+            "position": {
+              "x": 1782,
+              "y": 1334
+            },
+            "definitionId": "get-control-rotation"
+          },
+          {
+            "id": "node-1778057965145-163",
+            "data": {
+              "eventScopeId": "node-1778057955840-107"
+            },
+            "position": {
+              "x": 1478.6666666666667,
+              "y": 1550.3333333333333
+            },
+            "definitionId": "get-control-rotation"
+          },
+          {
+            "id": "node-1778057965145-164",
+            "data": {
+              "operator": "subtract",
+              "eventScopeId": "node-1778057955840-107"
+            },
+            "position": {
+              "x": 1574,
+              "y": 1318
+            },
+            "definitionId": "math"
+          },
+          {
+            "id": "node-1778057965145-165",
+            "data": {
+              "value": "350.000000",
+              "eventScopeId": "node-1778057955840-107",
+              "constantTypeValue": "Float"
+            },
+            "position": {
+              "x": 1249,
+              "y": 1256.3333333333333
+            },
+            "definitionId": "constant"
+          },
+          {
+            "id": "node-1778057965145-167",
+            "data": {
+              "variableId": "var-lean-angle",
+              "eventScopeId": "node-1778057955840-107"
+            },
+            "position": {
+              "x": 1173.6666666666667,
+              "y": 1611.3333333333333
+            },
+            "definitionId": "get-variable"
+          }
+        ]
+      },
+      "selectedFiles": [
+        "Runtime/Actor.json",
+        "Runtime/Character.json",
+        "Runtime/CharacterMovementComponent.json",
+        "Runtime/Controller.json",
+        "Runtime/GameplayStatics.json",
+        "Runtime/KismetMathLibrary.json",
+        "Runtime/NavMovementComponent.json",
+        "Runtime/Pawn.json",
+        "Runtime/PlayerController.json"
+      ],
+      "loadedFileNames": [
+        "Runtime/Actor.json",
+        "Runtime/ActorComponent.json",
+        "Runtime/AnimMontage.json",
+        "Runtime/AnimationAsset.json",
+        "Runtime/CameraTypes.json",
+        "Runtime/Character.json",
+        "Runtime/CharacterMovementComponent.json",
+        "Runtime/CharacterMovementReplication.json",
+        "Runtime/ChildActorComponent.json",
+        "Runtime/CollisionQueryParams.json",
+        "Runtime/Controller.json",
+        "Runtime/EngineBaseTypes.json",
+        "Runtime/EngineTypes.json",
+        "Runtime/GameplayStatics.json",
+        "Runtime/HitResult.json",
+        "Runtime/InputCoreTypes.json",
+        "Runtime/KismetMathLibrary.json",
+        "Runtime/KismetSystemLibrary.json",
+        "Runtime/MovementComponent.json",
+        "Runtime/NavMovementComponent.json",
+        "Runtime/NavMovementInterface.json",
+        "Runtime/NavigationTypes.json",
+        "Runtime/Object.json",
+        "Runtime/ObjectMacros.json",
+        "Runtime/OnlineReplStructs.json",
+        "Runtime/Pawn.json",
+        "Runtime/PawnMovementComponent.json",
+        "Runtime/PlayerCameraManager.json",
+        "Runtime/PlayerController.json",
+        "Runtime/PlayerMuteList.json",
+        "Runtime/PrimaryAssetId.json",
+        "Runtime/ReplicatedState.json",
+        "Runtime/RootMotionSource.json",
+        "Runtime/SceneComponent.json",
+        "Runtime/SoftObjectPtr.json",
+        "Runtime/SubclassOf.json",
+        "Runtime/UpdateLevelVisibilityLevelInfo.json",
+        "Runtime/WorldCollision.json"
+      ],
+      "manualHeaderIncludes": [
+        "GameFramework/Actor.h",
+        "Layout/Visibility.h"
+      ],
+      "customEvents": [],
+      "delegates": [],
+      "variables": [
+        {
+          "id": "var-charactermovement",
+          "name": "CharacterMovement",
+          "valueType": "Object",
+          "isArray": false,
+          "isMap": false,
+          "objectPointerKind": "raw",
+          "defaultValue": null,
+          "isPublic": false,
+          "isUProperty": false,
+          "forwardDeclareType": false,
+          "upropertySpecifiers": [],
+          "upropertyValues": {}
+        },
+        {
+          "id": "var-interp-speed",
+          "name": "INTERP SPEED",
+          "valueType": "Float",
+          "isArray": false,
+          "isMap": false,
+          "defaultValue": null,
+          "isPublic": false,
+          "isUProperty": false,
+          "forwardDeclareType": false,
+          "upropertySpecifiers": [],
+          "upropertyValues": {}
+        },
+        {
+          "id": "var-lean-angle",
+          "name": "lean angle",
+          "valueType": "Float",
+          "isArray": false,
+          "isMap": false,
+          "defaultValue": null,
+          "isPublic": false,
+          "isUProperty": false,
+          "forwardDeclareType": false,
+          "upropertySpecifiers": [],
+          "upropertyValues": {}
+        },
+        {
+          "id": "var-scalevalue",
+          "name": "ScaleValue",
+          "valueType": "Float",
+          "isArray": false,
+          "isMap": false,
+          "defaultValue": null,
+          "isPublic": false,
+          "isUProperty": false,
+          "forwardDeclareType": false,
+          "upropertySpecifiers": [],
+          "upropertyValues": {}
+        },
+        {
+          "id": "var-myactor",
+          "name": "myactor",
+          "valueType": "Object",
+          "typeName": "AActor",
+          "isArray": false,
+          "isMap": false,
+          "objectPointerKind": "none",
+          "defaultValue": null,
+          "isPublic": false,
+          "isUProperty": false,
+          "forwardDeclareType": false,
+          "upropertySpecifiers": [],
+          "upropertyValues": {}
+        },
+        {
+          "id": "var-newcharacter",
+          "name": "NewCharacter",
+          "valueType": "Object",
+          "typeName": "ACharacter",
+          "isArray": false,
+          "isMap": false,
+          "objectPointerKind": "none",
+          "defaultValue": null,
+          "isPublic": false,
+          "isUProperty": false,
+          "forwardDeclareType": true,
+          "upropertySpecifiers": [],
+          "upropertyValues": {}
+        },
+        {
+          "id": "var-myvisibility",
+          "name": "MyVisibility",
+          "valueType": "Unknown",
+          "typeName": "EVisibility",
+          "isArray": false,
+          "isMap": false,
+          "defaultValue": null,
+          "isPublic": false,
+          "isUProperty": false,
+          "forwardDeclareType": false,
+          "upropertySpecifiers": [],
+          "upropertyValues": {}
+        }
+      ],
+      "enums": [],
+      "structs": [],
+      "selectedProjectEnumIds": [],
+      "selectedProjectStructIds": [],
+      "selectedProjectInterfaceIds": [],
+      "includedBlueprintIds": []
+    },
+    {
+      "id": "bp-1778080592228-1",
+      "name": "myobject",
+      "templateId": "object",
+      "templateLabel": "Object",
+      "categoryPath": "",
+      "graph": {
+        "edges": [],
+        "nodes": [
+          {
+            "id": "node-1778080592229-2",
+            "position": {
+              "x": -250,
+              "y": 194
+            },
+            "definitionId": "event-construct"
+          },
+          {
+            "id": "node-1778080592229-3",
+            "position": {
+              "x": 244,
+              "y": 20
+            },
+            "definitionId": "event-destruct"
+          },
+          {
+            "id": "node-1778159867810-1",
+            "data": {
+              "eventScopeId": "node-1778080592229-2"
+            },
+            "position": {
+              "x": 655.1666666666666,
+              "y": 369.0499999999999
+            },
+            "definitionId": "bool-or"
+          },
+          {
+            "id": "node-1778159877448-2",
+            "data": {
+              "eventScopeId": "node-1778080592229-2"
+            },
+            "position": {
+              "x": 1148.075686882046,
+              "y": -175.26463072552826
+            },
+            "definitionId": "u-object-a2f894"
+          }
+        ]
+      },
+      "selectedFiles": [
+        "Runtime/Object.json"
+      ],
+      "loadedFileNames": [
+        "Runtime/Object.json",
+        "Runtime/ObjectMacros.json",
+        "Runtime/PrimaryAssetId.json"
+      ],
+      "manualHeaderIncludes": [],
+      "customEvents": [],
       "delegates": [],
       "variables": [],
       "enums": [],
